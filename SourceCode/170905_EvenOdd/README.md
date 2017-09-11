@@ -1,6 +1,6 @@
 ## - testNum의 값이 짝수인지 홀수인지 판별
 
-![170905_EvenOdd](https://github.com/simajune/iOS_School/blob/master/Users/pro/Desktop/myGits/Fastcampus/Img/170905_EvenOdd.png)
+![170905_EvenOdd](https://github.com/simajune/iOS_School/blob/master/Img/170905_EvenOdd.png)
 
 ** **
 

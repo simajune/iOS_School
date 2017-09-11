@@ -2,7 +2,7 @@
 
 
 
-![170905_AbsoluteValue](https://github.com/simajune/iOS_School/blob/master/Users/pro/Desktop/myGits/Fastcampus/Img/170905_AbsoluteValue.png)
+![170905_AbsoluteValue](https://github.com/simajune/iOS_School/blob/master/Img/170905_AbsoluteValue.png)
 
 ** **
 
