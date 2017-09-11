@@ -8,31 +8,53 @@
 
 //  output 단위까지 생각해보기
 
-
+////////1번 문제///////////
 import Foundation
 
-//func lengthConvert (unit: String, value: Double) -> Double {
-//    let tmpValue: Double = value
-//    var resultValue: Double = 0
-//    if unit == "inch" {
-//        resultValue = tmpValue * 2.54
-//    } else if unit == "cm" {
-//        resultValue = tmpValue / 2.54
-//    }
-//    return resultValue
-//}
-//
-//func volConvert (unit: String, value: Double) -> Double {
-//    let tmpValue: Double = value
-//    var resultValue: Double = 0
-//    if unit == "pyeong" {
-//        resultValue = tmpValue / 0.393701
-//    } else if unit == "m2" {
-//        resultValue = tmpValue * 0.393701
-//    }
-//    return resultValue
-//}
-//
+func inchToCm (inch: Double) -> Double {
+    return inch * 2.54
+}
+
+func cmToInch (cm: Double) -> Double {
+    return cm / 2.54
+}
+
+func lengthConvert (unit: String, value: Double) -> Double {
+    var resultValue: Double = 0
+    if unit == "inch" {
+        resultValue = inchToCm(inch: value)
+    } else if unit == "cm" {
+        resultValue = cmToInch(cm: value)
+    }
+    return resultValue
+}
+
+print(lengthConvert(unit: "cm", value: 1.312))
+
+////////2번 문제///////////
+
+func pyeongToM2 (pyeong: Double) -> Double {
+    return pyeong / 0.393701
+}
+
+func m2ToPyeong (m2: Double) -> Double {
+    return m2 * 0.393701
+}
+
+func volConvert (unit: String, value: Double) -> Double {
+    var resultValue: Double = 0
+    if unit == "pyeong" {
+        resultValue = pyeongToM2(pyeong: value)
+    } else if unit == "m2" {
+        resultValue = m2ToPyeong(m2: value)
+    }
+    return resultValue
+}
+
+print(volConvert(unit: "m2", value: 12.11))
+////////3번 문제///////////
+
+
 //func tempConvert (unit: String, value: Double) -> Double {
 //    let tmpValue: Double = value
 //    var resultValue: Double = 0
