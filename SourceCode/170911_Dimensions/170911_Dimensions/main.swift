@@ -11,6 +11,8 @@
 ////////1번 문제///////////
 import Foundation
 
+pow
+
 func inchToCm (inch: Double) -> Double {
     return inch * 2.54
 }
