@@ -1,4 +1,4 @@
-<img src="/Users/pro/Desktop/myGits/Fastcampus/Class/170905/swift.png" width="100px" height="100px"/>
+<img src="https://github.com/simajune/iOS_School/blob/master/Class/170905/swift.png" width="100px" height="100px"/>
 
 ------
 
