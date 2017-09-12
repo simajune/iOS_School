@@ -11,8 +11,6 @@
 ////////1번 문제///////////
 import Foundation
 
-pow
-
 func inchToCm (inch: Double) -> Double {
     return inch * 2.54
 }
@@ -54,31 +52,49 @@ func volConvert (unit: String, value: Double) -> Double {
 }
 
 print(volConvert(unit: "m2", value: 12.11))
+
 ////////3번 문제///////////
+func celToFab (celsius :Double) -> Double {
+    return celsius * 32
+}
 
+func fabToCel (Fahrenheit: Double) -> Double {
+    return Fahrenheit / 32
+}
 
-//func tempConvert (unit: String, value: Double) -> Double {
-//    let tmpValue: Double = value
-//    var resultValue: Double = 0
-//    if unit == "cel" {
-//        resultValue = tmpValue * 32
-//    } else if unit == "fab" {
-//        resultValue = tmpValue / 32
-//    }
-//    return resultValue
-//}
-//
-//func dataConvert (unit: String, value: Double) -> Double {
-//    let tmpValue: Double = value
-//    var resultValue: Double = 0
-//    if unit == "kb" {
-//        resultValue = tmpValue * 1024
-//    } else if unit == "mb" {
-//        resultValue = tmpValue * 1024
-//    }
-//    return resultValue
-//}
-//
+func tempConvert (unit: String, value: Double) -> Double {
+    var resultValue: Double = 0
+    if unit == "cel" {
+        resultValue = celToFab(celsius: value)
+    } else if unit == "fab" {
+        resultValue = fabToCel(Fahrenheit: value)
+    }
+    return resultValue
+}
+
+print(tempConvert(unit: "cel", value: 3.11))
+
+////////4번 문제///////////
+func kbToMb (kb: Int) -> Int {
+    return kb * 1024
+}
+
+func mbToGb (mb: Int) -> Int {
+    return mb * 1024
+}
+
+func dataConvert (unit: String, value: Int) -> Int {
+    var resultValue: Int = 0
+    if unit == "kb" {
+        resultValue = kbToMb(kb: value)
+    } else if unit == "mb" {
+        resultValue = mbToGb(mb: value)
+    }
+    return resultValue
+}
+
+print(dataConvert(unit: "kb", value: 126))
+
 //func timeConvert (unit: String, value: Int) -> Int {
 //    var tmpValue: Int = value
 //    var resultValue: Int = 0
@@ -100,7 +116,7 @@ print(volConvert(unit: "m2", value: 12.11))
 //}
 //print(timeConvert(unit: "second", value: 3600))
 
-////////다른 방법///////////////////
+////////다른 방법///////////////////효율성 떨어짐
 //func timeConvert (unit: String, value: Int) -> Int {
 //    var tmpValue: Int = value
 //    var tmpNum: Int = 0
@@ -150,7 +166,7 @@ print(volConvert(unit: "m2", value: 12.11))
 //print(collatz(number: 123286325789578297))
 
 
-//////Harshad수 찾기
+///////////Harshad수 찾기///////////////////////////////
 
 func harshad (inputNum: Int) -> Bool {
     var tmpNum: Int = inputNum
