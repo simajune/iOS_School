@@ -4,7 +4,7 @@
 
 ### 사전 과제
 
-> - [스위프트에 대해](https://github.com/simajune/iOS_School/tree/master/Class/PreStudy1)
+> - [스위프트에 대해](https://github.com/simajune/iOS_School/tree/master/Class/PreStudy_1)
 > - [프로그래머]()
 > - [컴퓨터의 구성]()
 > - [운영체제]()

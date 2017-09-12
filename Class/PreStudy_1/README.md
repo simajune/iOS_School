@@ -1,4 +1,4 @@
-<img src="https://github.com/simajune/iOS_School/blob/master/Class/170905/swift.png" width="100px" height="100px"/>
+<img src="https://github.com/simajune/iOS_School/blob/master/Class/PreStudy_1/swift.png" width="100px" height="100px"/>
 
 ------
 
@@ -25,13 +25,13 @@
 #### 2. 신속성 (fast)
 
 > - 스위프트는 C언어를 기반으로 한 C, C++, Objective-C와 같은 프로그래밍 언어를 대체하려는 목적으로 만들어짐
-> -  실행속도의 최적화 뿐만 아니라 컴파일러의 지속된 개량을 통해 더 빠른 컴파일 성능을 구현
+> - 실행속도의 최적화 뿐만 아니라 컴파일러의 지속된 개량을 통해 더 빠른 컴파일 성능을 구현
 
 
 
 #### 3. 표현성 (expressive)
 
 > -  스위프트는 더 사용하기 편하고 보기 좋은 문법을 구사
-> - 개발자들이 원하던 현대적이고 세련된 문법을 구현 가능
-> - 계속된 업데이트를 통해 더욱 보기 좋은 언어로 발전 중
+> -  개발자들이 원하던 현대적이고 세련된 문법을 구현 가능
+> -  계속된 업데이트를 통해 더욱 보기 좋은 언어로 발전 중
 
