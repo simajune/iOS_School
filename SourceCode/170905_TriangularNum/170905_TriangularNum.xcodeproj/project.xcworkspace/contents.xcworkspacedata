@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:170911_MyCalculator.xcodeproj">
+      location = "self:170905_TriangularNum.xcodeproj">
    </FileRef>
 </Workspace>
