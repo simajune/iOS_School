@@ -9,18 +9,22 @@
 import Foundation
 
 class SubjectCalculation {
-    func calculation(student: Student) {
-        let totalScore: Int = avgSubject(studentName: student)
-        if totalScore >= 90 {
+    func avrgCalculation(student: Student) -> String {
+        let avgScore: Double = avgSubject(studentName: student)
+        var text: String = ""
+        if avgScore >= 90 {
             student.totalGrade = "A"
-        }else if totalScore >= 80 {
+        }else if avgScore >= 80 {
             student.totalGrade = "B"
-        }else if totalScore >= 70 {
+        }else if avgScore >= 70 {
             student.totalGrade = "C"
-        }else if totalScore >= 60 {
+        }else if avgScore >= 60 {
             student.totalGrade = "D"
         }
-        print("\(student.name)님의 평균 점수는 \(totalScore)이고 최종 학점은 \(student.totalGrade)입니다")
+        text = "\(student.name)님의 평균점수는 \(avgScore)이고 최종학점은 \(student.totalGrade)입니다"
+        //print("\(student.name)님의 평균점수는 \(avgScore)이고 최종학점은 \(student.totalGrade)입니다")
+        return text
+        
     }
     //student.totalGradePoint =
 
@@ -33,8 +37,8 @@ class SubjectCalculation {
         return totalScore
     }
     
-    func avgSubject(studentName: Student) -> Int {
-        let avgScore = sumAllSubjects(subjects: studentName.subjects) / studentName.subjects.count
+    func avgSubject(studentName: Student) -> Double {
+        let avgScore = Double(sumAllSubjects(subjects: studentName.subjects)) / Double(studentName.subjects.count)
         return avgScore
     }
     

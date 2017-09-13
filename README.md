@@ -5,15 +5,7 @@
 ### 사전 과제
 
 > - [스위프트에 대해](https://github.com/simajune/iOS_School/tree/master/Class/PreStudy_1)
-> - [프로그래머]()
-> - [컴퓨터의 구성]()
-> - [운영체제]()
-> - [HTTP, GET, POST, HTTPS]()
-> - [IPv4, IPv6, DNS]()
-> - [자료구조]()
-> - [데이터]()
-> - [서버 - 클라이언트]()
-> - [프론트엔드 - 백엔드]()
+> - [컴퓨터 공학 기초상식](https://github.com/simajune/iOS_School/tree/master/Class/PreStudy_2)
 
 ** **
 

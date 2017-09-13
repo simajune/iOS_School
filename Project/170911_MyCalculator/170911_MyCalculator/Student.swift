@@ -25,10 +25,16 @@ class Student {
     
     func setSubjects(subjects: [Subject]) {
         self.subjects = subjects
+        
+//        for s in subjects {
+//            totalScore += s.score
+//        }
     }
+    
     
     func addSubject(subject: Subject) {
         self.subjects.append(subject)
+//        totalScore += subject.score
     }
     
 }

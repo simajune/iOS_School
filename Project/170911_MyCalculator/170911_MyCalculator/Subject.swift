@@ -14,15 +14,35 @@ class Subject {
     var gradePoint: Double = 0
     var grade: String = "F"
     var credits: Int = 1
-    
-    
-    init(name: String){
+
+    init (name: String) {
         self.name = name
-        //self.score = score
     }
     
-    func setScore(score: Int) {
+    func setScore (score: Int) {
         self.score = score
+    }
+    
+    func changeGrade() {
+        if score > 0 && score <= 100 {
+            if score >= 95 {
+                grade = "A+"
+            }else if score >= 90 {
+                grade = "A"
+            }else if score >= 85 {
+                grade = "B+"
+            }else if score >= 80 {
+                grade = "B"
+            }else if score >= 75 {
+                grade = "C+"
+            }else if score >= 70 {
+                grade = "C"
+            }else if score >= 65 {
+                grade = "D+"
+            }else if score >= 60 {
+                grade = "D"
+            }
+        }
     }
 }
 

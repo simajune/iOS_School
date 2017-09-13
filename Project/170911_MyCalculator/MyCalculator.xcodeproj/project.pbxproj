@@ -64,8 +64,8 @@
 			children = (
 				23D58D1B1F667F1B000CB875 /* AppDelegate.swift */,
 				23D58D1D1F667F1B000CB875 /* ViewController.swift */,
-				23066DF71F67B9A3009C1746 /* Subject.swift */,
 				23066DFD1F67CE9B009C1746 /* Student.swift */,
+				23066DF71F67B9A3009C1746 /* Subject.swift */,
 				23066E001F67D0EC009C1746 /* SubjectCalculation.swift */,
 				23066DFB1F67BFB0009C1746 /* Poketmon.swift */,
 				23D58D1F1F667F1B000CB875 /* Main.storyboard */,

@@ -7,7 +7,7 @@
 
 - 대표적인 조건무으로 if-else문과 switch-case문이 있다.
 
-  ![17090801_Class](https://github.com/simajune/iOS_School/blob/master/Img/17090801_Class.png)
+  ![17090801_Class](https://github.com/simajune/iOS_School/blob/master/Img/17090801.png)
 
 #### if-else문
 
@@ -30,11 +30,11 @@
 
   ```swift
   if 조건1 {
-      //조건1이 만족되면 실행할 코드
+      //조건1이 만족되면 실행
   }else if 조건2 {
-      //조건1이 만족되지 않고 조건2가 만족되면 실행할 코드
+      //조건1이 만족되지 않고 조건2가 만족되면 실행
   }else {
-      //조건1,2가 모두 만족되지 않을 떄 실행할 코드
+      //조건1,2가 모두 만족되지 않을 떄 실행
   }
   ```
 
