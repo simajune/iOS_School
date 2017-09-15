@@ -23,10 +23,20 @@
 ### 1주차
 
 > 1. [컴퓨터, 프로그래밍이란](https://github.com/simajune/iOS_School/tree/master/Class/PreStudy_2)
+>
 > 2. [변수와 상수, 이름 짓기, 산술연산자](https://github.com/simajune/iOS_School/tree/master/Class/170906)
+>
+>    **연습문제**
+>
+>     - [절대값 만들기](https://github.com/simajune/iOS_School/tree/master/SourceCode/170905_AbsoluteValue)
+>    - ​
+>
 > 3. [데이터 타입](https://github.com/simajune/iOS_School/tree/master/Class/170907)
+>
 > 4. [조건문, 반복문](https://github.com/simajune/iOS_School/tree/master/Class/170908)
+>
 > 5. [함수](https://github.com/simajune/iOS_School/tree/master/Class/170909)
+>
 > 6. [콜렉션 타입](https://github.com/simajune/iOS_School/tree/master/Class/170910)
 
 ** **

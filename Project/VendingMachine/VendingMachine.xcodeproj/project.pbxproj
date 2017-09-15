@@ -1,0 +1,362 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		23087D951F6BD736004F31D9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23087D941F6BD736004F31D9 /* AppDelegate.swift */; };
+		23087D971F6BD736004F31D9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23087D961F6BD736004F31D9 /* ViewController.swift */; };
+		23087D9A1F6BD736004F31D9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23087D981F6BD736004F31D9 /* Main.storyboard */; };
+		23087D9C1F6BD736004F31D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 23087D9B1F6BD736004F31D9 /* Assets.xcassets */; };
+		23087D9F1F6BD736004F31D9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23087D9D1F6BD736004F31D9 /* LaunchScreen.storyboard */; };
+		23087DA71F6BDA6E004F31D9 /* VendingMachine.png in Resources */ = {isa = PBXBuildFile; fileRef = 23087DA61F6BDA6E004F31D9 /* VendingMachine.png */; };
+		23087DAA1F6BDF7A004F31D9 /* VendingMachine1.png in Resources */ = {isa = PBXBuildFile; fileRef = 23087DA91F6BDF7A004F31D9 /* VendingMachine1.png */; };
+		23087DAC1F6BE413004F31D9 /* VendingMachine2.png in Resources */ = {isa = PBXBuildFile; fileRef = 23087DAB1F6BE413004F31D9 /* VendingMachine2.png */; };
+		23087DB61F6BECF1004F31D9 /* iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = 23087DB51F6BECF1004F31D9 /* iphone.png */; };
+		23087DC51F6BF4CC004F31D9 /* appletv.png in Resources */ = {isa = PBXBuildFile; fileRef = 23087DC11F6BF4CC004F31D9 /* appletv.png */; };
+		23087DC61F6BF4CC004F31D9 /* macbook.png in Resources */ = {isa = PBXBuildFile; fileRef = 23087DC21F6BF4CC004F31D9 /* macbook.png */; };
+		23087DC71F6BF4CC004F31D9 /* macpro.png in Resources */ = {isa = PBXBuildFile; fileRef = 23087DC31F6BF4CC004F31D9 /* macpro.png */; };
+		23087DC81F6BF4CC004F31D9 /* mactracker.png in Resources */ = {isa = PBXBuildFile; fileRef = 23087DC41F6BF4CC004F31D9 /* mactracker.png */; };
+		23087DCA1F6BF4FF004F31D9 /* apple.png in Resources */ = {isa = PBXBuildFile; fileRef = 23087DC91F6BF4FF004F31D9 /* apple.png */; };
+		23087DCC1F6BF69E004F31D9 /* keypad.png in Resources */ = {isa = PBXBuildFile; fileRef = 23087DCB1F6BF69E004F31D9 /* keypad.png */; };
+		23087DD31F6BF9B5004F31D9 /* applewatch.png in Resources */ = {isa = PBXBuildFile; fileRef = 23087DD11F6BF9B5004F31D9 /* applewatch.png */; };
+		23087DD41F6BF9B5004F31D9 /* imac.png in Resources */ = {isa = PBXBuildFile; fileRef = 23087DD21F6BF9B5004F31D9 /* imac.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		23087D911F6BD736004F31D9 /* VendingMachine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VendingMachine.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		23087D941F6BD736004F31D9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		23087D961F6BD736004F31D9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		23087D991F6BD736004F31D9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		23087D9B1F6BD736004F31D9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		23087D9E1F6BD736004F31D9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		23087DA01F6BD736004F31D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		23087DA61F6BDA6E004F31D9 /* VendingMachine.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = VendingMachine.png; sourceTree = "<group>"; };
+		23087DA91F6BDF7A004F31D9 /* VendingMachine1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = VendingMachine1.png; sourceTree = "<group>"; };
+		23087DAB1F6BE413004F31D9 /* VendingMachine2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = VendingMachine2.png; sourceTree = "<group>"; };
+		23087DB51F6BECF1004F31D9 /* iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iphone.png; sourceTree = "<group>"; };
+		23087DC11F6BF4CC004F31D9 /* appletv.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = appletv.png; sourceTree = "<group>"; };
+		23087DC21F6BF4CC004F31D9 /* macbook.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = macbook.png; sourceTree = "<group>"; };
+		23087DC31F6BF4CC004F31D9 /* macpro.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = macpro.png; sourceTree = "<group>"; };
+		23087DC41F6BF4CC004F31D9 /* mactracker.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mactracker.png; sourceTree = "<group>"; };
+		23087DC91F6BF4FF004F31D9 /* apple.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = apple.png; sourceTree = "<group>"; };
+		23087DCB1F6BF69E004F31D9 /* keypad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = keypad.png; sourceTree = "<group>"; };
+		23087DD11F6BF9B5004F31D9 /* applewatch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = applewatch.png; sourceTree = "<group>"; };
+		23087DD21F6BF9B5004F31D9 /* imac.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = imac.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		23087D8E1F6BD736004F31D9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		23087D881F6BD736004F31D9 = {
+			isa = PBXGroup;
+			children = (
+				23087D931F6BD736004F31D9 /* VendingMachine */,
+				23087D921F6BD736004F31D9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		23087D921F6BD736004F31D9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				23087D911F6BD736004F31D9 /* VendingMachine.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		23087D931F6BD736004F31D9 /* VendingMachine */ = {
+			isa = PBXGroup;
+			children = (
+				23087DA81F6BDA71004F31D9 /* Resources */,
+				23087D941F6BD736004F31D9 /* AppDelegate.swift */,
+				23087D961F6BD736004F31D9 /* ViewController.swift */,
+				23087D981F6BD736004F31D9 /* Main.storyboard */,
+				23087D9B1F6BD736004F31D9 /* Assets.xcassets */,
+				23087D9D1F6BD736004F31D9 /* LaunchScreen.storyboard */,
+				23087DA01F6BD736004F31D9 /* Info.plist */,
+			);
+			path = VendingMachine;
+			sourceTree = "<group>";
+		};
+		23087DA81F6BDA71004F31D9 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				23087DA61F6BDA6E004F31D9 /* VendingMachine.png */,
+				23087DA91F6BDF7A004F31D9 /* VendingMachine1.png */,
+				23087DAB1F6BE413004F31D9 /* VendingMachine2.png */,
+				23087DC91F6BF4FF004F31D9 /* apple.png */,
+				23087DB51F6BECF1004F31D9 /* iphone.png */,
+				23087DC11F6BF4CC004F31D9 /* appletv.png */,
+				23087DC21F6BF4CC004F31D9 /* macbook.png */,
+				23087DC31F6BF4CC004F31D9 /* macpro.png */,
+				23087DC41F6BF4CC004F31D9 /* mactracker.png */,
+				23087DCB1F6BF69E004F31D9 /* keypad.png */,
+				23087DD11F6BF9B5004F31D9 /* applewatch.png */,
+				23087DD21F6BF9B5004F31D9 /* imac.png */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		23087D901F6BD736004F31D9 /* VendingMachine */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 23087DA31F6BD736004F31D9 /* Build configuration list for PBXNativeTarget "VendingMachine" */;
+			buildPhases = (
+				23087D8D1F6BD736004F31D9 /* Sources */,
+				23087D8E1F6BD736004F31D9 /* Frameworks */,
+				23087D8F1F6BD736004F31D9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VendingMachine;
+			productName = VendingMachine;
+			productReference = 23087D911F6BD736004F31D9 /* VendingMachine.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		23087D891F6BD736004F31D9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = SIMA;
+				TargetAttributes = {
+					23087D901F6BD736004F31D9 = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 23087D8C1F6BD736004F31D9 /* Build configuration list for PBXProject "VendingMachine" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 23087D881F6BD736004F31D9;
+			productRefGroup = 23087D921F6BD736004F31D9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				23087D901F6BD736004F31D9 /* VendingMachine */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		23087D8F1F6BD736004F31D9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23087D9F1F6BD736004F31D9 /* LaunchScreen.storyboard in Resources */,
+				23087DA71F6BDA6E004F31D9 /* VendingMachine.png in Resources */,
+				23087DC51F6BF4CC004F31D9 /* appletv.png in Resources */,
+				23087DAC1F6BE413004F31D9 /* VendingMachine2.png in Resources */,
+				23087DD31F6BF9B5004F31D9 /* applewatch.png in Resources */,
+				23087D9C1F6BD736004F31D9 /* Assets.xcassets in Resources */,
+				23087DB61F6BECF1004F31D9 /* iphone.png in Resources */,
+				23087DCC1F6BF69E004F31D9 /* keypad.png in Resources */,
+				23087DAA1F6BDF7A004F31D9 /* VendingMachine1.png in Resources */,
+				23087DC81F6BF4CC004F31D9 /* mactracker.png in Resources */,
+				23087DC71F6BF4CC004F31D9 /* macpro.png in Resources */,
+				23087DD41F6BF9B5004F31D9 /* imac.png in Resources */,
+				23087DC61F6BF4CC004F31D9 /* macbook.png in Resources */,
+				23087DCA1F6BF4FF004F31D9 /* apple.png in Resources */,
+				23087D9A1F6BD736004F31D9 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		23087D8D1F6BD736004F31D9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23087D971F6BD736004F31D9 /* ViewController.swift in Sources */,
+				23087D951F6BD736004F31D9 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		23087D981F6BD736004F31D9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				23087D991F6BD736004F31D9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		23087D9D1F6BD736004F31D9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				23087D9E1F6BD736004F31D9 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		23087DA11F6BD736004F31D9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		23087DA21F6BD736004F31D9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		23087DA41F6BD736004F31D9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = VendingMachine/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.SIMA.VendingMachine;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		23087DA51F6BD736004F31D9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = VendingMachine/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.SIMA.VendingMachine;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		23087D8C1F6BD736004F31D9 /* Build configuration list for PBXProject "VendingMachine" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				23087DA11F6BD736004F31D9 /* Debug */,
+				23087DA21F6BD736004F31D9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		23087DA31F6BD736004F31D9 /* Build configuration list for PBXNativeTarget "VendingMachine" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				23087DA41F6BD736004F31D9 /* Debug */,
+				23087DA51F6BD736004F31D9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 23087D891F6BD736004F31D9 /* Project object */;
+}

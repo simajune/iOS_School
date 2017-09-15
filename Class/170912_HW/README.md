@@ -62,18 +62,19 @@
 > >
 > > 여기서 메서드의 기능이 꼭 같아야만 하는 것은 아니다.
 > >
+> > ```swift
+> > class printValue {
+> >   var a: Int = 10
+> > 	func outValue (num: Int) {
+> > 		print(num - 2)
+> > 	}
+> > 	func outValue (name: String) {
+> > 		print(name + "good")
+> > 	}
+> > }
+> > ```
 >
-> ```swift
-> class printValue {
->   var a: Int = 10
-> 	func outValue (num: Int) {
-> 		print(num - 2)
-> 	}
-> 	func outValue (name: String) {
-> 		print(name + "good")
-> 	}
-> }
-> ```
+> 
 >
 > > ##### ```오버라이딩```
 > >
