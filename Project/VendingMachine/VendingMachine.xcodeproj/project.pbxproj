@@ -24,6 +24,7 @@
 		23087DCC1F6BF69E004F31D9 /* keypad.png in Resources */ = {isa = PBXBuildFile; fileRef = 23087DCB1F6BF69E004F31D9 /* keypad.png */; };
 		23087DD31F6BF9B5004F31D9 /* applewatch.png in Resources */ = {isa = PBXBuildFile; fileRef = 23087DD11F6BF9B5004F31D9 /* applewatch.png */; };
 		23087DD41F6BF9B5004F31D9 /* imac.png in Resources */ = {isa = PBXBuildFile; fileRef = 23087DD21F6BF9B5004F31D9 /* imac.png */; };
+		23F6EFB11F6CEBA900636F42 /* Vending.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F6EFB01F6CEBA900636F42 /* Vending.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +47,7 @@
 		23087DCB1F6BF69E004F31D9 /* keypad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = keypad.png; sourceTree = "<group>"; };
 		23087DD11F6BF9B5004F31D9 /* applewatch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = applewatch.png; sourceTree = "<group>"; };
 		23087DD21F6BF9B5004F31D9 /* imac.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = imac.png; sourceTree = "<group>"; };
+		23F6EFB01F6CEBA900636F42 /* Vending.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Vending.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +83,7 @@
 				23087DA81F6BDA71004F31D9 /* Resources */,
 				23087D941F6BD736004F31D9 /* AppDelegate.swift */,
 				23087D961F6BD736004F31D9 /* ViewController.swift */,
+				23F6EFB01F6CEBA900636F42 /* Vending.swift */,
 				23087D981F6BD736004F31D9 /* Main.storyboard */,
 				23087D9B1F6BD736004F31D9 /* Assets.xcassets */,
 				23087D9D1F6BD736004F31D9 /* LaunchScreen.storyboard */,
@@ -192,6 +195,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				23F6EFB11F6CEBA900636F42 /* Vending.swift in Sources */,
 				23087D971F6BD736004F31D9 /* ViewController.swift in Sources */,
 				23087D951F6BD736004F31D9 /* AppDelegate.swift in Sources */,
 			);
@@ -355,6 +359,7 @@
 				23087DA51F6BD736004F31D9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

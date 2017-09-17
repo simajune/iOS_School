@@ -10,16 +10,20 @@ import UIKit
 
 class ViewController: UIViewController {
     //mactracker의 가격은 300만원, 애플티비는 50만원, 맥프로는 2000만원, 애플와치는 80만원, 맥북은 200만원, 아이맥은 500만원
-    @IBOutlet var itemPrice: UILabel!
-    @IBOutlet var remainAmount: UILabel!
-    var selectItem: String = ""
-    var priceView: Int = 0
-    var depositMoney: String = ""
-    var lackMoney: String = ""
+    @IBOutlet var itemPrice: UILabel!       //아이템 가격을 나타내는 레이블
+    @IBOutlet var remainAmount: UILabel!    //남은 금액을 나타내는 레이블
+    @IBOutlet var priceWon: UILabel!        //가격 뒤에 "원"을 나타내기 위한 레이블
+    @IBOutlet var remainWon: UILabel!       //남은 금액 뒤에 "원"을 나타내기 위한 레이블
+
+    
+    
+    let machine: Vending = Vending()        //클래스 초기화
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        priceWon.text! = ""                 //레이블 초기 값은 없음
+        remainWon.text! = ""                //레이블 초기 값은 없음
         
     }
 
@@ -27,64 +31,26 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    
+    //아이템을 눌렀을 때 가격이 나오게 하는 함수
     @IBAction func vendingItem(_ sender: UIButton) {
-        itemPriceView(btn: sender.titleLabel!.text!)
+        itemPrice.text! =  machine.itemPriceView(btn: sender.titleLabel!.text!)
     }
+    //입금 버튼을 눌렀을 때 남은 금액 가격 레이블을 변화시키는 함수
     @IBAction func moneyInput(_ sender: UIButton) {
         if remainAmount.text! == "남은 금액" {
             remainAmount.text! = "0"
         }
-        addMoney(btn: sender.titleLabel!.text!)
+        remainAmount.text! =  machine.addMoney(remainButton: remainAmount.text!, depositButton: sender.titleLabel!.text!)
     }
+    
+    //아이템을 선택해서 샀을 때 남은 금액의 레이블을 변화시키기 위한 함수
     @IBAction func selectItem(_ sender: UIButton) {
-        buyItem()
+        remainAmount.text! = machine.buyItem(remainButton: remainAmount.text!, priceButton: itemPrice.text!)
     }
     
-    func buyItem() {
-        if Int(remainAmount.text!)! - Int(itemPrice.text!)! >= 0 {
-        remainAmount.text! = String(Int(remainAmount.text!)! - Int(itemPrice.text!)!)
-        }else {
-            lackMoney = remainAmount.text!
-            remainAmount.text! = "돈 넣으세요!!"
-        }
-    }
     
-    func addMoney (btn: String) {
-        if remainAmount.text! == "돈 넣으세요!!" {
-            remainAmount.text! = lackMoney
-        }
-        depositMoney = btn
-        switch depositMoney {
-        case "100만원" :
-            remainAmount.text! = String(Int(remainAmount.text!)! + 1000000)
-        case "500만원" :
-            remainAmount.text! = String(Int(remainAmount.text!)! + 5000000)
-        case "1000만원" :
-            remainAmount.text! = String(Int(remainAmount.text!)! + 10000000)
-        default :
-            print("a")
-        }
-    }
-    
-    func itemPriceView (btn: String) {
-        selectItem = btn
-        switch selectItem {
-        case "mactracker" :
-            itemPrice.text! = "3000000"
-        case "appletv" :
-            itemPrice.text! = "500000"
-        case "macpro" :
-            itemPrice.text! = "20000000"
-        case "applewatch" :
-            itemPrice.text! = "8000000"
-        case "macbook" :
-            itemPrice.text! = "2000000"
-        case "imac" :
-            itemPrice.text! = "5000000"
-        default :
-            print("a")
-        }
-    }
 
 }
 
