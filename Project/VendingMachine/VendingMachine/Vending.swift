@@ -8,21 +8,24 @@
 
 import Foundation
 
-class Vending {
+public class Vending {
     var lackMoney: String = ""      //돈이 부족했을 때 가지고 있던 금액을 따로 저장하기 위한 변수
+    private let lackLabel: String = "돈을 넣으세요!!"
+    private let initLabel: String = "남은 금액"
     
     init() {
         
     }
     //아이템을 선택해서 샀을 때 실핼하기 위한 함수
-    func buyItem(remainButton: String, priceButton: String) -> String {
+    func buyItem(remainButton: String, priceButton: String, remainWonLabel: inout String) -> String {
         var tmpRemainButton: String = remainButton
-        if tmpRemainButton != "돈 넣으세요!!" && tmpRemainButton != "남은 금액" {
+        if tmpRemainButton != lackLabel && tmpRemainButton != initLabel {
             if Int(tmpRemainButton)! - Int(priceButton)! >= 0 {
                 tmpRemainButton = String(Int(tmpRemainButton)! - Int(priceButton)!)
             }else {
                 lackMoney = remainButton
-                tmpRemainButton = "돈 넣으세요!!"
+                tmpRemainButton = lackLabel
+                remainWonLabel = ""
             }
         }
         return tmpRemainButton
@@ -31,7 +34,11 @@ class Vending {
     //입금 버튼을 눌렀을 때의 함수
     func addMoney (remainButton: String, depositButton: String) -> String{
         var tmpRemainButton: String = remainButton
-        if tmpRemainButton == "돈 넣으세요!!" {
+        if tmpRemainButton == initLabel {
+            tmpRemainButton = "0"
+        }
+        
+        if tmpRemainButton == lackLabel {
             tmpRemainButton = lackMoney
         }
         switch depositButton {
