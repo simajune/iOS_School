@@ -33,9 +33,13 @@
 >
 > 3. [데이터 타입](https://github.com/simajune/iOS_School/tree/master/Class/170907_DataType)
 >
+>    **연습문제**
+>
 >    - [큰수에서 작은수 빼기](https://github.com/simajune/iOS_School/tree/master/SourceCode/170905_MinusPositive)
 >
 > 4. [조건문, 반복문](https://github.com/simajune/iOS_School/tree/master/Class/170908_IfFor)
+>
+>    **연습문제**
 >
 >    - [삼각수 구하기](https://github.com/simajune/iOS_School/tree/master/SourceCode/170905_TriangularNum)
 >    - [구구단 구하기](https://github.com/simajune/iOS_School/tree/master/SourceCode/170906_Gugudan)
@@ -44,11 +48,15 @@
 >
 > 5. [함수](https://github.com/simajune/iOS_School/tree/master/Class/170909_Function)
 >
+>    **연습문제**
+>
 >    - [도형의 둘레, 넓이, 부피 구하기](https://github.com/simajune/iOS_School/tree/master/SourceCode/170906_AreaPerimeterVolume)
 >    - [함수 만들기](https://github.com/simajune/iOS_School/tree/master/SourceCode/170906_Function)
 >    - [단위 환산하기](https://github.com/simajune/iOS_School/tree/master/SourceCode/170911_Dimensions)
 >
 > 6. [콜렉션 타입](https://github.com/simajune/iOS_School/tree/master/Class/170910_Collectiontype)
+>
+>    **연습문제**
 >
 >    - [2017년도 요일 구하기, 중복 숫자 줄이기, 소수 찾기, 시저 암호](https://github.com/simajune/iOS_School/tree/master/SourceCode/170912_ArrayEx)
 
@@ -59,13 +67,19 @@
 ### 2주차
 
 > 1. Git 사용법 및 마크다운 사용법
+>
 > 2. [객체 지향 프로그래밍의 5가지 특성](https://github.com/simajune/iOS_School/tree/master/Class/170912_HW)
+>
 > 3. [클래스와 객체](https://github.com/simajune/iOS_School/tree/master/Class/170914_Class)
+>
+>    **연습문제**
 >
 >    - [은행 계좌 만들기](https://github.com/simajune/iOS_School/tree/master/SourceCode/170914_BankSystem)
 >    - [포켓몬 클래스 작성](https://github.com/simajune/iOS_School/tree/master/SourceCode/170917_Pokemon)
 >    - [학점계산기](https://github.com/simajune/iOS_School/tree/master/SourceCode/170914_CreditsCalculator)
+>
 > 4. [미니프로젝트 (계산기)](https://github.com/simajune/iOS_School/tree/master/Project/170911_MyCalculator)
+>
 > 5. [자판기 만들기](https://github.com/simajune/iOS_School/tree/master/Project/VendingMachine)
 
 ** **
