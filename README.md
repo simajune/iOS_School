@@ -44,7 +44,6 @@
 >    - [삼각수 구하기](https://github.com/simajune/iOS_School/tree/master/SourceCode/170905_TriangularNum)
 >    - [구구단 구하기](https://github.com/simajune/iOS_School/tree/master/SourceCode/170906_Gugudan)
 >    - [윤년구하기, 각자리수 더하기, 숫자 반대로 출력하기, 삼각별 그리기](https://github.com/simajune/iOS_School/tree/master/SourceCode/170906_IfFor)
->    - ​
 >
 > 5. [함수](https://github.com/simajune/iOS_School/tree/master/Class/170909_Function)
 >
