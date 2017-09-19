@@ -1,6 +1,6 @@
 # 자판기
 
-![vending](https://github.com/simajune/iOS_School/blob/master/Img/VendingMachine.png)
+<img src="https://github.com/simajune/iOS_School/blob/master/Img/VendingMachine.png" width="300px" height="500px"/>
 
 1. 우선 첫번째 방법으로는 클래스를 쓰지 않고 만들어 보았다. 일단 클래스를 사용하는게 익숙지 않다보니 처음에는 ViewController에 모든 함수를 만들어서 자판기를 만들었다. 
 
