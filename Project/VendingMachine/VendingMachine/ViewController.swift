@@ -27,17 +27,17 @@ class ViewController: UIViewController {
     //아이템을 눌렀을 때 가격이 나오게 하는 함수
     @IBAction func vendingItem(_ sender: UIButton) {
         priceWon.text! = wonLabel
-        itemPrice.text! =  machine.itemPriceView(btn: sender.titleLabel!.text!)
+        itemPrice.text! =  machine.itemPriceView(btnTitle: sender.tag)
     }
     //입금 버튼을 눌렀을 때 남은 금액 가격 레이블을 변화시키는 함수
     @IBAction func moneyInput(_ sender: UIButton) {
         remainWon.text! = wonLabel
-        remainAmount.text! =  machine.addMoney(remainButton: remainAmount.text!, depositButton: sender.titleLabel!.text!)
+        remainAmount.text! =  machine.addMoney(remainBtnTitle: remainAmount.text!, depositBtnTitle: sender.tag)
     }
     
     //아이템을 선택해서 샀을 때 남은 금액의 레이블을 변화시키기 위한 함수
     @IBAction func selectItem(_ sender: UIButton) {
-        remainAmount.text! = machine.buyItem(remainButton: remainAmount.text!, priceButton: itemPrice.text!, remainWonLabel: &remainWon.text!)
+        remainAmount.text! = machine.buyItem(remainBtnTitle: remainAmount.text!, priceBtnTitle: itemPrice.text!, remainWonLabel: &remainWon.text!)
     }
 }
 

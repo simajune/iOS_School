@@ -65,7 +65,7 @@
 
 ### 2주차
 
-> 1. Git 사용법 및 마크다운 사용법
+> 1. [Git 사용법 및 마크다운 사용법](https://github.com/simajune/iOS_School/tree/master/Class/170913_Git)
 >
 > 2. [객체 지향 프로그래밍의 5가지 특성](https://github.com/simajune/iOS_School/tree/master/Class/170912_HW)
 >
@@ -84,6 +84,20 @@
 ** **
 
 
+
+### 3주차
+
+> 1. [연산자와 switch문](https://github.com/simajune/iOS_School/tree/master/Class/170918_Switch)
+>
+> 2. [프로퍼티](https://github.com/simajune/iOS_School/tree/master/Class/170918_Property)
+>
+> 3. [메서드](https://github.com/simajune/iOS_School/tree/master/Class/170918_Method)
+>
+> 4. 열거형
+>
+> 5. 옵셔널
+>
+>    ​
 
 
 

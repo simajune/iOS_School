@@ -35,7 +35,7 @@ var system: Rect = Rect()
 system.origin = Point(x: 5.0, y: 1.0)
 system.size = Size(width: 5.0, height: 10.0)
 
-print(system.origin.x, system.origin.y)
+print(system.center.x, system.center.y)
 
 system.center = Point(x: 10.0, y: 10.0)
 
