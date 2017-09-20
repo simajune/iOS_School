@@ -111,29 +111,29 @@ import Foundation
 //    return (num == 1 || num == 2) ? 1 : pibonachi(num: num - 1) + pibonachi(num: num - 2)
 //}
 //
-//
 //print(pibonachi(num: 7))
 //
 //
 //////////////옵셔널////////////////////
 //var a: Int? = Optional.none
 
-
-
-
-
-
-
-
-class Number {
-    var num1: Int
-    var num2: Int
-    init(num1: Int, num2: Int) {
-        self.num1 = num1
-        self.num2 = num2
-    }
+//class Number {
+//    var num1: Int
+//    var num2: Int
+//    init(num1: Int, num2: Int) {
+//        self.num1 = num1
+//        self.num2 = num2
+//    }
+//}
+//
+//var number: Number = Number(num1: 10, num2: 5)
+//
+enum add {
+    case plus((Int, Int) -> Int)
 }
 
-var number: Number = Number(num1: 10, num2: 5)
+    var operation = add.plus(+)
+
+
 
 

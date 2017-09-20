@@ -93,7 +93,7 @@
 >
 > 3. [메서드](https://github.com/simajune/iOS_School/tree/master/Class/170918_Method)
 >
-> 4. 열거형
+> 4. [열거형](https://github.com/simajune/iOS_School/tree/master/Class/170919_Enum)
 >
 > 5. 옵셔널
 >

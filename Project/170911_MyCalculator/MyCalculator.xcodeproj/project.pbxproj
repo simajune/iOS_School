@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		23066DFC1F67BFB0009C1746 /* Poketmon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23066DFB1F67BFB0009C1746 /* Poketmon.swift */; };
+		23A8425E1F7238640054A0D7 /* UpgradeCalculatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A8425D1F7238640054A0D7 /* UpgradeCalculatorViewController.swift */; };
+		23A842601F7257CF0054A0D7 /* MyCalculatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A8425F1F7257CF0054A0D7 /* MyCalculatorViewController.swift */; };
 		23D58D1C1F667F1B000CB875 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23D58D1B1F667F1B000CB875 /* AppDelegate.swift */; };
 		23D58D1E1F667F1B000CB875 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23D58D1D1F667F1B000CB875 /* ViewController.swift */; };
 		23D58D211F667F1B000CB875 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23D58D1F1F667F1B000CB875 /* Main.storyboard */; };
@@ -17,6 +19,8 @@
 
 /* Begin PBXFileReference section */
 		23066DFB1F67BFB0009C1746 /* Poketmon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Poketmon.swift; sourceTree = "<group>"; };
+		23A8425D1F7238640054A0D7 /* UpgradeCalculatorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UpgradeCalculatorViewController.swift; sourceTree = "<group>"; };
+		23A8425F1F7257CF0054A0D7 /* MyCalculatorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyCalculatorViewController.swift; sourceTree = "<group>"; };
 		23D58D181F667F1B000CB875 /* MyCalculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyCalculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		23D58D1B1F667F1B000CB875 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		23D58D1D1F667F1B000CB875 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -58,6 +62,8 @@
 			children = (
 				23D58D1B1F667F1B000CB875 /* AppDelegate.swift */,
 				23D58D1D1F667F1B000CB875 /* ViewController.swift */,
+				23A8425D1F7238640054A0D7 /* UpgradeCalculatorViewController.swift */,
+				23A8425F1F7257CF0054A0D7 /* MyCalculatorViewController.swift */,
 				23066DFB1F67BFB0009C1746 /* Poketmon.swift */,
 				23D58D1F1F667F1B000CB875 /* Main.storyboard */,
 				23D58D221F667F1B000CB875 /* Assets.xcassets */,
@@ -140,7 +146,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				23A842601F7257CF0054A0D7 /* MyCalculatorViewController.swift in Sources */,
 				23066DFC1F67BFB0009C1746 /* Poketmon.swift in Sources */,
+				23A8425E1F7238640054A0D7 /* UpgradeCalculatorViewController.swift in Sources */,
 				23D58D1E1F667F1B000CB875 /* ViewController.swift in Sources */,
 				23D58D1C1F667F1B000CB875 /* AppDelegate.swift in Sources */,
 			);

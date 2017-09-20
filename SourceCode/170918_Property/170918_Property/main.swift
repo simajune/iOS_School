@@ -51,3 +51,25 @@ var changeValue:Int = 0{
     }
 }
 changeValue = 4
+
+
+struct TV {
+    var height: Double
+    var width: Double
+    // 1
+    var diagonal: Int {
+        // 2
+        let result = sqrt(height * height + width * width)
+        print(result)
+        // 3
+        let roundedResult = result.rounded()
+        print(roundedResult)
+        // 4
+        return Int(roundedResult)
+    }
+}
+
+var tv = TV(height: 30.0, width: 10.5)
+
+print(tv.diagonal)
+

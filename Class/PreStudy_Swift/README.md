@@ -1,4 +1,4 @@
-<img src="https://github.com/simajune/iOS_School/blob/master/Class/PreStudy_1/swift.png" width="100px" height="100px"/>
+<img src="https://github.com/simajune/iOS_School/blob/master/Class/PreStudy_Swift/swift.png" width="100px" height="100px"/>
 
 ------
 

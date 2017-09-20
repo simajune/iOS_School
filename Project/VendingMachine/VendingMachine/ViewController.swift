@@ -16,6 +16,7 @@ class ViewController: UIViewController {
     @IBOutlet var remainWon: UILabel!       //남은 금액 뒤에 "원"을 나타내기 위한 레이블
     let wonLabel: String = "원"
     
+    
     let machine: Vending = Vending()        //클래스 초기화
 
     override func viewDidLoad() {
