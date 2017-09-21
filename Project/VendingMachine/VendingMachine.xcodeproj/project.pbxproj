@@ -24,6 +24,7 @@
 		23087DCC1F6BF69E004F31D9 /* keypad.png in Resources */ = {isa = PBXBuildFile; fileRef = 23087DCB1F6BF69E004F31D9 /* keypad.png */; };
 		23087DD31F6BF9B5004F31D9 /* applewatch.png in Resources */ = {isa = PBXBuildFile; fileRef = 23087DD11F6BF9B5004F31D9 /* applewatch.png */; };
 		23087DD41F6BF9B5004F31D9 /* imac.png in Resources */ = {isa = PBXBuildFile; fileRef = 23087DD21F6BF9B5004F31D9 /* imac.png */; };
+		23A9E3701F7344F1000CDBAE /* Vending.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F6EFB01F6CEBA900636F42 /* Vending.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -194,6 +195,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				23A9E3701F7344F1000CDBAE /* Vending.swift in Sources */,
 				23087D971F6BD736004F31D9 /* ViewController.swift in Sources */,
 				23087D951F6BD736004F31D9 /* AppDelegate.swift in Sources */,
 			);

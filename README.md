@@ -89,13 +89,21 @@
 
 > 1. [연산자와 switch문](https://github.com/simajune/iOS_School/tree/master/Class/170918_Switch)
 >
+>    - [소스코드](https://github.com/simajune/iOS_School/tree/master/SourceCode/170918_Switch)
+>
 > 2. [프로퍼티](https://github.com/simajune/iOS_School/tree/master/Class/170918_Property)
+>
+>    - [소스코드](https://github.com/simajune/iOS_School/tree/master/SourceCode/170918_Property)
 >
 > 3. [메서드](https://github.com/simajune/iOS_School/tree/master/Class/170918_Method)
 >
 > 4. [열거형](https://github.com/simajune/iOS_School/tree/master/Class/170919_Enum)
 >
-> 5. 옵셔널
+>    - [소스코드](https://github.com/simajune/iOS_School/tree/master/SourceCode/170919_Enum)
+>
+> 5. [옵셔널](https://github.com/simajune/iOS_School/tree/master/Class/170920_Optional)
+>
+> 6. [베이스볼 게임](https://github.com/simajune/iOS_School/tree/master/Project/BaseballGame)
 >
 >    ​
 

@@ -9,15 +9,11 @@
 import Foundation
 
 
-class Vending {
+public class Vending {
     
     var lackMoney: String = ""      //돈이 부족했을 때 가지고 있던 금액을 따로 저장하기 위한 변수
     private let lackLabel: String = "돈을 넣으세요!!"
     private let initLabel: String = "남은 금액"
-    
-    init() {
-        
-    }
     
     //아이템을 선택해서 샀을 때 실핼하기 위한 함수
     func buyItem(remainBtnTitle: String, priceBtnTitle: String, remainWonLabel: inout String) -> String {
@@ -79,3 +75,4 @@ class Vending {
         return tmpItemPrice
     }
 }
+
