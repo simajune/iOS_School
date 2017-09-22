@@ -14,6 +14,7 @@
 		23A9E3871F73475D000CDBAE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 23A9E3861F73475D000CDBAE /* Assets.xcassets */; };
 		23A9E38A1F73475D000CDBAE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23A9E3881F73475D000CDBAE /* LaunchScreen.storyboard */; };
 		23A9E3921F734F88000CDBAE /* baseball.png in Resources */ = {isa = PBXBuildFile; fileRef = 23A9E3911F734F88000CDBAE /* baseball.png */; };
+		23F421251F749BE900923DB9 /* Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F421241F749BE900923DB9 /* Database.swift */; };
 		23FCBB6B1F73A60F00FDC94B /* Computer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FCBB6A1F73A60F00FDC94B /* Computer.swift */; };
 /* End PBXBuildFile section */
 
@@ -27,6 +28,7 @@
 		23A9E3891F73475D000CDBAE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		23A9E38B1F73475D000CDBAE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		23A9E3911F734F88000CDBAE /* baseball.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = baseball.png; sourceTree = "<group>"; };
+		23F421241F749BE900923DB9 /* Database.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Database.swift; sourceTree = "<group>"; };
 		23FCBB6A1F73A60F00FDC94B /* Computer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Computer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -63,8 +65,9 @@
 				23A9E3931F735C58000CDBAE /* Resources */,
 				23A9E37F1F73475D000CDBAE /* AppDelegate.swift */,
 				23A9E3811F73475D000CDBAE /* ViewController.swift */,
-				23A76AD81F736B8C00156281 /* User.swift */,
 				23FCBB6A1F73A60F00FDC94B /* Computer.swift */,
+				23A76AD81F736B8C00156281 /* User.swift */,
+				23F421241F749BE900923DB9 /* Database.swift */,
 				23A9E3831F73475D000CDBAE /* Main.storyboard */,
 				23A9E3861F73475D000CDBAE /* Assets.xcassets */,
 				23A9E3881F73475D000CDBAE /* LaunchScreen.storyboard */,
@@ -157,6 +160,7 @@
 				23FCBB6B1F73A60F00FDC94B /* Computer.swift in Sources */,
 				23A9E3821F73475D000CDBAE /* ViewController.swift in Sources */,
 				23A76AD91F736B8C00156281 /* User.swift in Sources */,
+				23F421251F749BE900923DB9 /* Database.swift in Sources */,
 				23A9E3801F73475D000CDBAE /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -280,6 +284,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = BaseballGame/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.SIMA.BaseballGame;
@@ -292,6 +297,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = BaseballGame/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.SIMA.BaseballGame;

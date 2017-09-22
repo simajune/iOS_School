@@ -45,7 +45,7 @@
 >    - [구구단 구하기](https://github.com/simajune/iOS_School/tree/master/SourceCode/170906_Gugudan)
 >    - [윤년구하기, 각자리수 더하기, 숫자 반대로 출력하기, 삼각별 그리기](https://github.com/simajune/iOS_School/tree/master/SourceCode/170906_IfFor)
 >
-> 5. [함수](https://github.com/simajune/iOS_School/tree/master/Class/170909_Function)
+> 5. [함수 (Function)](https://github.com/simajune/iOS_School/tree/master/Class/170909_Function)
 >
 >    **연습문제**
 >
@@ -53,7 +53,7 @@
 >    - [함수 만들기](https://github.com/simajune/iOS_School/tree/master/SourceCode/170906_Function)
 >    - [단위 환산하기](https://github.com/simajune/iOS_School/tree/master/SourceCode/170911_Dimensions)
 >
-> 6. [콜렉션 타입](https://github.com/simajune/iOS_School/tree/master/Class/170910_Collectiontype)
+> 6. [콜렉션 타입 (Collection Type)](https://github.com/simajune/iOS_School/tree/master/Class/170910_Collectiontype)
 >
 >    **연습문제**
 >
@@ -87,23 +87,27 @@
 
 ### 3주차
 
-> 1. [연산자와 switch문](https://github.com/simajune/iOS_School/tree/master/Class/170918_Switch)
+> 1. [튜플 (Tuple)](https://github.com/simajune/iOS_School/tree/master/Class/170917_Tuple)
+>
+> 2. [연산자와 switch문](https://github.com/simajune/iOS_School/tree/master/Class/170918_Switch)
 >
 >    - [소스코드](https://github.com/simajune/iOS_School/tree/master/SourceCode/170918_Switch)
 >
-> 2. [프로퍼티](https://github.com/simajune/iOS_School/tree/master/Class/170918_Property)
+> 3. [프로퍼티](https://github.com/simajune/iOS_School/tree/master/Class/170918_Property)
 >
 >    - [소스코드](https://github.com/simajune/iOS_School/tree/master/SourceCode/170918_Property)
 >
-> 3. [메서드](https://github.com/simajune/iOS_School/tree/master/Class/170918_Method)
+> 4. [메서드 (Method)](https://github.com/simajune/iOS_School/tree/master/Class/170918_Method)
 >
-> 4. [열거형](https://github.com/simajune/iOS_School/tree/master/Class/170919_Enum)
+> 5. [열거형 (Enumeration)](https://github.com/simajune/iOS_School/tree/master/Class/170919_Enum)
 >
 >    - [소스코드](https://github.com/simajune/iOS_School/tree/master/SourceCode/170919_Enum)
 >
-> 5. [옵셔널](https://github.com/simajune/iOS_School/tree/master/Class/170920_Optional)
+> 6. [옵셔널 (Optional)](https://github.com/simajune/iOS_School/tree/master/Class/170920_Optional)
 >
-> 6. [베이스볼 게임](https://github.com/simajune/iOS_School/tree/master/Project/BaseballGame)
+> 7. [베이스볼 게임](https://github.com/simajune/iOS_School/tree/master/Project/BaseballGame)
+>
+> 8. [클로져 Closure()](https://github.com/simajune/iOS_School/tree/master/Class/170921_Closure)
 >
 >    ​
 

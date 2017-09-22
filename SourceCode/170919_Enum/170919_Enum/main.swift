@@ -4,7 +4,7 @@
 //
 //  Created by SIMA on 2017. 9. 19..
 //  Copyright © 2017년 SIMA. All rights reserved.
-//
+
 
 import Foundation
 
@@ -107,18 +107,3 @@ class Number {
         self.num2 = num2
     }
 }
-
-var number: Number = Number(num1: 10, num2: 5)
-
-enum add {
-    case plus((Int, Int) -> Int)
-}
-
-    var operation = add.plus(+)
-
-
-
-var name: String? = "Taejune"
-var age: Int? = 31
-
-print("my name is \(name!)")
