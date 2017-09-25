@@ -49,8 +49,6 @@ class ViewController: UIViewController {
     //버튼 입력 유저에서 받기
     @IBAction func numberClicked(_ sender: UIButton) {
         if isRunning {
-//            strikeCount = 0
-//            ballCount = 0
             resultTextLb.text = emptyLb
             user.clickNum(sender.tag, &firstTextLb.text, &secondTextLb.text, &thirdTextLb.text)
         }
@@ -86,7 +84,7 @@ class ViewController: UIViewController {
     private func initLable () {
         firstTextLb.text = nil
         secondTextLb.text = nil
-        self.thirdTextLb.text = nil
+        thirdTextLb.text = nil
         user.tryArr = []
         strikeCount = 0
         ballCount = 0
@@ -132,6 +130,7 @@ class ViewController: UIViewController {
     //버튼 눌렀을 때 결과 값 출력
     private func afterResultText () -> String {
         if strikeCount == computer.ansArr.count {
+            isRunning = false
             return "정답!! 짝짝짝"
         }else {
             return "\(strikeCount)S \(ballCount)B \(outCount)O"

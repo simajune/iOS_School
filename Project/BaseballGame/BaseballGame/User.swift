@@ -11,11 +11,11 @@ class User {
     
     //MARK: - Property
     var tryArr: [String] = []
-
+    
     
     //MARK: - Method
     
-    // 버튼을 눌렀을 때 동작
+    // 버튼을 눌렀을 때 동작 -> view controller에서 해주는 것이 좋음
     func clickNum (_ tagNum: Int, _ firstText: inout String?, _ secondText: inout String?, _ thirdText: inout String?) {
         if firstText != nil && secondText != nil && thirdText != nil{
         }else if firstText != nil && secondText != nil {
