@@ -107,7 +107,7 @@
 >
 > 7. [베이스볼 게임](https://github.com/simajune/iOS_School/tree/master/Project/BaseballGame)
 >
-> 8. [클로져 Closure()](https://github.com/simajune/iOS_School/tree/master/Class/170921_Closure)
+> 8. [클로져 (sClosure](https://github.com/simajune/iOS_School/tree/master/Class/170921_Closure)
 >
 >    ​
 

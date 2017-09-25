@@ -24,11 +24,12 @@ class ViewController: UIViewController {
     private var count: Int = 0
     private var strikeCount: Int = 0
     private var ballCount: Int = 0
-    
+    private let plzAnswerLb: String = "정답을 입력해주세요~"
+    private let emptyLb: String = ""
     //연산 프로퍼티
     private var outCount: Int {
         get{
-            let out = 3 - (strikeCount + ballCount)
+            let out = computer.ansArr.count - (strikeCount + ballCount)
             return out
         }
     }
@@ -48,9 +49,9 @@ class ViewController: UIViewController {
     //버튼 입력 유저에서 받기
     @IBAction func numberClicked(_ sender: UIButton) {
         if isRunning {
-            strikeCount = 0
-            ballCount = 0
-            resultTextLb.text = ""
+//            strikeCount = 0
+//            ballCount = 0
+            resultTextLb.text = emptyLb
             user.clickNum(sender.tag, &firstTextLb.text, &secondTextLb.text, &thirdTextLb.text)
         }
     }
@@ -87,15 +88,17 @@ class ViewController: UIViewController {
         secondTextLb.text = nil
         self.thirdTextLb.text = nil
         user.tryArr = []
+        strikeCount = 0
+        ballCount = 0
     }
 
     //새로운 겜 시작
     private func newGameStart() {
         count = 0
         isRunning = true
-        historyText.text = ""
-        resultTextLb.text = "정답을 입력해주세요"
-        database.gameHistory = ""
+        historyText.text = emptyLb
+        resultTextLb.text = plzAnswerLb
+        database.gameHistory = emptyLb
     }
     
     //현재의 정답과 유저를 통해 받아온 값을 비교하는 함수
@@ -128,7 +131,7 @@ class ViewController: UIViewController {
     
     //버튼 눌렀을 때 결과 값 출력
     private func afterResultText () -> String {
-        if strikeCount == 3 {
+        if strikeCount == computer.ansArr.count {
             return "정답!! 짝짝짝"
         }else {
             return "\(strikeCount)S \(ballCount)B \(outCount)O"
