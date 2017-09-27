@@ -170,17 +170,6 @@ class ViewController: UIViewController {
         summaryBar.backgroundColor = UIColor(red: 2.0/255.0, green: 148.0/255.0, blue: 165.0/255.0, alpha: 1.0)
         view.addSubview(summaryBar)
         
-        movieBar = UILabel(frame: CGRect(x: view.frame.width/3, y: 408, width: 124, height: 3))
-        movieBar.backgroundColor = UIColor.white
-        view.addSubview(movieBar)
-        
-        moreBar = UILabel(frame: CGRect(x: 2*view.frame.width/3, y: 408, width: 124, height: 3))
-        moreBar.backgroundColor = UIColor.white
-        view.addSubview(moreBar)
-        
-        
-        
-        
         //4번째 뷰
         let textHeader: UILabel = UILabel(frame: CGRect(x: 11, y: 429, width: 244, height: 17))
         textHeader.textAlignment = .left
@@ -262,40 +251,28 @@ class ViewController: UIViewController {
             summaryBtn.isSelected = true
             moviesBtn.isSelected = false
             moreBtn.isSelected = false
-            summaryBtn.frame.origin.x = 0
-//            summaryBar.backgroundColor = UIColor(red: 2.0/255.0, green: 148.0/255.0, blue: 165.0/255.0, alpha: 1.0)
-//            movieBar.backgroundColor = UIColor.white
-//            moreBar.backgroundColor = UIColor.white
-            
-            
+            UIView.animate(withDuration: 0.2, animations: { 
+                self.summaryBar.frame.origin.x = 0
+            })
         }else if index == 1 {
             summaryBtn.isSelected = false
             moviesBtn.isSelected = true
             moreBtn.isSelected = false
-            summaryBtn.frame.origin.x = view.frame.width/3
-//            summaryBar.backgroundColor = UIColor.white
-//            movieBar.backgroundColor = UIColor(red: 2.0/255.0, green: 148.0/255.0, blue: 165.0/255.0, alpha: 1.0)
-//            moreBar.backgroundColor = UIColor.white
+            UIView.animate(withDuration: 0.2, animations: {
+                self.summaryBar.frame.origin.x = 375.0/3.0
+            })
         }else {
             summaryBtn.isSelected = false
             genreBtn.isSelected = false
             moreBtn.isSelected = true
-            summaryBtn.frame.origin.x = 2*view.frame.width/3
-//            summaryBar.backgroundColor = UIColor.white
-//            movieBar.backgroundColor = UIColor.white
-//            moreBar.backgroundColor = UIColor(red: 2.0/255.0, green: 148.0/255.0, blue: 165.0/255.0, alpha: 1.0)
+            UIView.animate(withDuration: 0.2, animations: {
+                self.summaryBar.frame.origin.x = 2*375.0/3.0
+            })
         }
     }
     
     func backBtnClicked (_ sender: UIButton) {
 
     }
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
-
 }
 
