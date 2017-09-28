@@ -21,7 +21,6 @@ class LoginViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
         
         userNameTextField.layer.borderColor = UIColor(red: 207.0/255.0, green: 208.0/255.0, blue: 209.0/255.0, alpha: 1.0).cgColor
         userNameTextField.layer.borderWidth = 1.0
@@ -51,10 +50,31 @@ class LoginViewController: UIViewController {
         guard let userName = userNameTextField.text else { return }
         guard let password = passwordTextField.text else { return }
         
-        if userModel.findUser(name: userName, password: password) {
+        let  isLoginSuccess: Bool = findUser(name: userName, password: password)
+        
+        
+        
+        
+        if isLoginSuccess {
             //화면 전환
-            let main = MainViewController()
-            self.present(main, animated: true, completion: nil)
+            //알럿 인스턴스 생성
+            let alerController = UIAlertController(title: "여기는 타이틀", message: "알럿 메세지", preferredStyle: .alert)
+            //알럿 액숀인스턴스 생성
+            let okAction = UIAlertAction(title: "액션입니다.", style: .default, handler: { (action) in
+                print("버튼이 클릭되었습니다.")
+                let main = MainViewController()
+                self.present(main, animated: true, completion: nil)
+            })
+            let cancelAction = UIAlertAction(title: "캔슬입니다.", style: .cancel, handler: { (action) in
+                print("취소버튼이 클릭되었습니다.")
+                let main = MainViewController()
+                self.present(main, animated: true, completion: nil)
+            })
+            //알럿 액숀 추가
+            alerController.addAction(okAction)
+            alerController.addAction(cancelAction)
+            //알럿 화면 전환
+            self.present(alerController, animated: true, completion: nil)
             
         }else {
             UIView.animate(withDuration: 0.1, animations: {
@@ -74,7 +94,6 @@ class LoginViewController: UIViewController {
                     })
                 })
             })
-            
         }
     }
     
@@ -105,6 +124,23 @@ class LoginViewController: UIViewController {
     
     func overlapUser (user: inout String, password: inout String) {
         
+    }
+    
+    func findUser(name: String, password: String) -> Bool {
+        //1. ID가 유효한지
+        //2. password가 맞는지
+        guard let userList: [[String: String]] = UserDefaults.standard.array(forKey: "UserList") as? [[String: String]] else { return false }
+        
+        for userData in userList {
+            let memberID = userData["ID"]
+            if memberID == name {
+                let memberPW = userData["PW"]
+                if memberPW == password {
+                    return true
+                }
+            }
+        }
+        return false
     }
     
 }

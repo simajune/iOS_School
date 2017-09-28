@@ -8,11 +8,12 @@
 
 import UIKit
 
+
+
 class SignupViewController: UIViewController {
     @IBOutlet var usernameTextField: UITextField!
     @IBOutlet var passwordTextField: UITextField!
     @IBOutlet var repasswordTextField: UITextField!
-
     
     var didTaskClosure: ((String, String) -> Void)? = nil
     
@@ -70,8 +71,25 @@ class SignupViewController: UIViewController {
         
         //입력 받은 패스워드가 같은지
         if password == repassword {
+            var list: [[String: String]]
+            //값을 받아온다. 그래서 값이 있으면 배열을 그대로 받아오고 없으면 초기화
+            if let tmpList = UserDefaults.standard.array(forKey: "UserList") as? [[String:String]] {
+                list = tmpList
+            }else {
+                list = []
+            }
             
-            didTaskClosure?(username,password)
+            let userData: [String:String] = ["ID": username, "PW": password]
+            list.append(userData)
+            
+            
+            UserDefaults.standard.set(list, forKey: "UserList")
+            
+            //didTaskClosure?(username,password)
+            
+//            UserDefaults.standard.set(username, forKey: "ID")
+//            UserDefaults.standard.set(password, forKey: "PW")
+            
             dismiss(animated: true, completion: nil)
             //print()
         } else {

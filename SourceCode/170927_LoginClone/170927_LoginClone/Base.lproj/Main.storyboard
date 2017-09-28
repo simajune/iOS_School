@@ -43,12 +43,14 @@
                                 <rect key="frame" x="43.5" y="286" width="288" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="     Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="O3z-2T-TiK">
                                 <rect key="frame" x="43.5" y="335.5" width="288" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="tailTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yNo-85-KO7" customClass="RoundButton" customModule="_70927_LoginClone" customModuleProvider="target">
@@ -198,6 +200,24 @@ ACCOUNT</string>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="toT-JY-Sqd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="807" y="35"/>
+        </scene>
+        <!--Main View Controller-->
+        <scene sceneID="BCK-DX-sEX">
+            <objects>
+                <viewController id="hxN-Gg-OYU" customClass="MainViewController" customModule="_70927_LoginClone" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Owb-09-0m9"/>
+                        <viewControllerLayoutGuide type="bottom" id="CuC-4J-ypH"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="j1o-Pj-avb">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MCa-ke-0fx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1548" y="35"/>
         </scene>
     </scenes>
     <resources>

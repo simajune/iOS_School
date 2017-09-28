@@ -9,12 +9,13 @@
 import UIKit
 
 class TodoViewController: UIViewController {
+    
     var firstCheckBox: UIButton!
     var secondCheckBox: UIButton!
     var thirdCheckBox: UIButton!
     var fourthCheckBox: UIButton!
     var fifthCheckBox: UIButton!
-    
+
     @IBOutlet var firstLB: UILabel!
     @IBOutlet var secondLB: UILabel!
     @IBOutlet var thirdLB: UILabel!
@@ -28,8 +29,16 @@ class TodoViewController: UIViewController {
     
     var bottomBar: UIView!
     
+    @IBOutlet var settingBtn: UIButton!
+    @IBOutlet var infoBtn: UIButton!
+    @IBOutlet var contentsBtn: UIButton!
+    @IBOutlet var plusBtn: UIButton!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
         firstCheckBox = UIButton(type: .custom)
         firstCheckBox.frame = CGRect(x: 32, y: 208, width: 24, height: 24)
         firstCheckBox.setImage(#imageLiteral(resourceName: "Rectangle 3"), for: .normal)
@@ -115,6 +124,21 @@ class TodoViewController: UIViewController {
         bottomBar = UIView(frame: CGRect(x: 0, y: 663, width: 75, height: 4))
         bottomBar.backgroundColor = UIColor(red: 36.0/255.0, green: 59.0/255.0, blue: 107.0/255.0, alpha: 1.0)
         view.addSubview(bottomBar)
+        
+        settingBtn.frame = CGRect(x: 160, y: 595, width: 56, height: 56)
+        view.addSubview(settingBtn)
+        settingBtn.isHidden = true
+        
+        infoBtn.frame = CGRect(x: 160, y: 595, width: 56, height: 56)
+        view.addSubview(settingBtn)
+        infoBtn.isHidden = true
+        
+        contentsBtn.frame = CGRect(x: 160, y: 595, width: 56, height: 56)
+        view.addSubview(settingBtn)
+        contentsBtn.isHidden = true
+        
+        plusBtn.addTarget(self, action: #selector(TodoViewController.plusBtnClicked(_:)), for: .touchUpInside)
+        plusBtn.isSelected = false
 
     }
     
@@ -206,5 +230,46 @@ class TodoViewController: UIViewController {
         }
     }
     
+    
+    func plusBtnClicked(_ sender: UIButton) {
+        if plusBtn.isSelected {
+            UIView.animate(withDuration: 0.5, animations: {
+                self.settingBtn.frame.origin.x += 80
+                self.settingBtn.frame.origin.y += 30
+            }, completion: { _ in
+                UIView.animate(withDuration: 0.5, animations: {
+                    self.infoBtn.frame.origin.y += 75
+                }, completion: { _ in
+                    UIView.animate(withDuration: 0.5, animations: {
+                        self.contentsBtn.frame.origin.x -= 80
+                        self.contentsBtn.frame.origin.y += 30
+                    }, completion: { _ in
+                        self.settingBtn.isHidden = true
+                        self.infoBtn.isHidden = true
+                        self.contentsBtn.isHidden = true
+                    })
+                })
+            })
+            sender.isSelected = false
+        }else {
+            UIView.animate(withDuration: 0.5, animations: {
+                self.settingBtn.isHidden = false
+                self.settingBtn.frame.origin.x -= 80
+                self.settingBtn.frame.origin.y -= 30
+            }, completion: { _ in
+                UIView.animate(withDuration: 0.5, animations: {
+                    self.infoBtn.isHidden = false
+                    self.infoBtn.frame.origin.y -= 75
+                }, completion: { _ in
+                    UIView.animate(withDuration: 0.5, animations: {
+                        self.contentsBtn.isHidden = false
+                        self.contentsBtn.frame.origin.x += 80
+                        self.contentsBtn.frame.origin.y -= 30
+                    })
+                })
+            })
+            sender.isSelected = true
+        }
+    }
 
 }

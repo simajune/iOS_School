@@ -43,6 +43,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		230E67361F7CBF7D004DC882 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				23118F7A1F7B3D5B00E2B903 /* LoginViewController.swift */,
+				23118F7C1F7B4C4800E2B903 /* SignupViewController.swift */,
+				23118F761F7B3B0A00E2B903 /* RoundButton.swift */,
+				23118F801F7B7C4100E2B903 /* MainViewController.swift */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
 		23118F581F7B37AB00E2B903 = {
 			isa = PBXGroup;
 			children = (
@@ -63,10 +74,7 @@
 			isa = PBXGroup;
 			children = (
 				23118F641F7B37AB00E2B903 /* AppDelegate.swift */,
-				23118F7A1F7B3D5B00E2B903 /* LoginViewController.swift */,
-				23118F7C1F7B4C4800E2B903 /* SignupViewController.swift */,
-				23118F761F7B3B0A00E2B903 /* RoundButton.swift */,
-				23118F801F7B7C4100E2B903 /* MainViewController.swift */,
+				230E67361F7CBF7D004DC882 /* ViewController */,
 				23118F7E1F7B6F8400E2B903 /* UserModel.swift */,
 				23118F681F7B37AB00E2B903 /* Main.storyboard */,
 				23118F6B1F7B37AB00E2B903 /* Assets.xcassets */,
@@ -315,6 +323,7 @@
 				23118F751F7B37AB00E2B903 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
