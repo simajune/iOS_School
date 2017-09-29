@@ -10,20 +10,17 @@ class Main: UIViewController,UITableViewDelegate, UITableViewDataSource {
     //MARK: - Status Bar delete
     override var prefersStatusBarHidden: Bool { return true }
     
-    
-//    override func prefersStatusBarHidden() -> Bool {
-//        return true
-//    }
-//    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewDidAppear(true)
+        data = UserDefaults.standard.object(forKey: "Data") as? [String] ?? [String]()
+    }
     
     // MARK: - Table View
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        data = UserDefaults.standard.object(forKey: "Data") as? [String] ?? [String]()
         return data.count
     }
     
@@ -42,21 +39,13 @@ class Main: UIViewController,UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
         UserDefaults.standard.set(indexPath.row, forKey: "Order")
-        
         performSegue(withIdentifier: "ToMemo", sender: self)
     }
     // Table View_End
-    
-    
+
     //MARK: - ButtonAction
     @IBAction func addButton(_ sender: Any) {
         UserDefaults.standard.set(-1, forKey: "Order")
     }
-    
-
-    
-    
-
 }
