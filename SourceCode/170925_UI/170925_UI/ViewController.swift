@@ -22,11 +22,6 @@ class ViewController: UIViewController {
         //프레임 연습하기
         //UI레이블
         //UIView, UIImageView
-
-
-
-        
-        
         
         let naviBar: UIView = UIView(frame: CGRect(x: 0, y: 0, width: view.frame.width, height:60))
         view.addSubview(naviBar)
@@ -106,29 +101,29 @@ class ViewController: UIViewController {
         
         
         
-        
-        let testBtn: UIButton = UIButton(type: .system)
-        view.addSubview(testBtn)
-        testBtn.frame = CGRect(x: 20, y: 300, width: 100, height: 100)
-        testBtn.setTitle("test", for: .normal)
-        //testBtn.setTitle("highlighted", for: .highlighted)
-        testBtn.setTitle("selected", for: .selected)
-        testBtn.setTitleColor(.yellow, for: .normal)
-        testBtn.setTitleColor(.black, for: .highlighted)
-        testBtn.setTitleColor(.blue, for: .selected)
-        testBtn.backgroundColor = .red
-        testBtn.addTarget(self, action: #selector(self.testBtnClicked(_:)), for: .touchUpInside)
-        
-        
+//        
+//        let testBtn: UIButton = UIButton(type: .system)
+//        view.addSubview(testBtn)
+//        testBtn.frame = CGRect(x: 20, y: 300, width: 100, height: 100)
+//        testBtn.setTitle("test", for: .normal)
+//        //testBtn.setTitle("highlighted", for: .highlighted)
+//        testBtn.setTitle("selected", for: .selected)
+//        testBtn.setTitleColor(.yellow, for: .normal)
+//        testBtn.setTitleColor(.black, for: .highlighted)
+//        testBtn.setTitleColor(.blue, for: .selected)
+//        testBtn.backgroundColor = .red
+//        testBtn.addTarget(self, action: #selector(self.testBtnClicked(_:)), for: .touchUpInside)
+//        
+//        
     }
-    @objc func testBtnClicked (_ sender: UIButton){
-        if sender.isSelected {
-            sender.isSelected = false
-        } else {
-            sender.isSelected = true
-        }
-    }
-    
+//    @objc func testBtnClicked (_ sender: UIButton){
+//        if sender.isSelected {
+//            sender.isSelected = false
+//        } else {
+//            sender.isSelected = true
+//        }
+//    }
+
     
     
     
