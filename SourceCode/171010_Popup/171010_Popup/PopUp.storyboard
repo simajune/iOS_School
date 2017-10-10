@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Pop Up View Controller-->
+        <scene sceneID="Eyl-z8-Mr9">
+            <objects>
+                <viewController storyboardIdentifier="PopUpViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Szn-NG-vUc" customClass="PopUpViewController" customModule="_71010_Popup" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="VvQ-GW-0xV">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" alpha="0.5" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="hkK-3q-eFo">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VXq-21-QsM">
+                                <rect key="frame" x="40" y="123.5" width="295" height="420"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="popup" translatesAutoresizingMaskIntoConstraints="NO" id="BR2-eo-gEk">
+                                        <rect key="frame" x="0.0" y="0.0" width="295" height="350"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="350" id="Ovg-tW-RM8"/>
+                                        </constraints>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NXS-vW-ge5">
+                                        <rect key="frame" x="20" y="370" width="59" height="30"/>
+                                        <color key="backgroundColor" red="0.75406885150000003" green="0.75408679249999999" blue="0.75407713649999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="닫기">
+                                            <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="dismiss:" destination="Szn-NG-vUc" eventType="touchUpInside" id="M3O-oI-6HF"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IJV-Cu-mkd">
+                                        <rect key="frame" x="99" y="370" width="176" height="30"/>
+                                        <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="자세히 보기">
+                                            <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ar4-zJ-1MC">
+                                        <rect key="frame" x="245" y="20" width="30" height="30"/>
+                                        <state key="normal" title="x"/>
+                                        <connections>
+                                            <action selector="dismiss:" destination="Szn-NG-vUc" eventType="touchUpInside" id="yoV-p7-O9f"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="NXS-vW-ge5" secondAttribute="bottom" constant="20" id="1Ay-dj-ywp"/>
+                                    <constraint firstAttribute="trailing" secondItem="BR2-eo-gEk" secondAttribute="trailing" id="6Ns-hJ-Tl0"/>
+                                    <constraint firstItem="NXS-vW-ge5" firstAttribute="top" secondItem="BR2-eo-gEk" secondAttribute="bottom" constant="20" id="77k-jt-qIK"/>
+                                    <constraint firstItem="IJV-Cu-mkd" firstAttribute="top" secondItem="BR2-eo-gEk" secondAttribute="bottom" constant="20" id="E4y-6L-W1J"/>
+                                    <constraint firstItem="BR2-eo-gEk" firstAttribute="top" secondItem="VXq-21-QsM" secondAttribute="top" id="Mm4-ja-6Cz"/>
+                                    <constraint firstItem="ar4-zJ-1MC" firstAttribute="top" secondItem="VXq-21-QsM" secondAttribute="top" constant="20" id="Xk9-xD-Koy"/>
+                                    <constraint firstAttribute="trailing" secondItem="IJV-Cu-mkd" secondAttribute="trailing" constant="20" id="cwY-0v-iyA"/>
+                                    <constraint firstItem="NXS-vW-ge5" firstAttribute="width" secondItem="IJV-Cu-mkd" secondAttribute="width" multiplier="1:3" id="e3O-Zu-hZy"/>
+                                    <constraint firstAttribute="bottom" secondItem="IJV-Cu-mkd" secondAttribute="bottom" constant="20" id="ep7-tB-Lql"/>
+                                    <constraint firstItem="BR2-eo-gEk" firstAttribute="leading" secondItem="VXq-21-QsM" secondAttribute="leading" id="kEa-dm-8Sa"/>
+                                    <constraint firstAttribute="trailing" secondItem="ar4-zJ-1MC" secondAttribute="trailing" constant="20" id="rKZ-TZ-haO"/>
+                                    <constraint firstItem="IJV-Cu-mkd" firstAttribute="leading" secondItem="NXS-vW-ge5" secondAttribute="trailing" constant="20" id="sbV-cc-iaZ"/>
+                                    <constraint firstItem="NXS-vW-ge5" firstAttribute="leading" secondItem="VXq-21-QsM" secondAttribute="leading" constant="20" id="yI9-34-CPI"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="hkK-3q-eFo" secondAttribute="trailing" id="00e-at-EzJ"/>
+                            <constraint firstItem="Ars-Cv-DmZ" firstAttribute="trailing" secondItem="VXq-21-QsM" secondAttribute="trailing" constant="40" id="Bdq-LZ-yuP"/>
+                            <constraint firstItem="VXq-21-QsM" firstAttribute="leading" secondItem="Ars-Cv-DmZ" secondAttribute="leading" constant="40" id="IOz-pv-agZ"/>
+                            <constraint firstItem="VXq-21-QsM" firstAttribute="centerY" secondItem="VvQ-GW-0xV" secondAttribute="centerY" id="Lfd-Sf-evX"/>
+                            <constraint firstItem="hkK-3q-eFo" firstAttribute="leading" secondItem="VvQ-GW-0xV" secondAttribute="leading" id="abN-n8-rRX"/>
+                            <constraint firstItem="hkK-3q-eFo" firstAttribute="top" secondItem="VvQ-GW-0xV" secondAttribute="top" id="cfq-so-Axy"/>
+                            <constraint firstAttribute="bottom" secondItem="hkK-3q-eFo" secondAttribute="bottom" id="eQF-20-Hg0"/>
+                            <constraint firstItem="VXq-21-QsM" firstAttribute="centerX" secondItem="VvQ-GW-0xV" secondAttribute="centerX" id="r1r-fa-8rj"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Ars-Cv-DmZ"/>
+                    </view>
+                    <connections>
+                        <outlet property="popupAnimatedY" destination="Lfd-Sf-evX" id="Y1P-8V-4tl"/>
+                        <outlet property="popupImgHeight" destination="Ovg-tW-RM8" id="f18-ja-Agt"/>
+                        <outlet property="popupImgView" destination="BR2-eo-gEk" id="Imz-oX-Blm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="g1S-s2-QnR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-106.40000000000001" y="-115.59220389805098"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="popup" width="532" height="498"/>
+    </resources>
+</document>

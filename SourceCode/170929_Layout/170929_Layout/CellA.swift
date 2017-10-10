@@ -35,11 +35,11 @@ class CellA: UICollectionViewCell, UICollectionViewDelegateFlowLayout, UICollect
         itemCellA.itemImage.layer.masksToBounds = true
         
         itemCellA.itemTitleLabel.text = itemGroupData.ItemSet[indexPath.row].ItemTitleLabel
-        
-        
-        
+
         return itemCellA
     }
+    
+    
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         NSDefault.set(itemGroupIndex, forKey: "ItemGroupIndex")
         NSDefault.set(indexPath.row, forKey: "ItemIndex")

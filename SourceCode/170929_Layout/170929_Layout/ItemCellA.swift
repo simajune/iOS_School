@@ -10,10 +10,6 @@ import UIKit
 
 class ItemCellA: UICollectionViewCell {
 //MARK: - Variable
-    
     @IBOutlet var itemImage: UIImageView!
     @IBOutlet var itemTitleLabel: UILabel!
-    
-    
-    
 }
