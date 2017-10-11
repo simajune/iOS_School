@@ -36,7 +36,7 @@ class SegueViewController: UIViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let sendStr = textFieldView.text ?? "no Text"
-        print("snedStr")
+        print("sendStr")
         let destinationVC = segue.destination as! SecondViewController
         destinationVC.sendMessage(sendStr)
     }

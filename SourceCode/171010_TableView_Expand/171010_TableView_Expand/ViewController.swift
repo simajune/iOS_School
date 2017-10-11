@@ -58,7 +58,6 @@ class ViewController: UIViewController,UITableViewDelegate, UITableViewDataSourc
             cell.myLabel.numberOfLines = 0
         }
         
-        
         return cell
     }
     
