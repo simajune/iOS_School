@@ -118,14 +118,14 @@
 
 > 1. [UI에 대해](https://github.com/simajune/iOS_School/tree/master/Class/170925_UI)
 > 2. [UIView](https://github.com/simajune/iOS_School/tree/master/Class/170925_UIView)
->    - UIImageVIew
->    - UILabel
->    - UIScrollView
-> 3. UIControl
->    - UIButton
->    - UISlider
->    - UISwitch
->    - UITextField
+>    - [UIImageVIew]
+>    - [UILabel]
+>    - [UIScrollView]
+> 3. [UIControl]
+>    - [UIButton]
+>    - [UISlider]
+>    - [UISwitch]
+>    - [UITextField]
 >
 >
 
@@ -134,7 +134,8 @@
 ### 6주차
 
 > 1. [NotePad](https://github.com/simajune/iOS_School/tree/master/SourceCode/170928_Notepad)
-> 2. Graph
-> 3. Pop Up
-> 4. TableView Expand
-> 5. CollectionView
+> 2. [CollectionView](https://github.com/simajune/iOS_School/tree/master/SourceCode/170929_Layout)
+> 3. [Graph](https://github.com/simajune/iOS_School/tree/master/SourceCode/171005_Graph)
+> 4. [Pop Up](https://github.com/simajune/iOS_School/tree/master/SourceCode/171010_Popup)
+> 5. [TableView Expand](https://github.com/simajune/iOS_School/tree/master/SourceCode/171010_TableView_Expand)
+> 6. [KakaoClone](https://github.com/simajune/iOS_School/tree/master/SourceCode/171011_KakaoClone)
