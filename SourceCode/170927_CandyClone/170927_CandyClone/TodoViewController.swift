@@ -143,7 +143,7 @@ class TodoViewController: UIViewController {
     }
     
     
-    func checkBoxClicked (_ sender: UIButton){
+    @objc func checkBoxClicked (_ sender: UIButton){
         
         UIView.animate(withDuration: 0.5) {
             switch sender.tag {
@@ -199,7 +199,7 @@ class TodoViewController: UIViewController {
         
     }
     
-    func bottomButtonClicked(_ sender: UIButton) {
+    @objc func bottomButtonClicked(_ sender: UIButton) {
         let tagNum = sender.tag
         UIView.animate(withDuration: 0.3) { 
             if tagNum == 0 {
@@ -231,7 +231,7 @@ class TodoViewController: UIViewController {
     }
     
     
-    func plusBtnClicked(_ sender: UIButton) {
+    @objc func plusBtnClicked(_ sender: UIButton) {
         if plusBtn.isSelected {
             UIView.animate(withDuration: 0.5, animations: {
                 self.settingBtn.frame.origin.x += 80

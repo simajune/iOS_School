@@ -34,7 +34,9 @@ class Content: UIViewController {
         
         
         itemGroupIndex = NSDefault.object(forKey: "ItemGroupIndex") as! Int
+        print(itemGroupIndex)
         itemIndex = NSDefault.object(forKey: "ItemIndex") as! Int
+        print(itemIndex)
         
         itemGroupSetData = ItemGroup().AddItem()
         itemGroupData = itemGroupSetData[itemGroupIndex]

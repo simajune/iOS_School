@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <exit id="SK4-kb-Glp" userLabel="Exit" sceneMemberID="exit"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="_71012_Delegate" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UWD-7A-uIw" customClass="CustomView" customModule="_71012_Delegate" customModuleProvider="target">
+                                <rect key="frame" x="20" y="40" width="335" height="300"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="타이틀" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="slt-wt-san">
+                                        <rect key="frame" x="20" y="20" width="295" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="20" id="Hqi-EG-3XD"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Jh5-aV-HPt">
+                                        <rect key="frame" x="20" y="59.5" width="295" height="150"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="150" id="iHh-CZ-Rj3"/>
+                                        </constraints>
+                                    </imageView>
+                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8vm-f4-gfH">
+                                        <rect key="frame" x="143" y="249" width="51" height="31"/>
+                                        <connections>
+                                            <action selector="isOnSwitch:" destination="SK4-kb-Glp" eventType="valueChanged" id="3Wc-tb-1IP"/>
+                                            <action selector="isOnSwitch:" destination="UWD-7A-uIw" eventType="valueChanged" id="Bq5-fc-5Mz"/>
+                                        </connections>
+                                    </switch>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="Jh5-aV-HPt" firstAttribute="top" secondItem="slt-wt-san" secondAttribute="bottom" constant="20" id="2lq-XX-RtC"/>
+                                    <constraint firstItem="slt-wt-san" firstAttribute="top" secondItem="UWD-7A-uIw" secondAttribute="top" constant="20" id="3sR-8n-JPM"/>
+                                    <constraint firstAttribute="trailing" secondItem="slt-wt-san" secondAttribute="trailing" constant="20" id="7TU-xj-hVC"/>
+                                    <constraint firstAttribute="trailing" secondItem="Jh5-aV-HPt" secondAttribute="trailing" constant="20" id="I8R-Rq-cJO"/>
+                                    <constraint firstItem="slt-wt-san" firstAttribute="leading" secondItem="UWD-7A-uIw" secondAttribute="leading" constant="20" id="JWY-8h-s2C"/>
+                                    <constraint firstItem="Jh5-aV-HPt" firstAttribute="leading" secondItem="UWD-7A-uIw" secondAttribute="leading" constant="20" id="Wxj-Pg-AUp"/>
+                                    <constraint firstAttribute="bottom" secondItem="8vm-f4-gfH" secondAttribute="bottom" constant="20" id="gmV-yF-lek"/>
+                                    <constraint firstItem="8vm-f4-gfH" firstAttribute="centerX" secondItem="UWD-7A-uIw" secondAttribute="centerX" id="hUx-Oi-RXS"/>
+                                    <constraint firstAttribute="height" constant="300" id="pwA-Ie-Ftq"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="contentsImage" destination="Jh5-aV-HPt" id="gpe-vs-gJP"/>
+                                    <outlet property="isOnSwitch" destination="8vm-f4-gfH" id="q0a-uf-KJe"/>
+                                    <outlet property="titleLB" destination="slt-wt-san" id="Cbd-iS-mb3"/>
+                                </connections>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.46202266219999999" green="0.83828371759999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="UWD-7A-uIw" secondAttribute="trailing" constant="20" id="Os0-6p-ozY"/>
+                            <constraint firstItem="UWD-7A-uIw" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="Tfq-uB-4ag"/>
+                            <constraint firstItem="UWD-7A-uIw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="U9I-Jl-Wmm"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="newView" destination="UWD-7A-uIw" id="XDZ-rp-sAX"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="24.800000000000001" y="29.23538230884558"/>
+        </scene>
+    </scenes>
+</document>
