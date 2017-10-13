@@ -24,13 +24,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ico-logo" translatesAutoresizingMaskIntoConstraints="NO" id="tWG-41-QCr">
-                                <rect key="frame" x="66" y="82" width="244" height="67"/>
+                                <rect key="frame" x="66" y="81.5" width="243.5" height="66.5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="tWG-41-QCr" secondAttribute="height" multiplier="212:58" id="iRn-Bv-wwr"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VQT-dM-VwE">
-                                <rect key="frame" x="127" y="234" width="121.5" height="28"/>
+                                <rect key="frame" x="126.5" y="233" width="122" height="28"/>
                                 <attributedString key="attributedText">
                                     <fragment content="WELCOME">
                                         <attributes>
@@ -43,7 +43,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="     Email" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XIw-Jv-xSB">
-                                <rect key="frame" x="44" y="286" width="287.5" height="40"/>
+                                <rect key="frame" x="44" y="285" width="287.5" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="Ow5-Nq-tOi"/>
                                 </constraints>
@@ -52,7 +52,7 @@
                                 <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="     Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="O3z-2T-TiK">
-                                <rect key="frame" x="44" y="326" width="288" height="40"/>
+                                <rect key="frame" x="44" y="325" width="287.5" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="5sw-Cm-YMF"/>
                                 </constraints>
@@ -61,7 +61,7 @@
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="tailTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yNo-85-KO7" customClass="RoundButton" customModule="_70927_LoginClone" customModuleProvider="target">
-                                <rect key="frame" x="44" y="436" width="288" height="50"/>
+                                <rect key="frame" x="44" y="435.5" width="287.5" height="50"/>
                                 <color key="backgroundColor" red="0.070588235294117646" green="0.59215686274509804" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="JF7-7C-PCU"/>
@@ -81,7 +81,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VHf-jY-R3m">
-                                <rect key="frame" x="214" y="381.5" width="133" height="41.5"/>
+                                <rect key="frame" x="214" y="381" width="133" height="41.5"/>
                                 <state key="normal">
                                     <attributedString key="attributedTitle">
                                         <fragment content="Forgot password?">
@@ -108,7 +108,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Don't have an account?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GTD-Sw-h6f">
-                                <rect key="frame" x="121.5" y="617" width="132.5" height="19"/>
+                                <rect key="frame" x="121.5" y="617" width="132" height="19"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="19" id="OAo-sZ-hsU"/>
                                 </constraints>
@@ -174,7 +174,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZWc-iM-Fvp">
-                                <rect key="frame" x="137.5" y="86" width="101" height="38"/>
+                                <rect key="frame" x="137" y="86" width="101" height="38"/>
                                 <string key="text">CREATE NEW
 ACCOUNT</string>
                                 <fontDescription key="fontDescription" name="SFMono-Regular" family="SF Mono" pointSize="16"/>

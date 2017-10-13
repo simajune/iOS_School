@@ -12,8 +12,6 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <exit id="SK4-kb-Glp" userLabel="Exit" sceneMemberID="exit"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="_71012_Delegate" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
@@ -40,8 +38,7 @@
                                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8vm-f4-gfH">
                                         <rect key="frame" x="143" y="249" width="51" height="31"/>
                                         <connections>
-                                            <action selector="isOnSwitch:" destination="SK4-kb-Glp" eventType="valueChanged" id="3Wc-tb-1IP"/>
-                                            <action selector="isOnSwitch:" destination="UWD-7A-uIw" eventType="valueChanged" id="Bq5-fc-5Mz"/>
+                                            <action selector="isOnSwitch:" destination="UWD-7A-uIw" eventType="valueChanged" id="txn-a6-CgO"/>
                                         </connections>
                                     </switch>
                                 </subviews>
@@ -59,7 +56,7 @@
                                 </constraints>
                                 <connections>
                                     <outlet property="contentsImage" destination="Jh5-aV-HPt" id="gpe-vs-gJP"/>
-                                    <outlet property="isOnSwitch" destination="8vm-f4-gfH" id="q0a-uf-KJe"/>
+                                    <outlet property="isOnSwitch" destination="8vm-f4-gfH" id="0Nj-Ah-Afz"/>
                                     <outlet property="titleLB" destination="slt-wt-san" id="Cbd-iS-mb3"/>
                                 </connections>
                             </view>
@@ -76,6 +73,7 @@
                         <outlet property="newView" destination="UWD-7A-uIw" id="XDZ-rp-sAX"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="24.800000000000001" y="29.23538230884558"/>
         </scene>

@@ -20,7 +20,6 @@ class CellA: UICollectionViewCell, UICollectionViewDelegateFlowLayout, UICollect
         return itemGroupData.ItemSet.count
     }
     
-    
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return CGSize(width: (self.frame.size.width - 30) / 2, height: 199)
     }

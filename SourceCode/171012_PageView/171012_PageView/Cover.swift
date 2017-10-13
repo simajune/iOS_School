@@ -57,7 +57,6 @@ class Cover: UIViewController {
 
     //MARK: - Action
     @objc func toConnection() {
-        
         NSDefault.set(contentImageName, forKey: "ConnectioBackGroundImageName")
         performSegue(withIdentifier: "toConnection", sender: self)
     }
