@@ -241,19 +241,19 @@
                                 <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XtO-Iz-7f8">
-                                <rect key="frame" x="77.5" y="552.5" width="49" height="94.5"/>
+                                <rect key="frame" x="77.5" y="552.5" width="48.5" height="94.5"/>
                                 <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nry-c6-RSH">
-                                <rect key="frame" x="134.5" y="552.5" width="49.5" height="94.5"/>
+                                <rect key="frame" x="134" y="552.5" width="49.5" height="94.5"/>
                                 <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jhN-F2-MQu">
-                                <rect key="frame" x="192" y="552.5" width="49.5" height="94.5"/>
+                                <rect key="frame" x="191.5" y="552.5" width="49.5" height="94.5"/>
                                 <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bTY-LR-7Iu">
-                                <rect key="frame" x="249.5" y="552.5" width="48.5" height="94.5"/>
+                                <rect key="frame" x="249" y="552.5" width="49" height="94.5"/>
                                 <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="A7N-SV-Kyu">
@@ -1094,7 +1094,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Oyd-1w-9Ic" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="7389" y="75"/>
+            <point key="canvasLocation" x="6978" y="-75"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="sZn-aD-tBm">
@@ -1159,7 +1159,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ixe-0H-buW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="8585" y="74"/>
+            <point key="canvasLocation" x="7745" y="-75"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="pvR-kg-nQu">
@@ -1227,7 +1227,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JVG-rd-1K7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="9570" y="74"/>
+            <point key="canvasLocation" x="8564" y="-75"/>
         </scene>
     </scenes>
 </document>
