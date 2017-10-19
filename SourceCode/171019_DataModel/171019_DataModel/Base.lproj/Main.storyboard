@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="_71019_DataModel" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Neh-0h-Yfn">
+                                <rect key="frame" x="0.0" y="202" width="375" height="465"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="131" id="feg-tM-ujz">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="131"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="feg-tM-ujz" id="8OR-Vh-3rk">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="130.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="gDN-eE-q0w">
+                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2B1-s3-LcC">
+                                        <rect key="frame" x="0.0" y="0.0" width="100" height="44"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="100" id="Lo0-ZZ-fe3"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="소녀시대 2집" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lyo-jK-O7Q">
+                                        <rect key="frame" x="108" y="0.0" width="267" height="44"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="2B1-s3-LcC" firstAttribute="top" secondItem="gDN-eE-q0w" secondAttribute="top" id="6C5-AK-UXN"/>
+                                    <constraint firstAttribute="height" constant="44" id="FaB-Rb-lQb"/>
+                                    <constraint firstItem="2B1-s3-LcC" firstAttribute="leading" secondItem="gDN-eE-q0w" secondAttribute="leading" id="dhB-o8-few"/>
+                                    <constraint firstAttribute="bottom" secondItem="2B1-s3-LcC" secondAttribute="bottom" id="qqE-gJ-eIR"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Zhx-D5-jKB">
+                                <rect key="frame" x="0.0" y="64" width="375" height="44"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Artist" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7iy-2Q-XKZ">
+                                        <rect key="frame" x="0.0" y="0.0" width="100" height="44"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="100" id="2TQ-Qx-LrC"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="소녀시대" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bKK-47-8uP">
+                                        <rect key="frame" x="108" y="0.0" width="267" height="44"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="7iy-2Q-XKZ" firstAttribute="top" secondItem="Zhx-D5-jKB" secondAttribute="top" id="4be-8i-thw"/>
+                                    <constraint firstItem="7iy-2Q-XKZ" firstAttribute="leading" secondItem="Zhx-D5-jKB" secondAttribute="leading" id="FPB-jo-KM5"/>
+                                    <constraint firstAttribute="bottom" secondItem="7iy-2Q-XKZ" secondAttribute="bottom" id="av3-gj-yG8"/>
+                                    <constraint firstAttribute="height" constant="44" id="uaw-RB-3oy"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="wQa-gm-fC4">
+                                <rect key="frame" x="0.0" y="108" width="375" height="44"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Genre" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gYv-gK-30f">
+                                        <rect key="frame" x="0.0" y="0.0" width="100" height="44"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="100" id="T1D-9u-o6K"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="댄스" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TJo-Rw-TnB">
+                                        <rect key="frame" x="108" y="0.0" width="267" height="44"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="gYv-gK-30f" firstAttribute="top" secondItem="wQa-gm-fC4" secondAttribute="top" id="MP5-Ln-tGs"/>
+                                    <constraint firstAttribute="height" constant="44" id="Yg6-Im-eFA"/>
+                                    <constraint firstItem="gYv-gK-30f" firstAttribute="leading" secondItem="wQa-gm-fC4" secondAttribute="leading" id="n9q-5Q-6dZ"/>
+                                    <constraint firstAttribute="bottom" secondItem="gYv-gK-30f" secondAttribute="bottom" id="rIk-Xv-5GW"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Neh-0h-Yfn" secondAttribute="bottom" id="4AB-If-XB6"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="gDN-eE-q0w" secondAttribute="trailing" id="4vu-MG-Rsy"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Zhx-D5-jKB" secondAttribute="trailing" id="Ely-Ao-rOw"/>
+                            <constraint firstItem="Zhx-D5-jKB" firstAttribute="top" secondItem="gDN-eE-q0w" secondAttribute="bottom" id="Gqi-zp-ynZ"/>
+                            <constraint firstItem="wQa-gm-fC4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="LSb-Y0-wgw"/>
+                            <constraint firstItem="Neh-0h-Yfn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="LlQ-Z6-HXt"/>
+                            <constraint firstItem="gDN-eE-q0w" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Sco-oG-WEh"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Neh-0h-Yfn" secondAttribute="trailing" id="agy-uJ-2l3"/>
+                            <constraint firstItem="Neh-0h-Yfn" firstAttribute="top" secondItem="wQa-gm-fC4" secondAttribute="bottom" constant="50" id="fC4-9U-fcs"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="wQa-gm-fC4" secondAttribute="trailing" id="gG7-Vq-Mev"/>
+                            <constraint firstItem="wQa-gm-fC4" firstAttribute="top" secondItem="Zhx-D5-jKB" secondAttribute="bottom" id="jxG-uR-COB"/>
+                            <constraint firstItem="Zhx-D5-jKB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="oC7-9G-Rxy"/>
+                            <constraint firstItem="gDN-eE-q0w" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="sn1-Bd-aiV"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="artistLb" destination="bKK-47-8uP" id="znd-pm-dhK"/>
+                        <outlet property="genreLb" destination="TJo-Rw-TnB" id="Z4L-5m-KZc"/>
+                        <outlet property="tableView" destination="Neh-0h-Yfn" id="iaz-w9-jpp"/>
+                        <outlet property="titleLb" destination="lyo-jK-O7Q" id="2ey-Ex-vaT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="24.800000000000001" y="29.23538230884558"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
-<dict>
-	<key>user_id</key>
+<array>
 	<string>taejune</string>
-	<key>pw</key>
-	<string>asd123</string>
-	<key>birthday</key>
-	<string>1987.05.07</string>
-</dict>
+	<string>1</string>
+	<string>2</string>
+	<string>3</string>
+	<string>4</string>
+	<string>5</string>
+</array>
 </plist>

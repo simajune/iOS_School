@@ -60,7 +60,6 @@ struct UserService {
 
     init() {
         //pList에서 정보를 가져와서 model에 넣는다.
-
         loadData()
     }
 
