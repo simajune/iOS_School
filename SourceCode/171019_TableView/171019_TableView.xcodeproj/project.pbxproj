@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2322B09C1F98CD88006DE21C /* FreindInfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2322B09B1F98CD88006DE21C /* FreindInfo.plist */; };
+		2322B09E1F98D180006DE21C /* GirlGroupDataCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2322B09D1F98D180006DE21C /* GirlGroupDataCenter.swift */; };
 		232592231F9878440069C991 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 232592221F9878440069C991 /* AppDelegate.swift */; };
 		232592251F9878440069C991 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 232592241F9878440069C991 /* ViewController.swift */; };
 		232592281F9878440069C991 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 232592261F9878440069C991 /* Main.storyboard */; };
@@ -18,6 +20,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2322B09B1F98CD88006DE21C /* FreindInfo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = FreindInfo.plist; sourceTree = "<group>"; };
+		2322B09D1F98D180006DE21C /* GirlGroupDataCenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GirlGroupDataCenter.swift; sourceTree = "<group>"; };
 		2325921F1F9878440069C991 /* 171019_TableView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 171019_TableView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		232592221F9878440069C991 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		232592241F9878440069C991 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -84,7 +88,9 @@
 			isa = PBXGroup;
 			children = (
 				232592371F98821F0069C991 /* DataCenter.swift */,
+				2322B09D1F98D180006DE21C /* GirlGroupDataCenter.swift */,
 				2325923A1F9890C20069C991 /* NameList.plist */,
+				2322B09B1F98CD88006DE21C /* FreindInfo.plist */,
 			);
 			path = DataBase;
 			sourceTree = "<group>";
@@ -149,6 +155,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2325922D1F9878440069C991 /* LaunchScreen.storyboard in Resources */,
+				2322B09C1F98CD88006DE21C /* FreindInfo.plist in Resources */,
 				2325923B1F9890C20069C991 /* NameList.plist in Resources */,
 				2325922A1F9878440069C991 /* Assets.xcassets in Resources */,
 				232592281F9878440069C991 /* Main.storyboard in Resources */,
@@ -162,6 +169,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2322B09E1F98D180006DE21C /* GirlGroupDataCenter.swift in Sources */,
 				232592251F9878440069C991 /* ViewController.swift in Sources */,
 				232592231F9878440069C991 /* AppDelegate.swift in Sources */,
 				232592381F98821F0069C991 /* DataCenter.swift in Sources */,

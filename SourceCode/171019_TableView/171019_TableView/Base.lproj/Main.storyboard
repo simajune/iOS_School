@@ -21,12 +21,28 @@
                                 <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="144" id="bPv-HX-nZr">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" textLabel="FKK-G2-Yxn" detailTextLabel="m96-eN-PD1" rowHeight="144" style="IBUITableViewCellStyleSubtitle" id="bPv-HX-nZr">
                                         <rect key="frame" x="0.0" y="28" width="375" height="144"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="bPv-HX-nZr" id="fbc-2Y-mpu">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="143.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="FKK-G2-Yxn">
+                                                    <rect key="frame" x="15" y="52" width="33.5" height="20.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="m96-eN-PD1">
+                                                    <rect key="frame" x="15" y="75.5" width="44" height="14.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </prototypes>
@@ -110,33 +126,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mNP-d7-rfh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1175" y="116"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="FWR-zR-mfk">
-            <objects>
-                <viewController id="dw0-0K-tTv" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="6RM-eY-tzu">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="afp-zS-gCq">
-                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </tableView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="afp-zS-gCq" firstAttribute="leading" secondItem="vRE-xM-ndL" secondAttribute="leading" id="9R1-xr-JoD"/>
-                            <constraint firstItem="vRE-xM-ndL" firstAttribute="trailing" secondItem="afp-zS-gCq" secondAttribute="trailing" id="FYg-fe-XG3"/>
-                            <constraint firstItem="vRE-xM-ndL" firstAttribute="bottom" secondItem="afp-zS-gCq" secondAttribute="bottom" id="GkW-KG-HsV"/>
-                            <constraint firstItem="afp-zS-gCq" firstAttribute="top" secondItem="vRE-xM-ndL" secondAttribute="top" id="fZc-RC-olz"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="vRE-xM-ndL"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="gdO-HY-QQC" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-250" y="-612"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Guv-CX-ofo">

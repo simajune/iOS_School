@@ -18,20 +18,20 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationController?.navigationBar.tintColor = .black
-
+        
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
         tableView.reloadData()
-        
+        tableView.rowHeight = UITableViewAutomaticDimension
         
     }
 
-//    func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
-//        return UITableViewAutomaticDimension
-//    }
+    func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
+        return UITableViewAutomaticDimension
+    }
     
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
@@ -39,24 +39,49 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
             DataCenter.mainCenter.saveNameList()
             tableView.deleteRows(at: [indexPath], with: .fade)
             tableView.reloadData()
-            
+
         }
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        print("\(GirlGroupDataCenter.mainCenter.Nickname[indexPath.row])를 눌렀습니다.")
+    }
     
+//    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+//        return 100
+//    }
     
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return DataCenter.mainCenter.nameList.count
+        //return DataCenter.mainCenter.nameList.count
+        return GirlGroupDataCenter.mainCenter.membersArray.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-        let name = DataCenter.mainCenter.nameList[indexPath.row]
+//        let name = DataCenter.mainCenter.nameList[indexPath.row]
+//        cell.textLabel?.text = name
+//        cell.imageView?.image = UIImage(named: "ProfileImage1")
+//        cell.accessoryType = .disclosureIndicator
+//        cell.textLabel?.numberOfLines = 0
+//        return cell
         
-        cell.textLabel?.text = name
-        cell.textLabel?.numberOfLines = 0
+        
+        let nickName = GirlGroupDataCenter.mainCenter.Nickname[indexPath.row]
+        let profileImage = GirlGroupDataCenter.mainCenter.ProfileImage[indexPath.row]
+        let myProfileDescription = GirlGroupDataCenter.mainCenter.MyProfileDescription[indexPath.row]
+        
+        cell.textLabel?.text = nickName
+        cell.detailTextLabel?.isEnabled = true
+        cell.detailTextLabel?.text = myProfileDescription
+        
+        cell.imageView?.image = UIImage(named: profileImage)
+        cell.imageView?.contentMode = .scaleAspectFill
+        cell.accessoryType = .disclosureIndicator
+        cell.accessoryType = .checkmark
+        
         return cell
+        
     }
 
 

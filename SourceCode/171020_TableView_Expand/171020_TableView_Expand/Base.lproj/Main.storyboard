@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="i0e-W9-3w8">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="gQA-Ty-Az3">
+            <objects>
+                <navigationController id="i0e-W9-3w8" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="nGw-dl-OAG">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="9S2-Lh-d85" kind="relationship" relationship="rootViewController" id="8kj-Ld-ghu"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OOX-Ef-Qud" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-419" y="802"/>
+        </scene>
+        <!--Main View Controller-->
+        <scene sceneID="KF5-Qc-gwH">
+            <objects>
+                <viewController id="9S2-Lh-d85" customClass="MainViewController" customModule="_71020_TableView_Expand" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="YjG-gk-aj1">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="9Bv-LR-H6P">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <view key="tableHeaderView" contentMode="scaleToFill" id="KMq-DX-J0j">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </view>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="kWX-6n-iQZ" customClass="CustomTableViewCell" customModule="_71020_TableView_Expand" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="72" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="kWX-6n-iQZ" id="rcm-Ug-jeW">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LVD-HQ-aew">
+                                                    <rect key="frame" x="316" y="6" width="51" height="31"/>
+                                                    <connections>
+                                                        <action selector="switchValueChanged:" destination="kWX-6n-iQZ" eventType="valueChanged" id="o0i-AK-7rC"/>
+                                                    </connections>
+                                                </switch>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="LVD-HQ-aew" secondAttribute="bottom" constant="6.5" id="8xM-xR-hOt"/>
+                                                <constraint firstItem="LVD-HQ-aew" firstAttribute="top" secondItem="rcm-Ug-jeW" secondAttribute="top" constant="6" id="YDY-Em-Gif"/>
+                                                <constraint firstAttribute="trailing" secondItem="LVD-HQ-aew" secondAttribute="trailing" constant="10" id="cro-eO-GLx"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="switchData" destination="LVD-HQ-aew" id="sXV-QB-ch2"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="9S2-Lh-d85" id="Wev-oA-uyn"/>
+                                    <outlet property="delegate" destination="9S2-Lh-d85" id="jap-Nm-xE6"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ZKr-bx-jEO" firstAttribute="bottom" secondItem="9Bv-LR-H6P" secondAttribute="bottom" id="5oI-8a-zs6"/>
+                            <constraint firstItem="ZKr-bx-jEO" firstAttribute="trailing" secondItem="9Bv-LR-H6P" secondAttribute="trailing" id="QAz-Op-5Sy"/>
+                            <constraint firstItem="9Bv-LR-H6P" firstAttribute="top" secondItem="ZKr-bx-jEO" secondAttribute="top" id="YN3-Lr-B9b"/>
+                            <constraint firstItem="9Bv-LR-H6P" firstAttribute="leading" secondItem="ZKr-bx-jEO" secondAttribute="leading" id="YNX-Sd-tsL"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ZKr-bx-jEO"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="8sh-Qe-ZjI"/>
+                    <connections>
+                        <outlet property="mainTableView" destination="9Bv-LR-H6P" id="5BS-Lu-mDk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Q1E-sC-Ghn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="423" y="802"/>
+        </scene>
+    </scenes>
+</document>
