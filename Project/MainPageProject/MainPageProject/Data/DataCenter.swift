@@ -7,6 +7,11 @@ class DataCenter {
     var membersData:[MemberData] {
         return members
     }
+ 
+    private var privateSettings: [SettingData] = []
+    var settings: [SettingData] {
+        return privateSettings
+    }
 
     init() {
         loadData()
@@ -20,6 +25,16 @@ class DataCenter {
                 if let data = list as? [String: String],
                     let memberData = MemberData(memberData: data) {
                     members.append(memberData)
+                }
+            }
+        }
+        
+        if let bundleArray = Bundle.main.path(forResource: "Settings", ofType: "plist"),
+            let settingsArray = NSArray(contentsOfFile: bundleArray) as? [Any] {
+            for list in settingsArray {
+                if let settinglist = list as? [String: Any],
+                    let privateSettings = SettingData(settingData: settinglist) {
+                    self.privateSettings.append(privateSettings)
                 }
             }
         }

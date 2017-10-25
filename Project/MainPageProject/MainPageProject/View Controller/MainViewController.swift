@@ -12,7 +12,6 @@ class MainViewController: UIViewController,UITableViewDataSource {
         self.navigationController?.navigationBar.tintColor = .black
         dataCenter = DataCenter()
         tableView.reloadData()
-        performSegue(withIdentifier: "loginSegue", sender: self)
     }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -40,10 +39,7 @@ class MainViewController: UIViewController,UITableViewDataSource {
         
         nextVC.data = cell.data
     }
-    
-    
-    
-    
+
     
     
     

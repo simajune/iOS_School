@@ -10,13 +10,13 @@ class LogInViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        userNameTextField.leftView = UIImageView(image: #imageLiteral(resourceName: "User"))
-        userNameTextField.leftViewMode = .always
-        userNameTextField.configureAttributedString(string: "아이디를 입력해주세요.", range: NSRange(location:0, length: 3) , stringColor: UIColor.red.withAlphaComponent(0.5))
-        
-        passwordTextField.leftView = UIImageView(image: #imageLiteral(resourceName: "Password"))
-        passwordTextField.leftViewMode = .always
-        passwordTextField.configureAttributedString(string: "패스워드를 입력해주세요.", range: NSRange(location: 0, length: 4), stringColor: UIColor.red.withAlphaComponent(0.5))
+//        userNameTextField.leftView = UIImageView(image: #imageLiteral(resourceName: "User"))
+//        userNameTextField.leftViewMode = .always
+//        userNameTextField.configureAttributedString(string: "아이디를 입력해주세요.", range: NSRange(location:0, length: 3) , stringColor: UIColor.red.withAlphaComponent(0.5))
+//        
+//        passwordTextField.leftView = UIImageView(image: #imageLiteral(resourceName: "Password"))
+//        passwordTextField.leftViewMode = .always
+//        passwordTextField.configureAttributedString(string: "패스워드를 입력해주세요.", range: NSRange(location: 0, length: 4), stringColor: UIColor.red.withAlphaComponent(0.5))
         
         NotificationCenter.default.addObserver(self, selector: #selector(self.keyboardWillShow(notification:)), name: .UIKeyboardDidShow, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(self.keyboardWillHide(notification:)), name: .UIKeyboardWillHide, object: nil)
