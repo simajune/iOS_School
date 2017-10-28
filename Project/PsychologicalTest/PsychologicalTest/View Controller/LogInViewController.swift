@@ -9,7 +9,7 @@ class LogInViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        print("Login")
 //        userNameTextField.leftView = UIImageView(image: #imageLiteral(resourceName: "User"))
 //        userNameTextField.leftViewMode = .always
 //        userNameTextField.configureAttributedString(string: "아이디를 입력해주세요.", range: NSRange(location:0, length: 3) , stringColor: UIColor.red.withAlphaComponent(0.5))
@@ -41,16 +41,14 @@ class LogInViewController: UIViewController {
     }
     
     @IBAction func didTapLoginButton(_ sender: RoundButton) {
-        print("눌림")
         guard let username = userNameTextField.text, !username.isEmpty else { return }
         guard let password = passwordTextField.text, !password.isEmpty else { return }
         
         if UserService.sharedInstance.validateUserInfo(username: username, password: password) {
-            //로그인 성공
-            print("성공")
+            
         }else {
-            //로그인 실패
-            print("실패")
+            userNameTextField.backgroundColor = UIColor.red.withAlphaComponent(0.5)
+            passwordTextField.backgroundColor = UIColor.red.withAlphaComponent(0.5)
         }
         
         

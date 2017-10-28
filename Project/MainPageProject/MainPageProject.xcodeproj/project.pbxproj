@@ -7,15 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2316DE7C1FA16F760040B5D8 /* ShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2316DE791FA16F750040B5D8 /* ShadowView.swift */; };
+		2316DE7D1FA16F760040B5D8 /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2316DE7A1FA16F750040B5D8 /* RoundButton.swift */; };
+		2316DE7E1FA16F760040B5D8 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2316DE7B1FA16F760040B5D8 /* CustomTextField.swift */; };
+		2316DE811FA16FBD0040B5D8 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2316DE7F1FA16FBD0040B5D8 /* LogInViewController.swift */; };
+		2316DE821FA16FBD0040B5D8 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2316DE801FA16FBD0040B5D8 /* SignUpViewController.swift */; };
+		2316DEAC1FA1B15A0040B5D8 /* MusicPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2316DEAB1FA1B15A0040B5D8 /* MusicPlayerViewController.swift */; };
+		2316DEAE1FA1B3160040B5D8 /* Song in Resources */ = {isa = PBXBuildFile; fileRef = 2316DEAD1FA1B3160040B5D8 /* Song */; };
+		2316DEB01FA1B8DA0040B5D8 /* MusicCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2316DEAF1FA1B8DA0040B5D8 /* MusicCollectionViewCell.swift */; };
+		2316DEB21FA1C0E00040B5D8 /* SongData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2316DEB11FA1C0E00040B5D8 /* SongData.swift */; };
+		2316DEB41FA1C4F80040B5D8 /* SongDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2316DEB31FA1C4F80040B5D8 /* SongDataModel.swift */; };
 		231D70B91FA07192000A54B0 /* MainNavi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 231D70B81FA07192000A54B0 /* MainNavi.swift */; };
 		231D70BB1FA071EF000A54B0 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 231D70BA1FA071EF000A54B0 /* SettingsViewController.swift */; };
-		231D70C81FA07DA2000A54B0 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 231D70C41FA07DA1000A54B0 /* LogInViewController.swift */; };
-		231D70C91FA07DA2000A54B0 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 231D70C51FA07DA2000A54B0 /* FirstViewController.swift */; };
-		231D70CA1FA07DA2000A54B0 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 231D70C61FA07DA2000A54B0 /* SignUpViewController.swift */; };
 		231D70CB1FA07DA2000A54B0 /* LoginFlow.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 231D70C71FA07DA2000A54B0 /* LoginFlow.storyboard */; };
-		231D70CF1FA0883E000A54B0 /* ShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 231D70CC1FA0883D000A54B0 /* ShadowView.swift */; };
-		231D70D01FA0883E000A54B0 /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 231D70CD1FA0883D000A54B0 /* RoundButton.swift */; };
-		231D70D11FA0883E000A54B0 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 231D70CE1FA0883D000A54B0 /* CustomTextField.swift */; };
 		231D70D41FA0886F000A54B0 /* UserServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 231D70D21FA0886E000A54B0 /* UserServices.swift */; };
 		231D70D51FA0886F000A54B0 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 231D70D31FA0886F000A54B0 /* User.swift */; };
 		231D70D71FA097C3000A54B0 /* SettingsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 231D70D61FA097C3000A54B0 /* SettingsCell.swift */; };
@@ -33,18 +37,24 @@
 		232068C51F99CB9E001CB98D /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 232068C41F99CB9E001CB98D /* StartViewController.swift */; };
 		232610C71FA02B340076857A /* SettingsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 232610C61FA02B340076857A /* SettingsData.swift */; };
 		232610C91FA02B550076857A /* Settings.plist in Resources */ = {isa = PBXBuildFile; fileRef = 232610C81FA02B550076857A /* Settings.plist */; };
+		23FC97361FA2BC3B007886B8 /* EditInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FC97351FA2BC3B007886B8 /* EditInfoViewController.swift */; };
+		23FC97591FA31005007886B8 /* CoverFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FC97581FA31005007886B8 /* CoverFlowLayout.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2316DE791FA16F750040B5D8 /* ShadowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShadowView.swift; sourceTree = "<group>"; };
+		2316DE7A1FA16F750040B5D8 /* RoundButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
+		2316DE7B1FA16F760040B5D8 /* CustomTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		2316DE7F1FA16FBD0040B5D8 /* LogInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
+		2316DE801FA16FBD0040B5D8 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		2316DEAB1FA1B15A0040B5D8 /* MusicPlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicPlayerViewController.swift; sourceTree = "<group>"; };
+		2316DEAD1FA1B3160040B5D8 /* Song */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Song; sourceTree = "<group>"; };
+		2316DEAF1FA1B8DA0040B5D8 /* MusicCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicCollectionViewCell.swift; sourceTree = "<group>"; };
+		2316DEB11FA1C0E00040B5D8 /* SongData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongData.swift; sourceTree = "<group>"; };
+		2316DEB31FA1C4F80040B5D8 /* SongDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongDataModel.swift; sourceTree = "<group>"; };
 		231D70B81FA07192000A54B0 /* MainNavi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainNavi.swift; sourceTree = "<group>"; };
 		231D70BA1FA071EF000A54B0 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
-		231D70C41FA07DA1000A54B0 /* LogInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LogInViewController.swift; path = "../../../PsychologicalTest/PsychologicalTest/View Controller/LogInViewController.swift"; sourceTree = "<group>"; };
-		231D70C51FA07DA2000A54B0 /* FirstViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FirstViewController.swift; path = "../../../PsychologicalTest/PsychologicalTest/View Controller/FirstViewController.swift"; sourceTree = "<group>"; };
-		231D70C61FA07DA2000A54B0 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SignUpViewController.swift; path = "../../../PsychologicalTest/PsychologicalTest/View Controller/SignUpViewController.swift"; sourceTree = "<group>"; };
 		231D70C71FA07DA2000A54B0 /* LoginFlow.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LoginFlow.storyboard; sourceTree = "<group>"; };
-		231D70CC1FA0883D000A54B0 /* ShadowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ShadowView.swift; path = ../../PsychologicalTest/PsychologicalTest/View/ShadowView.swift; sourceTree = "<group>"; };
-		231D70CD1FA0883D000A54B0 /* RoundButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RoundButton.swift; path = ../../PsychologicalTest/PsychologicalTest/View/RoundButton.swift; sourceTree = "<group>"; };
-		231D70CE1FA0883D000A54B0 /* CustomTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CustomTextField.swift; path = ../../PsychologicalTest/PsychologicalTest/View/CustomTextField.swift; sourceTree = "<group>"; };
 		231D70D21FA0886E000A54B0 /* UserServices.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UserServices.swift; path = ../../../PsychologicalTest/PsychologicalTest/Services/UserServices.swift; sourceTree = "<group>"; };
 		231D70D31FA0886F000A54B0 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = User.swift; path = ../../../PsychologicalTest/PsychologicalTest/Model/User.swift; sourceTree = "<group>"; };
 		231D70D61FA097C3000A54B0 /* SettingsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsCell.swift; sourceTree = "<group>"; };
@@ -64,6 +74,8 @@
 		232068C41F99CB9E001CB98D /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
 		232610C61FA02B340076857A /* SettingsData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsData.swift; sourceTree = "<group>"; };
 		232610C81FA02B550076857A /* Settings.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Settings.plist; sourceTree = "<group>"; };
+		23FC97351FA2BC3B007886B8 /* EditInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditInfoViewController.swift; sourceTree = "<group>"; };
+		23FC97581FA31005007886B8 /* CoverFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoverFlowLayout.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,9 +111,7 @@
 				232068A61F998715001CB98D /* AppDelegate.swift */,
 				232068BC1F998793001CB98D /* View Controller */,
 				232068BF1F999361001CB98D /* Data */,
-				231D70CE1FA0883D000A54B0 /* CustomTextField.swift */,
-				231D70CD1FA0883D000A54B0 /* RoundButton.swift */,
-				231D70CC1FA0883D000A54B0 /* ShadowView.swift */,
+				23FC97371FA2BC5E007886B8 /* View */,
 				232068AA1F998715001CB98D /* Main.storyboard */,
 				231D70C71FA07DA2000A54B0 /* LoginFlow.storyboard */,
 				232068AD1F998715001CB98D /* Assets.xcassets */,
@@ -118,11 +128,12 @@
 				231D70B81FA07192000A54B0 /* MainNavi.swift */,
 				232068A81F998715001CB98D /* MainViewController.swift */,
 				232068B81F998774001CB98D /* DetailViewController.swift */,
-				232068C41F99CB9E001CB98D /* StartViewController.swift */,
 				231D70BA1FA071EF000A54B0 /* SettingsViewController.swift */,
-				231D70C51FA07DA2000A54B0 /* FirstViewController.swift */,
-				231D70C41FA07DA1000A54B0 /* LogInViewController.swift */,
-				231D70C61FA07DA2000A54B0 /* SignUpViewController.swift */,
+				232068C41F99CB9E001CB98D /* StartViewController.swift */,
+				2316DE7F1FA16FBD0040B5D8 /* LogInViewController.swift */,
+				2316DE801FA16FBD0040B5D8 /* SignUpViewController.swift */,
+				2316DEAB1FA1B15A0040B5D8 /* MusicPlayerViewController.swift */,
+				23FC97351FA2BC3B007886B8 /* EditInfoViewController.swift */,
 			);
 			path = "View Controller";
 			sourceTree = "<group>";
@@ -130,17 +141,32 @@
 		232068BF1F999361001CB98D /* Data */ = {
 			isa = PBXGroup;
 			children = (
-				232068C21F99A82D001CB98D /* MemberTableViewCell.swift */,
-				231D70D61FA097C3000A54B0 /* SettingsCell.swift */,
 				232068BD1F99935B001CB98D /* DataCenter.swift */,
 				232068C01F9993D7001CB98D /* MemberData.swift */,
 				232610C61FA02B340076857A /* SettingsData.swift */,
+				2316DEB11FA1C0E00040B5D8 /* SongData.swift */,
+				2316DEB31FA1C4F80040B5D8 /* SongDataModel.swift */,
 				231D70D31FA0886F000A54B0 /* User.swift */,
 				231D70D21FA0886E000A54B0 /* UserServices.swift */,
 				232068BA1F99878C001CB98D /* FreindInfo.plist */,
 				232610C81FA02B550076857A /* Settings.plist */,
+				2316DEAD1FA1B3160040B5D8 /* Song */,
 			);
 			path = Data;
+			sourceTree = "<group>";
+		};
+		23FC97371FA2BC5E007886B8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				232068C21F99A82D001CB98D /* MemberTableViewCell.swift */,
+				2316DEAF1FA1B8DA0040B5D8 /* MusicCollectionViewCell.swift */,
+				231D70D61FA097C3000A54B0 /* SettingsCell.swift */,
+				2316DE7B1FA16F760040B5D8 /* CustomTextField.swift */,
+				2316DE7A1FA16F750040B5D8 /* RoundButton.swift */,
+				2316DE791FA16F750040B5D8 /* ShadowView.swift */,
+				23FC97581FA31005007886B8 /* CoverFlowLayout.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -203,6 +229,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				232068B11F998715001CB98D /* LaunchScreen.storyboard in Resources */,
+				2316DEAE1FA1B3160040B5D8 /* Song in Resources */,
 				232068AE1F998715001CB98D /* Assets.xcassets in Resources */,
 				232068BB1F99878D001CB98D /* FreindInfo.plist in Resources */,
 				232068AC1F998715001CB98D /* Main.storyboard in Resources */,
@@ -218,25 +245,30 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2316DE7C1FA16F760040B5D8 /* ShadowView.swift in Sources */,
 				232610C71FA02B340076857A /* SettingsData.swift in Sources */,
+				23FC97591FA31005007886B8 /* CoverFlowLayout.swift in Sources */,
 				232068B91F998774001CB98D /* DetailViewController.swift in Sources */,
-				231D70C81FA07DA2000A54B0 /* LogInViewController.swift in Sources */,
-				231D70C91FA07DA2000A54B0 /* FirstViewController.swift in Sources */,
-				231D70D11FA0883E000A54B0 /* CustomTextField.swift in Sources */,
+				2316DE7E1FA16F760040B5D8 /* CustomTextField.swift in Sources */,
+				2316DE7D1FA16F760040B5D8 /* RoundButton.swift in Sources */,
 				232068C51F99CB9E001CB98D /* StartViewController.swift in Sources */,
 				231D70BB1FA071EF000A54B0 /* SettingsViewController.swift in Sources */,
-				231D70D01FA0883E000A54B0 /* RoundButton.swift in Sources */,
-				231D70CF1FA0883E000A54B0 /* ShadowView.swift in Sources */,
 				232068C31F99A82D001CB98D /* MemberTableViewCell.swift in Sources */,
+				2316DEB41FA1C4F80040B5D8 /* SongDataModel.swift in Sources */,
 				232068C11F9993D7001CB98D /* MemberData.swift in Sources */,
 				232068A91F998715001CB98D /* MainViewController.swift in Sources */,
+				2316DEAC1FA1B15A0040B5D8 /* MusicPlayerViewController.swift in Sources */,
 				232068BE1F99935B001CB98D /* DataCenter.swift in Sources */,
 				232068A71F998715001CB98D /* AppDelegate.swift in Sources */,
 				231D70D51FA0886F000A54B0 /* User.swift in Sources */,
 				231D70D41FA0886F000A54B0 /* UserServices.swift in Sources */,
+				2316DE821FA16FBD0040B5D8 /* SignUpViewController.swift in Sources */,
+				2316DEB01FA1B8DA0040B5D8 /* MusicCollectionViewCell.swift in Sources */,
+				23FC97361FA2BC3B007886B8 /* EditInfoViewController.swift in Sources */,
 				231D70D71FA097C3000A54B0 /* SettingsCell.swift in Sources */,
-				231D70CA1FA07DA2000A54B0 /* SignUpViewController.swift in Sources */,
+				2316DEB21FA1C0E00040B5D8 /* SongData.swift in Sources */,
 				231D70B91FA07192000A54B0 /* MainNavi.swift in Sources */,
+				2316DE811FA16FBD0040B5D8 /* LogInViewController.swift in Sources */,
 				231D70D91FA0C524000A54B0 /* SplashViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

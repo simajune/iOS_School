@@ -3,23 +3,48 @@ import UIKit
 
 class SplashViewController: UIViewController {
     
+    @IBOutlet weak var loadingIndicator: UIActivityIndicatorView!
     var isLogin = UserDefaults.standard.bool(forKey: "isLogined")
-    var AutoLogin = UserDefaults.standard.bool(forKey: "autoLogin")
+    var autoLogin = UserDefaults.standard.bool(forKey: "autoLogin")
+    var loadingTime = 2
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        //isLogin = true
-        // Do any additional setup after loading the view.
     }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        if isLogin {
+        if isLogin && autoLogin{
             showMain()
         }else {
             isLogin = false
             showLogin()
         }
+//        let _ = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(self.countDown), userInfo: nil, repeats: false)
+        
+    }
+    
+//    @objc func countDown () {
+//        if loadingTime > 0 {
+//            loadingTime -= 1
+//        }else if loadingTime == 0 {
+//            if isLogin && autoLogin{
+//                showMain()
+//            }else {
+//                isLogin = false
+//                showLogin()
+//            }
+//        }
+//    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        loadingIndicator.startAnimating()
+    }
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidDisappear(animated)
+        loadingIndicator.stopAnimating()
     }
     
     func showLogin() {

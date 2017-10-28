@@ -7,29 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2316DE751FA16EB50040B5D8 /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 232CC5FA1F96EE7400017735 /* RoundButton.swift */; };
+		2316DE761FA16EB50040B5D8 /* ShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 232CC6011F96FC3F00017735 /* ShadowView.swift */; };
+		2316DE771FA16EB50040B5D8 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 239A89031F97014A00FD9935 /* CustomTextField.swift */; };
+		2316DE781FA16EBC0040B5D8 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2316DE731FA16DE20040B5D8 /* FirstViewController.swift */; };
 		232CC5E41F96E91F00017735 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 232CC5E31F96E91F00017735 /* AppDelegate.swift */; };
 		232CC5E91F96E91F00017735 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 232CC5E71F96E91F00017735 /* Main.storyboard */; };
 		232CC5EB1F96E91F00017735 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 232CC5EA1F96E91F00017735 /* Assets.xcassets */; };
 		232CC5EE1F96E91F00017735 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 232CC5EC1F96E91F00017735 /* LaunchScreen.storyboard */; };
-		232CC5F91F96E99D00017735 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 232CC5F81F96E99D00017735 /* FirstViewController.swift */; };
-		232CC5FB1F96EE7400017735 /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 232CC5FA1F96EE7400017735 /* RoundButton.swift */; };
 		232CC5FE1F96F1EA00017735 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 232CC5FD1F96F1EA00017735 /* LogInViewController.swift */; };
 		232CC6001F96F1F600017735 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 232CC5FF1F96F1F600017735 /* SignUpViewController.swift */; };
-		232CC6021F96FC3F00017735 /* ShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 232CC6011F96FC3F00017735 /* ShadowView.swift */; };
 		239890071F973550007C83D6 /* UserServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 239890061F973550007C83D6 /* UserServices.swift */; };
-		239A89041F97014A00FD9935 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 239A89031F97014A00FD9935 /* CustomTextField.swift */; };
 		239A89061F97321200FD9935 /* UserData.plist in Resources */ = {isa = PBXBuildFile; fileRef = 239A89051F97321200FD9935 /* UserData.plist */; };
 		239A89081F97334E00FD9935 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 239A89071F97334E00FD9935 /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2316DE731FA16DE20040B5D8 /* FirstViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
 		232CC5E01F96E91E00017735 /* PsychologicalTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PsychologicalTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		232CC5E31F96E91F00017735 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		232CC5E81F96E91F00017735 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		232CC5EA1F96E91F00017735 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		232CC5ED1F96E91F00017735 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		232CC5EF1F96E91F00017735 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		232CC5F81F96E99D00017735 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
 		232CC5FA1F96EE7400017735 /* RoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
 		232CC5FD1F96F1EA00017735 /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
 		232CC5FF1F96F1F600017735 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
@@ -103,7 +103,7 @@
 		232CC5F71F96E97600017735 /* View Controller */ = {
 			isa = PBXGroup;
 			children = (
-				232CC5F81F96E99D00017735 /* FirstViewController.swift */,
+				2316DE731FA16DE20040B5D8 /* FirstViewController.swift */,
 				232CC5FD1F96F1EA00017735 /* LogInViewController.swift */,
 				232CC5FF1F96F1F600017735 /* SignUpViewController.swift */,
 			);
@@ -209,14 +209,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				239A89041F97014A00FD9935 /* CustomTextField.swift in Sources */,
+				2316DE781FA16EBC0040B5D8 /* FirstViewController.swift in Sources */,
+				2316DE751FA16EB50040B5D8 /* RoundButton.swift in Sources */,
+				2316DE761FA16EB50040B5D8 /* ShadowView.swift in Sources */,
+				2316DE771FA16EB50040B5D8 /* CustomTextField.swift in Sources */,
 				239890071F973550007C83D6 /* UserServices.swift in Sources */,
-				232CC6021F96FC3F00017735 /* ShadowView.swift in Sources */,
 				232CC5FE1F96F1EA00017735 /* LogInViewController.swift in Sources */,
-				232CC5FB1F96EE7400017735 /* RoundButton.swift in Sources */,
 				239A89081F97334E00FD9935 /* User.swift in Sources */,
 				232CC5E41F96E91F00017735 /* AppDelegate.swift in Sources */,
-				232CC5F91F96E99D00017735 /* FirstViewController.swift in Sources */,
 				232CC6001F96F1F600017735 /* SignUpViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

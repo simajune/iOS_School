@@ -5,6 +5,7 @@ enum CellType: String {
     case settingDetailCell = "SettingDetailCell"
     case settingBasicCell = "SettingBasicCell"
     case settingSwitchCell = "SettingSwitchCell"
+    case settingNonButtonCell = "SettingNonButtonCell"
 }
 
 struct DataCell {
