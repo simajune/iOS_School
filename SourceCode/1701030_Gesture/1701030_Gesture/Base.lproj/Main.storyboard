@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="_701030_Gesture" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VmL-3g-boh">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hoC-7c-xOq">
+                                        <rect key="frame" x="0.0" y="111" width="375" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qYd-hQ-ogb">
+                                        <rect key="frame" x="0.0" y="66" width="375" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstItem="hoC-7c-xOq" firstAttribute="top" secondItem="qYd-hQ-ogb" secondAttribute="bottom" constant="24" id="3if-M1-XRi"/>
+                                    <constraint firstItem="qYd-hQ-ogb" firstAttribute="top" secondItem="VmL-3g-boh" secondAttribute="top" constant="66" id="4R4-3b-NtP"/>
+                                    <constraint firstAttribute="trailing" secondItem="qYd-hQ-ogb" secondAttribute="trailing" id="KzW-IG-T82"/>
+                                    <constraint firstAttribute="trailing" secondItem="hoC-7c-xOq" secondAttribute="trailing" id="fGm-Tp-uac"/>
+                                    <constraint firstItem="hoC-7c-xOq" firstAttribute="leading" secondItem="VmL-3g-boh" secondAttribute="leading" id="pHV-he-ptH"/>
+                                    <constraint firstItem="qYd-hQ-ogb" firstAttribute="leading" secondItem="VmL-3g-boh" secondAttribute="leading" id="pkp-Vh-Iw0"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="bM7-71-i5Y" appends="YES" id="U3o-Nz-XBF"/>
+                                    <outletCollection property="gestureRecognizers" destination="iv9-dF-Pnc" appends="YES" id="sA8-kp-HfI"/>
+                                </connections>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="VmL-3g-boh" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="5UD-zC-yHX"/>
+                            <constraint firstItem="VmL-3g-boh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Kyp-0K-jV6"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="VmL-3g-boh" secondAttribute="bottom" id="af7-RB-vdj"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="VmL-3g-boh" secondAttribute="trailing" id="mPc-BL-Vmv"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="coordinates" destination="hoC-7c-xOq" id="p9D-eb-Ohk"/>
+                        <outlet property="counter" destination="qYd-hQ-ogb" id="N7r-Hx-Vk8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="bM7-71-i5Y"/>
+                <tapGestureRecognizer id="iv9-dF-Pnc">
+                    <connections>
+                        <action selector="tapGesture:" destination="BYZ-38-t0r" id="naH-Ss-IQq"/>
+                        <outlet property="delegate" destination="BYZ-38-t0r" id="maC-CB-bEm"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+        </scene>
+    </scenes>
+</document>

@@ -9,16 +9,14 @@
 import UIKit
 
 class SettingsViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
-
-    
+    //MARK: - Variable
     var dataCenter: DataCenter?
-    
+    //MARK: - Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
         dataCenter = DataCenter()
-        // Do any additional setup after loading the view.
     }
-    
+    //MARK: - TableView Datasource
     func numberOfSections(in tableView: UITableView) -> Int {
         return dataCenter?.settings.count ?? 0
     }
@@ -57,7 +55,7 @@ class SettingsViewController: UIViewController, UITableViewDataSource, UITableVi
         cell.textLabel?.text = detailSettingItem?.content
         return cell
     }
-    
+    //MARK: - TableView Delegate
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let settingItem = dataCenter?.settings[indexPath.section]
         let detailItem = settingItem?.datas[indexPath.row]
@@ -87,8 +85,5 @@ class SettingsViewController: UIViewController, UITableViewDataSource, UITableVi
         }else if titleName == "회원탈퇴" {
             
         }
-        
     }
-    
-
 }

@@ -84,6 +84,8 @@ struct UserService {
 
             for user in model.users {
                 if user.username == username && user.password == password {
+                    UserDefaults.standard.set(username, forKey: "username")
+                    UserDefaults.standard.set(user.email, forKey: "userEmail")
                     return true
                 }
             }

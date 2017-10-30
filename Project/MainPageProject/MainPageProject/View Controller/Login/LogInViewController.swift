@@ -48,8 +48,9 @@ class LogInViewController: UIViewController {
         if UserService.sharedInstance.validateUserInfo(username: username, password: password) {
             UserDefaults.standard.set(true, forKey: "isLogined")
             UserDefaults.standard.set(true, forKey: "autoLogin")
+            
             let goMainVC = UIStoryboard(name: "Main", bundle: nil)
-            if let MainVC = goMainVC.instantiateViewController(withIdentifier: "SplashView") as? UIViewController {
+            if let MainVC = goMainVC.instantiateViewController(withIdentifier: "SplashView") as? SplashViewController {
                 self.present(MainVC, animated: true, completion: nil)
             }
         }else {

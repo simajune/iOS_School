@@ -94,29 +94,7 @@ class CoverFlowLayout : UICollectionViewFlowLayout {
         //alpha값에 따른 z 좌표 변경
         attribute.zIndex = NSInteger(alpha * 10.0)
     }
-    
-    //실제 연산내용
-//    func changeLayoutAttribute(attribute:UICollectionViewLayoutAttributes)
-//    {
-//        //변경가능한 최대 거리(조정가능)
-//        let maxDistance = self.itemSize.width + self.minimumLineSpacing
-//
-//        //실제 거리과 최대거리중 작은거리를 선택!
-//
-//
-//        //비율
-//
-//
-//        //비율에 따라 스케일과 투명도 변경
-//
-//
-//
-//        //alpha값에 따른 z 좌표 변경
-//
-//    }
 
-    
-    
     func distance(ofCenter centerx:CGFloat) -> CGFloat
     {
         guard let collectionView = self.collectionView else {

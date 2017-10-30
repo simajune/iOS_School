@@ -2,18 +2,20 @@
 import UIKit
 
 class SplashViewController: UIViewController {
-    
+    //MARK: - Variable
     @IBOutlet weak var loadingIndicator: UIActivityIndicatorView!
     var isLogin = UserDefaults.standard.bool(forKey: "isLogined")
     var autoLogin = UserDefaults.standard.bool(forKey: "autoLogin")
     var loadingTime = 2
-    
+    //MARK: - Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
     }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
+        print(isLogin)
+        print(autoLogin)
         if isLogin && autoLogin{
             showMain()
         }else {
@@ -46,7 +48,7 @@ class SplashViewController: UIViewController {
         super.viewDidDisappear(animated)
         loadingIndicator.stopAnimating()
     }
-    
+    //MARK: - Method
     func showLogin() {
         let loginVC = UIStoryboard(name: "LoginFlow", bundle: nil)
         if let loginView = loginVC.instantiateViewController(withIdentifier: "LoginNavi") as? UINavigationController {
@@ -56,7 +58,7 @@ class SplashViewController: UIViewController {
     
     func showMain() {
         let mainVC = UIStoryboard(name: "Main", bundle: nil)
-        if let mainView = mainVC.instantiateViewController(withIdentifier: "mainNavi") as? UINavigationController {
+        if let mainView = mainVC.instantiateViewController(withIdentifier: "MainTabBar") as? UITabBarController {
             self.present(mainView, animated: true, completion: nil)
         }
     }

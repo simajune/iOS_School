@@ -7,7 +7,7 @@ class SongData {
     var songTitle : [String] = []
     var artist : [String] = []
     var imgList: [UIImage] = []
-    
+    var lyric: [String] = []
     
     init? () {
         loadImageData()
@@ -21,8 +21,12 @@ class SongData {
                 let asset = AVURLAsset(url: url)
                 let metaData: [AVMetadataItem] = asset.metadata
                 
+                if let lyric = asset.lyrics {
+                    self.lyric.append(lyric)
+                }
                 
                 for item in metaData {
+
                     if let key = item.commonKey?.rawValue {
                         switch key {
                         case "title" :
@@ -38,18 +42,10 @@ class SongData {
                         default :
                             print("없음")
                         }
-                        
                     }
                 }
             }
         }
     }
 }
-
-//extension MusicCollectionViewCell: UIScrollViewDelegate {
-//    func scrollViewDidEndDragging(_ scrollView: UIScrollView, willDecelerate decelerate: Bool) {
-//        let pageIndex = Int(targetContentOffset.pointee.x/scrollView.bounds.size.width)
-//
-//    }
-//}
 
