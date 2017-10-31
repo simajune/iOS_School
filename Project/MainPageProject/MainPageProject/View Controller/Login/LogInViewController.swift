@@ -57,8 +57,6 @@ class LogInViewController: UIViewController {
             userNameTextField.backgroundColor = UIColor.red.withAlphaComponent(0.5)
             passwordTextField.backgroundColor = UIColor.red.withAlphaComponent(0.5)
         }
-        
-        
     }
     
 

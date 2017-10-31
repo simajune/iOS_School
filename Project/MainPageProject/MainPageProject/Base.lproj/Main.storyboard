@@ -858,7 +858,7 @@
                                 </connections>
                             </collectionView>
                             <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gxZ-9H-Gey">
-                                <rect key="frame" x="-0.5" y="0.0" width="375" height="400"/>
+                                <rect key="frame" x="-0.5" y="667" width="375" height="400"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="b6j-VG-SPX">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="400"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -907,7 +907,7 @@
                             <constraint firstItem="GVp-UA-HIF" firstAttribute="centerX" secondItem="m5c-Gx-LPd" secondAttribute="centerX" id="bfq-Tv-Sd0"/>
                             <constraint firstItem="gxZ-9H-Gey" firstAttribute="centerX" secondItem="m5c-Gx-LPd" secondAttribute="centerX" id="eNA-wV-Rzl"/>
                             <constraint firstAttribute="bottom" secondItem="drd-ht-JmF" secondAttribute="bottom" id="eht-u2-Kj1"/>
-                            <constraint firstAttribute="top" secondItem="gxZ-9H-Gey" secondAttribute="top" id="ge2-wN-OVa"/>
+                            <constraint firstAttribute="top" secondItem="gxZ-9H-Gey" secondAttribute="top" constant="-667" id="ge2-wN-OVa"/>
                             <constraint firstItem="drd-ht-JmF" firstAttribute="leading" secondItem="A9b-zB-oN9" secondAttribute="leading" id="i7n-VG-Tad"/>
                             <constraint firstItem="bQ6-2q-lVE" firstAttribute="leading" secondItem="A9b-zB-oN9" secondAttribute="leading" id="if0-7Q-n7n"/>
                             <constraint firstItem="GVp-UA-HIF" firstAttribute="top" secondItem="S0f-Am-Sby" secondAttribute="bottom" id="mlU-Ml-bB8"/>

@@ -41,22 +41,7 @@ class MusicPlayerViewController: UIViewController,UIGestureRecognizerDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         songData = SongData()
-        let selectedTitle = songData?.songTitle[currentIndex]
-        let selectedArtist = songData?.artist[currentIndex]
-        self.songTitle.text = selectedTitle
-        self.artist.text = selectedArtist
-        musicCollectionView.reloadData()
-        
-        playPasueButton.isSelected = false
-        playPasueButton.setImage(UIImage(named: "play-button") , for: .normal)
-        playPasueButton.setImage(UIImage(named: "pause1") , for: .selected)
-        
-        if let url = Bundle.main.url(forResource: "Song/0", withExtension: "mp3") {
-            musicPlayer = AVPlayer(url: url)
-        }
-        
-        
-        lyricAnimationY.constant = -self.view.frame.size.height
+        createUI()
         
         //gesture setting2
         let doubleClickGesture = UITapGestureRecognizer(target: self, action: #selector(self.doubleClickedView))
@@ -75,6 +60,25 @@ class MusicPlayerViewController: UIViewController,UIGestureRecognizerDelegate {
         musicCollectionView.addGestureRecognizer(openLyric)
         lyricTextView.addGestureRecognizer(cancelLyric)
         lyricView.addGestureRecognizer(cancelLyric1)
+    }
+    
+    //MARK: - Create UI
+    
+    func createUI() {
+        let selectedTitle = songData?.songTitle[currentIndex]
+        let selectedArtist = songData?.artist[currentIndex]
+        self.songTitle.text = selectedTitle
+        self.artist.text = selectedArtist
+        musicCollectionView.reloadData()
+        
+        playPasueButton.isSelected = false
+        playPasueButton.setImage(UIImage(named: "play-button") , for: .normal)
+        playPasueButton.setImage(UIImage(named: "pause1") , for: .selected)
+        
+        if let url = Bundle.main.url(forResource: "Song/0", withExtension: "mp3") {
+            musicPlayer = AVPlayer(url: url)
+        }
+        lyricAnimationY.constant = -self.view.frame.size.height
     }
     
     
@@ -190,6 +194,8 @@ extension MusicPlayerViewController : UICollectionViewDelegateFlowLayout, UIColl
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return CGSize(width: collectionView.frame.width * 0.6, height: collectionView.frame.width * 0.6)
     }
+    
+    
 }
 
 //MARK: - UIScrollViewDelegate
