@@ -7,8 +7,12 @@ target 'LoginTest' do
 
   # Pods for LoginTest
 
-    pod "FBSDKShareKit"
-    pod "FBSDKCoreKit"
-    pod "FBSDKLoginKit"
+pod "FBSDKShareKit"
+pod "FBSDKCoreKit"
+pod "FBSDKLoginKit"
+pod "Firebase/Auth"
+pod "Firebase/Core"
+  pod 'GoogleMaps'
+  pod 'GooglePlaces'
 
 end

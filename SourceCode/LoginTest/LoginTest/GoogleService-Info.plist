@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AD_UNIT_ID_FOR_BANNER_TEST</key>
+	<string>ca-app-pub-3940256099942544/2934735716</string>
+	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
+	<string>ca-app-pub-3940256099942544/4411468910</string>
+	<key>CLIENT_ID</key>
+	<string>1048233070431-i5brpq6ftmfqvf8p7n0ml6snusqntrpd.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.1048233070431-i5brpq6ftmfqvf8p7n0ml6snusqntrpd</string>
+	<key>API_KEY</key>
+	<string>AIzaSyCuFNiNYUSnlalEH2IWM7EQS80JaZmn6ns</string>
+	<key>GCM_SENDER_ID</key>
+	<string>1048233070431</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.SimaDev.LoginTest</string>
+	<key>PROJECT_ID</key>
+	<string>fir-sociallogin-6eb0a</string>
+	<key>STORAGE_BUCKET</key>
+	<string>fir-sociallogin-6eb0a.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<true></true>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<false></false>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:1048233070431:ios:d4b7fb7ebecaedce</string>
+	<key>DATABASE_URL</key>
+	<string>https://fir-sociallogin-6eb0a.firebaseio.com</string>
+</dict>
+</plist>

@@ -14,30 +14,22 @@ class SplashViewController: UIViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        print(isLogin)
-        print(autoLogin)
-        if isLogin && autoLogin{
-            showMain()
-        }else {
-            isLogin = false
-            showLogin()
+        Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true) { (timer) in
+            if self.loadingTime > 0 {
+                self.loadingTime -= 1
+            }else if self.loadingTime == 0 {
+                if self.isLogin && self.autoLogin{
+                    timer.invalidate()
+                    self.showMain()
+                }else {
+                    self.isLogin = false
+                    timer.invalidate()
+                    self.showLogin()
+                }
+            }
         }
-//        let _ = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(self.countDown), userInfo: nil, repeats: false)
         
     }
-    
-//    @objc func countDown () {
-//        if loadingTime > 0 {
-//            loadingTime -= 1
-//        }else if loadingTime == 0 {
-//            if isLogin && autoLogin{
-//                showMain()
-//            }else {
-//                isLogin = false
-//                showLogin()
-//            }
-//        }
-//    }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
