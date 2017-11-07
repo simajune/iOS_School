@@ -10,24 +10,32 @@ class SplashViewController: UIViewController {
     //MARK: - Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
+        isLogin = true
+        print(isLogin)
+        if isLogin && autoLogin{
+            showMain()
+        }else {
+            isLogin = false
+            showLogin()
+        }
     }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true) { (timer) in
-            if self.loadingTime > 0 {
-                self.loadingTime -= 1
-            }else if self.loadingTime == 0 {
-                if self.isLogin && self.autoLogin{
-                    timer.invalidate()
-                    self.showMain()
-                }else {
-                    self.isLogin = false
-                    timer.invalidate()
-                    self.showLogin()
-                }
-            }
-        }
+//        Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true) { (timer) in
+//            if self.loadingTime > 0 {
+//                self.loadingTime -= 1
+//            }else if self.loadingTime == 0 {
+//                if self.isLogin && self.autoLogin{
+//                    timer.invalidate()
+//                    self.showMain()
+//                }else {
+//                    self.isLogin = false
+//                    timer.invalidate()
+//                    self.showLogin()
+//                }
+//            }
+//        }
         
     }
     
@@ -44,6 +52,7 @@ class SplashViewController: UIViewController {
     func showLogin() {
         let loginVC = UIStoryboard(name: "LoginFlow", bundle: nil)
         if let loginView = loginVC.instantiateViewController(withIdentifier: "LoginNavi") as? UINavigationController {
+            UIApplication.shared.delegate?.window!!.rootViewController?.present(loginView, animated: true, completion: nil)
             self.present(loginView, animated: true, completion: nil)
         }
     }
@@ -51,6 +60,7 @@ class SplashViewController: UIViewController {
     func showMain() {
         let mainVC = UIStoryboard(name: "Main", bundle: nil)
         if let mainView = mainVC.instantiateViewController(withIdentifier: "MainTabBar") as? UITabBarController {
+            UIApplication.shared.delegate?.window!!.rootViewController?.present(mainView, animated: true, completion: nil)
             self.present(mainView, animated: true, completion: nil)
         }
     }

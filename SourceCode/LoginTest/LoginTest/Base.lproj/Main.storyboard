@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -33,17 +34,22 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uv1-F0-BgS">
-                                <rect key="frame" x="0.0" y="183" width="375" height="185"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uv1-F0-BgS" customClass="GMSMapView">
+                                <rect key="frame" x="0.0" y="33.5" width="375" height="266.5"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="uv1-F0-BgS" firstAttribute="centerX" secondItem="lIY-QC-Bva" secondAttribute="centerX" id="0tV-fz-Czb"/>
+                            <constraint firstItem="uv1-F0-BgS" firstAttribute="centerY" secondItem="lIY-QC-Bva" secondAttribute="centerY" multiplier="0.5" id="DOI-ar-esT"/>
+                            <constraint firstItem="uv1-F0-BgS" firstAttribute="height" secondItem="lIY-QC-Bva" secondAttribute="height" multiplier="0.4" id="J08-Tl-uo4"/>
+                            <constraint firstItem="uv1-F0-BgS" firstAttribute="width" secondItem="lIY-QC-Bva" secondAttribute="width" id="r9z-VO-QKE"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="hAA-Cx-b8s"/>
                     </view>
                     <connections>
-                        <outlet property="googleMapView" destination="uv1-F0-BgS" id="8fp-yy-3b8"/>
+                        <outlet property="mapView" destination="uv1-F0-BgS" id="bgv-VW-W0j"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UM3-jq-ORI" userLabel="First Responder" sceneMemberID="firstResponder"/>
