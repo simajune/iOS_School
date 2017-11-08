@@ -1,12 +1,6 @@
-//
-//  LoginViewController.swift
-//  FirebaseTest
-//
-//  Created by SIMA on 2017. 11. 7..
-//  Copyright © 2017년 SimaDev. All rights reserved.
-//
 
 import UIKit
+import Firebase
 
 class LoginViewController: UIViewController {
 
@@ -47,6 +41,27 @@ class LoginViewController: UIViewController {
         signupButton.layer.borderWidth = 1
         signupButton.layer.cornerRadius = signupButton.frame.height / 2
         
+    }
+    
+    @IBAction func loginButton(_ sender: UIButton) {
+        guard let id = idTextField.text else { return }
+        guard let pw = pwTextField.text else { return }
+        Auth.auth().signIn(withEmail: id, password: pw) { (user, error) in
+            if error == nil && user != nil {
+                print("로그인 성공")
+                let alertSheet = UIAlertController(title: "로그인 성공", message: "로그인 성공", preferredStyle: .alert)
+                let okAction = UIAlertAction(title: "확인", style: .default, handler: { (action) in
+                    let mainstoryBoard = UIStoryboard(name: "Main", bundle: nil)
+                    if let mainVC = mainstoryBoard.instantiateViewController(withIdentifier: "MainNavi") as? UINavigationController {
+                        self.present(mainVC, animated: true, completion: nil)
+                    }
+                })
+                alertSheet.addAction(okAction)
+                self.present(alertSheet, animated: true, completion: nil)
+            }else {
+                print(error!.localizedDescription)
+            }
+        }
     }
     
 

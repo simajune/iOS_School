@@ -30,7 +30,6 @@ class SignupViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
         
         NotificationCenter.default.addObserver(self, selector: #selector(self.keyboardWillShow(noti:)), name: .UIKeyboardWillShow, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(self.keyboardWillHide(noti:)), name: .UIKeyboardWillHide, object: nil)
@@ -60,7 +59,7 @@ class SignupViewController: UIViewController {
         self.navigationController?.popViewController(animated: true)
     }
     @IBAction func signupButton(_ sender: UIButton) {
-        guard let username = usernameTextField.text else { return }
+        guard let _ = usernameTextField.text else { return }
         guard let password = passwordTextField.text else { return }
         guard let repassword = rePasswordTextField.text else { return }
         guard let email = emailTextField.text else { return }
@@ -71,8 +70,23 @@ class SignupViewController: UIViewController {
             Auth.auth().createUser(withEmail: email, password: password, completion: { (user, error) in
                 if error == nil && user != nil {
                     print("User Created")
+                    let alertSheet = UIAlertController(title: "가입 완료", message: "가입이 성공적으로\n이루어졌습니다", preferredStyle: .alert)
+                    let okAction = UIAlertAction(title: "확인", style: .default, handler: { (action) in
+                        let mainstoryBoard = UIStoryboard(name: "Main", bundle: nil)
+                        if let mainVC = mainstoryBoard.instantiateViewController(withIdentifier: "MainNavi") as? UINavigationController {
+                            self.present(mainVC, animated: true, completion: nil)
+                        }
+                    })
+                    alertSheet.addAction(okAction)
+                    self.present(alertSheet, animated: true, completion: nil)
                 }else {
-                    print(error!.localizedDescription)
+                    let firebaseErrorMsg = error!.localizedDescription
+                    let errorMsg = firebaseError(rawValue: firebaseErrorMsg)?.ErrorStr
+                    let alertSheet = UIAlertController(title: "경고", message: errorMsg, preferredStyle: .alert)
+                    let okAction = UIAlertAction(title: "확인", style: .default, handler: nil)
+                    alertSheet.addAction(okAction)
+                    self.present(alertSheet, animated: true, completion: nil)
+                    
                 }
             })
         }
@@ -80,17 +94,10 @@ class SignupViewController: UIViewController {
     }
     
     func wrongSignup() {
-//        usernameTextField.backgroundColor = UIColor.red.withAlphaComponent(0.5)
-//        passwordTextField.backgroundColor = UIColor.red.withAlphaComponent(0.5)
-//        rePasswordTextField.backgroundColor = UIColor.red.withAlphaComponent(0.5)
-//        emailTextField.backgroundColor = UIColor.red.withAlphaComponent(0.5)
-        
-        let alerSheet = UIAlertController(title: "비밀번호 오류", message: "비밀번호가 동일하지 않습니다.", preferredStyle: .alert)
+        let alertSheet = UIAlertController(title: "비밀번호 오류", message: "비밀번호가 동일하지 않습니다.", preferredStyle: .alert)
         let OkAction = UIAlertAction(title: "확인", style: .default, handler: nil)
-        alerSheet.addAction(OkAction)
-        present(alerSheet, animated: true, completion: nil)
-        
-        
+        alertSheet.addAction(OkAction)
+        present(alertSheet, animated: true, completion: nil)
     }
     
 }

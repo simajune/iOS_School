@@ -1,12 +1,6 @@
-//
-//  SplashViewController.swift
-//  FirebaseTest
-//
-//  Created by SIMA on 2017. 11. 7..
-//  Copyright © 2017년 SimaDev. All rights reserved.
-//
 
 import UIKit
+import Firebase
 
 class SplashViewController: UIViewController {
 
@@ -18,10 +12,16 @@ class SplashViewController: UIViewController {
         UIView.animate(withDuration: 2.5, animations: {
             self.titleLb.alpha = 1
         }) { (action) in
-            let loginStoryBoard = UIStoryboard(name: "Main", bundle: nil)
-            if let loginVC = loginStoryBoard.instantiateViewController(withIdentifier: "LoginNavi") as? UINavigationController {
-                self.present(loginVC, animated: true, completion: nil)
+            if let _ = Auth.auth().currentUser {
+                self.performSegue(withIdentifier: "ToMain", sender: self)
+            }else{
+                let loginStoryBoard = UIStoryboard(name: "Main", bundle: nil)
+                if let loginVC = loginStoryBoard.instantiateViewController(withIdentifier: "LoginNavi") as? UINavigationController {
+                    self.present(loginVC, animated: true, completion: nil)
+                }
             }
+            
+            
         }
     }
 
