@@ -19,7 +19,7 @@ class SplashViewController: UIViewController {
             self.titleLb.alpha = 1
         }) { (action) in
             let loginStoryBoard = UIStoryboard(name: "Main", bundle: nil)
-            if let loginVC = loginStoryBoard.instantiateViewController(withIdentifier: "LoginVC") as? LoginViewController {
+            if let loginVC = loginStoryBoard.instantiateViewController(withIdentifier: "LoginNavi") as? UINavigationController {
                 self.present(loginVC, animated: true, completion: nil)
             }
         }
