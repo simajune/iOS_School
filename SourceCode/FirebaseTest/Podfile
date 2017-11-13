@@ -11,6 +11,6 @@ pod 'Firebase/Auth'
 pod 'Firebase/Storage'
 pod 'Firebase/Database'
 pod 'Firebase/Core'
-
+pod 'JTAppleCalendar', '~> 7.0.0'
 
 end

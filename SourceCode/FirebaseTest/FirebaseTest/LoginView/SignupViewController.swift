@@ -59,7 +59,7 @@ class SignupViewController: UIViewController {
         self.navigationController?.popViewController(animated: true)
     }
     @IBAction func signupButton(_ sender: UIButton) {
-        guard let _ = usernameTextField.text else { return }
+        guard let username = usernameTextField.text else { return }
         guard let password = passwordTextField.text else { return }
         guard let repassword = rePasswordTextField.text else { return }
         guard let email = emailTextField.text else { return }
@@ -70,6 +70,10 @@ class SignupViewController: UIViewController {
             Auth.auth().createUser(withEmail: email, password: password, completion: { (user, error) in
                 if error == nil && user != nil {
                     print("User Created")
+
+                    let userDic = ["username": username, "email": email]
+                    Database.database().reference().child("user").child(user!.uid).setValue(userDic)
+                    
                     let alertSheet = UIAlertController(title: "가입 완료", message: "가입이 성공적으로\n이루어졌습니다", preferredStyle: .alert)
                     let okAction = UIAlertAction(title: "확인", style: .default, handler: { (action) in
                         let mainstoryBoard = UIStoryboard(name: "Main", bundle: nil)

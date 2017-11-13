@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2316FFF31FB46CC100FBADCF /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2316FFF21FB46CC100FBADCF /* CustomCell.swift */; };
 		231995EA1FB28F8A005CFBF8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 231995E91FB28F8A005CFBF8 /* GoogleService-Info.plist */; };
 		231A3BCA1FB3778000C2868F /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 231A3BC91FB3778000C2868F /* MainViewController.swift */; };
 		231B4D401FB1D420002A4709 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 231B4D3F1FB1D420002A4709 /* AppDelegate.swift */; };
@@ -16,10 +17,12 @@
 		231B4D521FB1D48D002A4709 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 231B4D511FB1D48D002A4709 /* SplashViewController.swift */; };
 		231B4D541FB1DABC002A4709 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 231B4D531FB1DABC002A4709 /* LoginViewController.swift */; };
 		231B4D561FB1E43B002A4709 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 231B4D551FB1E43B002A4709 /* SignupViewController.swift */; };
+		23C564AD1FB9A076003C703E /* ContentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23C564AC1FB9A076003C703E /* ContentsViewController.swift */; };
 		BF625E6A7332F81C07853CEB /* Pods_FirebaseTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35C48F45E40B8B30F09C7B94 /* Pods_FirebaseTest.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2316FFF21FB46CC100FBADCF /* CustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
 		231995E91FB28F8A005CFBF8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		231A3BC91FB3778000C2868F /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		231B4D3C1FB1D420002A4709 /* FirebaseTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FirebaseTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -31,6 +34,7 @@
 		231B4D511FB1D48D002A4709 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
 		231B4D531FB1DABC002A4709 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		231B4D551FB1E43B002A4709 /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
+		23C564AC1FB9A076003C703E /* ContentsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentsViewController.swift; sourceTree = "<group>"; };
 		35C48F45E40B8B30F09C7B94 /* Pods_FirebaseTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FirebaseTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		63A3A822ACEAE233C2F52CBF /* Pods-FirebaseTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirebaseTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FirebaseTest/Pods-FirebaseTest.debug.xcconfig"; sourceTree = "<group>"; };
 		777200CDD51EC8840B6C0835 /* Pods-FirebaseTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirebaseTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-FirebaseTest/Pods-FirebaseTest.release.xcconfig"; sourceTree = "<group>"; };
@@ -48,6 +52,49 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2316FFEE1FB4663000FBADCF /* SplashView */ = {
+			isa = PBXGroup;
+			children = (
+				231B4D511FB1D48D002A4709 /* SplashViewController.swift */,
+			);
+			path = SplashView;
+			sourceTree = "<group>";
+		};
+		2316FFEF1FB4664400FBADCF /* MainView */ = {
+			isa = PBXGroup;
+			children = (
+				2316FFF41FB46CCB00FBADCF /* View */,
+				2316FFF11FB46C0400FBADCF /* ViewController */,
+			);
+			path = MainView;
+			sourceTree = "<group>";
+		};
+		2316FFF01FB4665100FBADCF /* LoginView */ = {
+			isa = PBXGroup;
+			children = (
+				231B4D531FB1DABC002A4709 /* LoginViewController.swift */,
+				231B4D551FB1E43B002A4709 /* SignupViewController.swift */,
+			);
+			path = LoginView;
+			sourceTree = "<group>";
+		};
+		2316FFF11FB46C0400FBADCF /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				231A3BC91FB3778000C2868F /* MainViewController.swift */,
+				23C564AC1FB9A076003C703E /* ContentsViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		2316FFF41FB46CCB00FBADCF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2316FFF21FB46CC100FBADCF /* CustomCell.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
 		231B4D331FB1D420002A4709 = {
 			isa = PBXGroup;
 			children = (
@@ -70,10 +117,9 @@
 			isa = PBXGroup;
 			children = (
 				231B4D3F1FB1D420002A4709 /* AppDelegate.swift */,
-				231B4D511FB1D48D002A4709 /* SplashViewController.swift */,
-				231A3BC91FB3778000C2868F /* MainViewController.swift */,
-				231B4D531FB1DABC002A4709 /* LoginViewController.swift */,
-				231B4D551FB1E43B002A4709 /* SignupViewController.swift */,
+				2316FFEE1FB4663000FBADCF /* SplashView */,
+				2316FFEF1FB4664400FBADCF /* MainView */,
+				2316FFF01FB4665100FBADCF /* LoginView */,
 				231B4D431FB1D420002A4709 /* Main.storyboard */,
 				231B4D461FB1D420002A4709 /* Assets.xcassets */,
 				231B4D481FB1D420002A4709 /* LaunchScreen.storyboard */,
@@ -214,6 +260,7 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-FirebaseTest/Pods-FirebaseTest-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/JTAppleCalendar/JTAppleCalendar.framework",
 				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
@@ -221,6 +268,7 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JTAppleCalendar.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
@@ -240,6 +288,8 @@
 				231B4D521FB1D48D002A4709 /* SplashViewController.swift in Sources */,
 				231B4D561FB1E43B002A4709 /* SignupViewController.swift in Sources */,
 				231B4D401FB1D420002A4709 /* AppDelegate.swift in Sources */,
+				23C564AD1FB9A076003C703E /* ContentsViewController.swift in Sources */,
+				2316FFF31FB46CC100FBADCF /* CustomCell.swift in Sources */,
 				231A3BCA1FB3778000C2868F /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -379,7 +429,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 3UGB7ZX43H;
 				INFOPLIST_FILE = FirebaseTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.SimaDev.FirebaseTest;
@@ -395,7 +445,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 3UGB7ZX43H;
 				INFOPLIST_FILE = FirebaseTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.SimaDev.FirebaseTest;
