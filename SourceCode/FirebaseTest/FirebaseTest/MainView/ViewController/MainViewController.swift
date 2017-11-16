@@ -22,7 +22,6 @@ class MainViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         ref = Database.database().reference()
         let userID = Auth.auth().currentUser?.uid
         ref.child("user").child(userID!).observeSingleEvent(of: .value, with: { (snapshot) in
@@ -102,7 +101,7 @@ class MainViewController: UIViewController {
         }
     }
     @IBAction func addButtonAction(_ sender: UIButton) {
-        self.ref.child("user").setValue("sima")
+        
         
     }
     
