@@ -33,6 +33,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         fullURL = weatherURL + "?q=\(cityName)&APPID=" + APIKey
         print("fullURL", fullURL)
+        
         let url = URL(string: fullURL)
         print("url", url)
             var request = URLRequest(url: url!)

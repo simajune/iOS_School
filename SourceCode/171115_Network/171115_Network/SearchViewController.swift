@@ -55,9 +55,9 @@ class SearchViewController: UIViewController, UISearchResultsUpdating {
         var list:[String] = []
         let searchText = searchController.searchBar.text!
         list.removeAll()
+        
         if searchText.count > 0
         {
-            
             let item = DispatchWorkItem {[unowned self] in
                 for index in 0..<self.filteredCityNameArray.count
                 {
@@ -69,13 +69,10 @@ class SearchViewController: UIViewController, UISearchResultsUpdating {
                 }
                 DispatchQueue.main.async {
                     self.cityNameArray = list
-                    self.cityTableView.reloadData()
                 }
             }
-            
             DispatchQueue.global().async(execute: item)
         }
-
     }
     
     //searchbar 셋팅
@@ -93,7 +90,6 @@ class SearchViewController: UIViewController, UISearchResultsUpdating {
             destinationViewController.cityName = cityName
         }
     }
-    
 }
 
 extension SearchViewController: UITableViewDataSource, UITableViewDelegate{
