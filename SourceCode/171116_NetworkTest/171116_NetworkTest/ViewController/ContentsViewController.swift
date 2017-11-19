@@ -15,9 +15,9 @@ class ContentsViewController: UIViewController {
         super.viewDidLoad()
         print("didload")
         
-        contents = UserDefaults.standard.object(forKey: "contents") as? [String] ?? []
-        datas = UserDefaults.standard.object(forKey: "Image") as? [Data] ?? []
     }
+    
+    
     
     override func viewDidAppear(_ animated: Bool) {
         
@@ -26,10 +26,6 @@ class ContentsViewController: UIViewController {
     @IBAction func saveButton(_ sender: UIButton) {
         guard let currentContents = contentsTextView.text else { return }
         if contentsImgView.image != nil {
-            contents.insert(currentContents, at: 0)
-            datas.insert(dataItem, at: 0)
-            UserDefaults.standard.set(datas, forKey: "Image")
-            UserDefaults.standard.set(contents, forKey: "contents")
             let currentUIImage = UIImage(data: dataItem)
             let PostData = PostModel(content: "냉무", title: currentContents, imgCoverUrl: nil)
             

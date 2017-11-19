@@ -15,21 +15,39 @@ class MainViewController: UIViewController {
     let refreshControl = UIRefreshControl()
     
     @IBOutlet weak var contentTablVIew: UITableView!
+    @IBOutlet weak var writeButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
         refreshControl.addTarget(self, action: #selector(refresh(_:)), for: .valueChanged)
         contentTablVIew.refreshControl = refreshControl
-        
+        setupView()
         NetworkManager.shared.requestGetPosts { (isSuccess, resultData, error) in
             if isSuccess {
-                self.result = resultData as! [PostModel]
-                self.contentTablVIew.reloadData()
+                
+                DispatchQueue.main.async {
+                    self.result = resultData as! [PostModel]
+                    self.contentTablVIew.reloadData()
+                }
+                
+                
             }else{
                 
             }
             
         }
     }
+    
+    func setupView() {
+        self.navigationItem.setHidesBackButton(true, animated: true)
+        self.navigationItem.title = "메인입니다"
+        
+        writeButton.layer.cornerRadius = (writeButton.bounds.height) / 2
+        writeButton.layer.borderColor = UIColor.lightGray.cgColor
+        writeButton.layer.borderWidth = 2
+        
+    }
+    
+    
     
     @objc func refresh(_ sender: UIRefreshControl) {
         NetworkManager.shared.requestGetPosts { (isSuccess, resultData, error) in
@@ -43,13 +61,12 @@ class MainViewController: UIViewController {
     
 }
 
-extension MainViewController: UITableViewDelegate, UITableViewDataSource {
+extension MainViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 200
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        print(result.count)
         return result.count
     }
     
@@ -61,6 +78,8 @@ extension MainViewController: UITableViewDelegate, UITableViewDataSource {
         cell.mainImageView.image = UIImage(data: imageData!)
         return cell
     }
-    
+}
+
+extension MainViewController: UITableViewDelegate {
     
 }

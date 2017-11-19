@@ -117,15 +117,10 @@ class NetworkManager {
     func requestGetPosts(completion:@escaping completion) {
         let url = URL(string: baseURL + urlPost)
         var request = URLRequest(url: url!)
-        
         guard let token = NetworkManager.shared.token else { return }
         
         request.httpMethod = "GET"
-        print(token)
         request.addValue("Token \(token)", forHTTPHeaderField: "Authorization")
-        print("Token \(token)")
-        
-        
         session.dataTask(with: request) { (data, response, error) in
             
             if let error = error {
@@ -177,8 +172,6 @@ class NetworkManager {
         body.appendString("\r\n")
 
         body.appendString("--\(boundary)--")
-        print("-------------------------------------")
-        print(body)
         return body
     }
     
