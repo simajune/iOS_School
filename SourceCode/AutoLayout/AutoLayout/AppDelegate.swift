@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  171116_NetworkTest
+//  AutoLayout
 //
-//  Created by SIMA on 2017. 11. 16..
+//  Created by SIMA on 2017. 11. 20..
 //  Copyright © 2017년 SimaDev. All rights reserved.
 //
 
@@ -16,9 +16,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        
-        
-        UIApplication.shared.statusBarStyle = .lightContent
         return true
     }
 
@@ -30,9 +27,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationDidEnterBackground(_ application: UIApplication) {
         // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
         // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
-        NetworkManager.shared.saveToken()
-        print(UserDefaults.standard.string(forKey: "TokenKey"))
-        
     }
 
     func applicationWillEnterForeground(_ application: UIApplication) {

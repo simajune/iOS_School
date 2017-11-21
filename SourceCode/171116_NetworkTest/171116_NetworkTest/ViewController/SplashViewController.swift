@@ -13,7 +13,7 @@ class SplashViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         if UserDefaults.standard.string(forKey: "TokenKey") != nil {
-            //print(UserDefaults.standard.string(forKey: "TokenKey"))
+            
             if let mainVC = self.storyboard?.instantiateViewController(withIdentifier: "MainVC") as? MainViewController {
                 self.navigationController?.pushViewController(mainVC, animated: true)
             }
@@ -23,5 +23,4 @@ class SplashViewController: UIViewController {
             }
         }
     }
-
 }

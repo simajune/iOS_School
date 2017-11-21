@@ -13,34 +13,38 @@ class ContentsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        print("didload")
-        
+        setupUI()
     }
-    
-    
-    
+
     override func viewDidAppear(_ animated: Bool) {
         
     }
     
+    func setupUI() {
+        contentsImgView.layer.cornerRadius = contentsImgView.frame.size.width / 2 + 10
+        contentsImgView.clipsToBounds = true
+        contentsImgView.layer.borderColor = UIColor.lightGray.cgColor
+        contentsImgView.layer.borderWidth = 2
+    }
+    
     @IBAction func saveButton(_ sender: UIButton) {
         guard let currentContents = contentsTextView.text else { return }
+        
         if contentsImgView.image != nil {
             let currentUIImage = UIImage(data: dataItem)
             let PostData = PostModel(content: "냉무", title: currentContents, imgCoverUrl: nil)
             
             NetworkManager.shared.requestPosts(post: PostData, img: currentUIImage!, completion: { (isSuccess, resultData, error) in
-                print("성공")
+                if isSuccess {
+                    print("성공")
+                }else {
+                    print(error)
+                }
             })
-
-            self.navigationController?.popViewController(animated: true)
-        }else {
-            contents.insert(currentContents, at: 0)
-            datas.insert(Data(), at: 0)
-            UserDefaults.standard.set(datas, forKey: "Image")
-            UserDefaults.standard.set(contents, forKey: "contents")
             self.navigationController?.popViewController(animated: true)
             
+        }else {
+
             let currentUIImage = UIImage(data: dataItem)
             let PostData = PostModel(content: currentContents, title: "내용 없음", imgCoverUrl: nil)
             NetworkManager.shared.requestPosts(post: PostData, img: currentUIImage!, completion: { (isSuccess, resultData, error) in
@@ -49,8 +53,8 @@ class ContentsViewController: UIViewController {
                 }else {
                     print(error)
                 }
-                
             })
+            self.navigationController?.popViewController(animated: true)
         }
     }
     
@@ -70,8 +74,8 @@ extension ContentsViewController: UIImagePickerControllerDelegate, UINavigationC
             if let data = try? Data(contentsOf: url) {
                 dataItem = data
                 contentsImgView.image = UIImage(data: data)
-                
-                
+
+
             }
             dismiss(animated: true, completion: nil)
         }
@@ -101,6 +105,8 @@ extension ContentsViewController: UIImagePickerControllerDelegate, UINavigationC
         alertSheet.addAction(photoAction)
         alertSheet.addAction(cancelAction)
         present(alertSheet, animated: true, completion: nil)
-        
     }
+    
+    
+    
 }

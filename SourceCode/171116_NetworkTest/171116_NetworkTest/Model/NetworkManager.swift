@@ -7,6 +7,7 @@ let baseURL = "http://api-ios-dev.ap-northeast-2.elasticbeanstalk.com/api"
 let urllogin = "/member/login/"
 let urlSignup = "/member/signup/"
 let urlPost = "/post/"
+let urlLogout = "/member/logout/"
 
 class NetworkManager {
     static var shared: NetworkManager = NetworkManager()
@@ -22,6 +23,7 @@ class NetworkManager {
         loadToken()
     }
     
+    //MARK: - 회원가입 요청
     func requestSignup(userid: String, pw: String, repw: String, completion: @escaping completion) {
         let url = URL(string: baseURL + urlSignup)
         var request = URLRequest(url: url!)
@@ -52,6 +54,7 @@ class NetworkManager {
         }.resume()
     }
     
+    //MARK: - 로그인 요청
     func requestLogin (userID: String, userpw: String, completion: @escaping completion) {
         let url = URL(string: baseURL + urllogin)
         var request = URLRequest(url: url!)
@@ -75,6 +78,7 @@ class NetworkManager {
         
     }
     
+    //MARK: - 포스팅
     func requestPosts(post: PostModel, img: UIImage, completion: @escaping completion) {
         let url = URL(string: baseURL + urlPost)
         var request = URLRequest(url: url!)
@@ -112,8 +116,7 @@ class NetworkManager {
         }.resume()
     }
     
-    
-    
+    //MARK: - 포스트 요청
     func requestGetPosts(completion:@escaping completion) {
         let url = URL(string: baseURL + urlPost)
         var request = URLRequest(url: url!)
@@ -136,6 +139,33 @@ class NetworkManager {
         }.resume()
     }
     
+    //MARK: - 로그아웃 요청
+    func requestLogout(completion: @escaping completion) {
+        //url 지정
+        let url = URL(string: baseURL + urlLogout)
+        //request 설정
+        var reqeust = URLRequest(url: url!)
+        reqeust.httpMethod = "POST"
+        guard let token = NetworkManager.shared.token else { return }
+        
+        reqeust.addValue("Token \(token)", forHTTPHeaderField: "Authorization")
+        
+        session.dataTask(with: reqeust) { (data, response, error) in
+            
+            if error != nil {
+                print(error)
+                completion(false, nil, error)
+            }else {
+                let code = (response as! HTTPURLResponse).statusCode
+                if code == 201 {
+                    completion(true, nil, nil)
+                }else {
+                    completion(false, nil, nil)
+                }
+            }
+        }.resume()
+    }
+    
     func saveToken() {
         if let token = token {
             UserDefaults.standard.set(token, forKey: "TokenKey")
@@ -147,6 +177,7 @@ class NetworkManager {
             self.token = token
         }
     }
+    
     ///////////////////////////////////////////////////
     private func createBody(parameters: [String: String],
                             boundary: String,

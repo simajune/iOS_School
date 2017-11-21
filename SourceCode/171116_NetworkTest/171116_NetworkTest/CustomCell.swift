@@ -10,13 +10,14 @@ import UIKit
 
 class CustomCell: UITableViewCell {
 
+    @IBOutlet weak var contentBGView: UIView!
     @IBOutlet weak var mainImageView: UIImageView!
     @IBOutlet weak var contentsLb: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
         mainImageView.layer.cornerRadius = mainImageView.frame.size.height / 2
         mainImageView.clipsToBounds = true
-        //mainImageView.layer.border
+        contentBGView.layer.cornerRadius = 25
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
