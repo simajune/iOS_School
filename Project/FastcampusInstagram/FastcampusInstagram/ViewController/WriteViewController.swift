@@ -37,10 +37,16 @@ class WriteViewController: UIViewController, UITextViewDelegate {
                     print(photoID)
                     self.photoID = photoID
                     let dic = ["username": InstaDatabase.main.username!, "content": postText, "postPhotoID": self.photoID!, "date": ServerValue.timestamp()] as [String: Any]
-                    let postDic = Post(with: dic)
-                    InstaDatabase.main.posts.append(postDic!)
-                    //let uid = Auth.auth().currentUser?.uid
-                    Database.database().reference().child("posts").child(uuid).updateChildValues(dic)
+//                    print(dic)
+//                    let postDic = Post(with: dic)
+//                    print(postDic)
+//                    InstaDatabase.main.posts.append(postDic!)
+                    let uid = Auth.auth().currentUser?.uid
+                    let key = Database.database().reference().child("posts").childByAutoId().key
+                    let childUpdates = ["/posts/\(key)": dic,
+                                        "/user-posts/\(uid!)/\(key)/": dic]
+                    Database.database().reference().updateChildValues(childUpdates)
+                    //Database.database().reference().child("posts").child(uuid).updateChildValues(dic)
                     print(InstaDatabase.main.posts)
                 }
                 self.dismiss(animated: false, completion: nil)

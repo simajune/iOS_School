@@ -14,8 +14,8 @@ class MainViewController: UIViewController {
         super.viewDidLoad()
         
         postTableView.dataSource = self
-        InstaDatabase.main.loadPostData()
-        InstaDatabase.main.loadUserData()
+//        InstaDatabase.main.loadPostData()
+//        InstaDatabase.main.loadUserData()
         NotificationCenter.default.addObserver(self, selector: #selector(self.loadComplete), name: .myNotification, object: nil)
         
         self.view.backgroundColor = .white
@@ -34,6 +34,7 @@ class MainViewController: UIViewController {
     
     @objc func loadComplete() {
         print(InstaDatabase.main.posts)
+        print(InstaDatabase.main.username)
         postTableView.reloadData()
     }
     
@@ -91,7 +92,6 @@ extension UIImageView {
             return
         }
         let urlStr = URL(string: photoID)
-        print("ID        asdasd", photoID)
         if let imgData = try? Data(contentsOf: urlStr!) {
             
             self.image = UIImage(data: imgData)

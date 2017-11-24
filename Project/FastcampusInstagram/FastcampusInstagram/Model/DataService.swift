@@ -11,6 +11,7 @@ class InstaDatabase {
     
     var username: String?
     var profilePhotoID: String?
+    var profilePhotoIDImg: UIImage?
     var posts: [Post] = []
     
     private init() {
@@ -19,28 +20,38 @@ class InstaDatabase {
     }
     
     func loadUserData() {
+        posts = []
         print(uid)
         ref.child("users").child(uid!).observe(.value) { (snapshot) in
             
             print(snapshot.value)
-            if let value = snapshot.value as? [String: Any] {
-                DispatchQueue.main.async {
+            DispatchQueue.main.async {
+                if let value = snapshot.value as? [String: Any] {
                     guard let username = value["username"] as? String else { return }
                     self.username = username
                     guard let profilePhotoID = value["profilePhotoID"] as? String else { return }
                     self.profilePhotoID = profilePhotoID
-                    NotificationCenter.default.post(name: .myNotification, object: self)
+                    if let urlStr = URL(string: profilePhotoID), let profileImg = try? Data(contentsOf: urlStr) {
+                        self.profilePhotoIDImg = UIImage(data: profileImg)
+                    }
+                    NotificationCenter.default.post(name: .myNotification, object: nil)
                 }
             }
         }
     }
     
     func loadPostData() {
-        ref.child("posts").observe(.value) { (snapshot) in
-            if let value = snapshot.value as? [String: Any] {
-                self.posts.insert(Post(with: value)! , at: 0)
-                
+        ref.child("posts").observeSingleEvent(of: .value) { (snapshot) in
+            DispatchQueue.main.async {
+                if let value = snapshot.value as? [String: [String: Any]] {
+                    print(value)
+                    for (key, postDic) in value {
+                        self.posts.insert(Post(key: key, with: postDic)!, at: 0)
+                    }
+                    NotificationCenter.default.post(name: .myNotification, object: nil)
+                }
             }
+            
         }
     }
     
@@ -48,8 +59,8 @@ class InstaDatabase {
         ref.child("posts").childByAutoId().setValue(["username": username, "content": content, "postPhotoID": postPhotoID, "date": ServerValue.timestamp()] )
     }
     
-    func saveUserData(username: String, userProfilephotoID: String) {
-        ref.child("users").child(uid!).setValue(["username": username, "profilePhotoID": userProfilephotoID])
+    func saveUserData(uid: String, username: String, profilePhotoID: String) {
+        ref.child("users").child(uid).setValue(["username": username, "profilePhotoID": profilePhotoID])
     }
     
     func saveProfilePhotoIDStorage() {

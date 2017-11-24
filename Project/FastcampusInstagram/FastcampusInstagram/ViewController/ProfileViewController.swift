@@ -144,6 +144,43 @@ class ProfileViewController: UIViewController, UIImagePickerControllerDelegate, 
         self.view.backgroundColor = .white
         
         self.view.addSubview(profileUiView)
+        autoLayoutUI()
+        
+        //    MARK : - read data
+//        ref = Database.database().reference()
+//
+//        DispatchQueue.global() .async {
+//            self.ref.child(self.uid!).observeSingleEvent(of: .value) { (snapshot) in
+//                if let value = snapshot.value as? NSDictionary {
+//                    DispatchQueue.main.async {
+//                        self.userEmailValue = value["user"] as! String
+//                        self.idLabel.text = "\(self.userEmailValue)"
+//                        self.idLabel.font = UIFont.boldSystemFont(ofSize: 14.0)
+//                        self.profileImgInFire = value["profileImgUrl"] as? String
+//                        let imgURL = URL(string: self.profileImgInFire!)
+//                        let data: Data = try! Data(contentsOf: imgURL!)
+//                        self.cameraBtn.setImage(UIImage(data: data), for: .normal)
+//                    }
+//                }
+//            }
+//        }
+        DispatchQueue.main.async {
+            //MARK: - Get data in instaDatabase
+            self.idLabel.text = InstaDatabase.main.username
+            print(InstaDatabase.main.username)
+            self.idLabel.font = UIFont.boldSystemFont(ofSize: 14.0)
+            self.cameraBtn.setImage(InstaDatabase.main.profilePhotoIDImg, for: .normal)
+
+
+        }
+        
+        
+        // MARK : - btn actions
+        cameraBtn.addTarget(self, action: #selector(selectedProfileImg(_:)), for: .touchUpInside)
+        modifyProfileBtn.addTarget(self, action: #selector(modifyBtnClicked(_:)), for: .touchUpInside)
+    }
+    
+    private func autoLayoutUI() {
         //MARK : - profileUiView autolayout
         profileUiView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor).isActive = true
         profileUiView.leftAnchor.constraint(equalTo: view.leftAnchor).isActive = true
@@ -194,36 +231,6 @@ class ProfileViewController: UIViewController, UIImagePickerControllerDelegate, 
         modifyProfileBtn.centerXAnchor.constraint(equalTo: fullStackView.centerXAnchor).isActive = true
         modifyProfileBtn.widthAnchor.constraint(equalTo: fullStackView.widthAnchor).isActive = true
         modifyProfileBtn.heightAnchor.constraint(equalTo: fullStackView.heightAnchor).isActive = true
-        
-        //    MARK : - read data
-//        ref = Database.database().reference()
-//
-//        DispatchQueue.global() .async {
-//            self.ref.child(self.uid!).observeSingleEvent(of: .value) { (snapshot) in
-//                if let value = snapshot.value as? NSDictionary {
-//                    DispatchQueue.main.async {
-//                        self.userEmailValue = value["user"] as! String
-//                        self.idLabel.text = "\(self.userEmailValue)"
-//                        self.idLabel.font = UIFont.boldSystemFont(ofSize: 14.0)
-//                        self.profileImgInFire = value["profileImgUrl"] as? String
-//                        let imgURL = URL(string: self.profileImgInFire!)
-//                        let data: Data = try! Data(contentsOf: imgURL!)
-//                        self.cameraBtn.setImage(UIImage(data: data), for: .normal)
-//                    }
-//                }
-//            }
-//        }
-        DispatchQueue.main.async {
-            //MARK: - Get data in instaDatabase
-            self.idLabel.text = InstaDatabase.main.username
-            self.idLabel.font = UIFont.boldSystemFont(ofSize: 14.0)
-//            self.cameraBtn.setImage(UIImage(data: InstaDatabase.main.profileImgData!), for: .normal)
-        }
-        
-        
-        // MARK : - btn actions
-        cameraBtn.addTarget(self, action: #selector(selectedProfileImg(_:)), for: .touchUpInside)
-        modifyProfileBtn.addTarget(self, action: #selector(modifyBtnClicked(_:)), for: .touchUpInside)
     }
     
     @objc func modifyBtnClicked(_ sender: UIButton) {
@@ -263,10 +270,11 @@ class ProfileViewController: UIViewController, UIImagePickerControllerDelegate, 
             guard let uploadData = UIImageJPEGRepresentation(img, 0.3) else { return }
             // Save imageData
             Storage.storage().reference().child("profile_images").child(uid!).putData(uploadData, metadata: nil, completion: { (metadata, error) in
-                guard let userProfilephotoID = metadata?.downloadURL()?.absoluteString else { return }
+                guard let profilePhotoID = metadata?.downloadURL()?.absoluteString else { return }
                 
-                    InstaDatabase.main.profilePhotoID = userProfilephotoID
-                Database.database().reference().child("users").child(self.uid!).updateChildValues(["userProfilephotoID": userProfilephotoID], withCompletionBlock: { (error, databaseRef) in
+                    InstaDatabase.main.profilePhotoID = profilePhotoID
+                print(profilePhotoID)
+                Database.database().reference().child("users").child(self.uid!).updateChildValues(["profilePhotoID": profilePhotoID], withCompletionBlock: { (error, databaseRef) in
                     //finish
                 })
             })

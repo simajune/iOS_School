@@ -212,11 +212,11 @@ class SignupViewController: UIViewController {
         }else {
             Auth.auth().createUser(withEmail: id, password: pw, completion: { (user, error) in
                 if error == nil && user != nil {
-                    
+                    let uid = user!.uid
                     //defaultProfileImgURL
                     let defaultphoID = "https://firebasestorage.googleapis.com/v0/b/fcinstagram-8876c.appspot.com/o/profile_images%2FdefaultphotoID.png?alt=media&token=966cffd6-75ec-4e8f-ab43-492c36bb9210"
                     //save UserData
-                    InstaDatabase.main.saveUserData(username: id, userProfilephotoID: defaultphoID)
+                    InstaDatabase.main.saveUserData(uid: uid, username: id, profilePhotoID: defaultphoID)
                     
                     //login success alert
                     let alertSheet = UIAlertController(title: "성공", message: "회원가입이 완료되었습니다.", preferredStyle: .alert)
