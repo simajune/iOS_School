@@ -9,49 +9,55 @@ class InstaDatabase {
     var ref = Database.database().reference()
     static var main: InstaDatabase = InstaDatabase()
     
-    var user: String?
-    var PhotoID: String?
+    var username: String?
+    var profilePhotoID: String?
     var posts: [Post] = []
     
-    func loadData() {
-        
-        ref.child(uid!).observeSingleEvent(of: .value) { (snapshot) in
-            if let value = snapshot.value as? [String: Any]{
-                print(value)
+    private init() {
+//        loadPostData()
+//        loadUserData()
+    }
+    
+    func loadUserData() {
+        print(uid)
+        ref.child("users").child(uid!).observe(.value) { (snapshot) in
+            
+            print(snapshot.value)
+            if let value = snapshot.value as? [String: Any] {
                 DispatchQueue.main.async {
-                    guard let user = value["user"] as? String else { return }
-                    self.user = user
-                    guard let PhotoID = value["photoID"] as? String else { return }
-                    self.PhotoID = PhotoID
-                    if let posts = value["Posts"] as? [[String: Any]] {
-                        for post in posts {
-                            self.posts.insert(Post(postsDic: post)!, at: 0)
-//                            self.posts = posts
-                        }
-                    }
-                    NotificationCenter.default.post(name: .myNotification, object: nil)
+                    guard let username = value["username"] as? String else { return }
+                    self.username = username
+                    guard let profilePhotoID = value["profilePhotoID"] as? String else { return }
+                    self.profilePhotoID = profilePhotoID
+                    NotificationCenter.default.post(name: .myNotification, object: self)
                 }
             }
         }
     }
-}
-
-struct Post {
-//    var date: String
-    var photoID: String
-    var content: String
-    var user: String
     
-    init? (postsDic: [String: Any]) {
-//        guard let date = postsDic["date"] as? String else { return nil }
-//        self.date = date
-        guard let photoID = postsDic["images"] as? String else { return nil }
-        self.photoID = photoID
-        guard let content  = postsDic["content"] as? String else { return nil }
-        self.content = content
-        guard let user = postsDic["user"] as? String else { return nil }
-        self.user = user
+    func loadPostData() {
+        ref.child("posts").observe(.value) { (snapshot) in
+            if let value = snapshot.value as? [String: Any] {
+                self.posts.insert(Post(with: value)! , at: 0)
+                
+            }
+        }
+    }
+    
+    func savePostData(username: String, content: String, postPhotoID: String) {
+        ref.child("posts").childByAutoId().setValue(["username": username, "content": content, "postPhotoID": postPhotoID, "date": ServerValue.timestamp()] )
+    }
+    
+    func saveUserData(username: String, userProfilephotoID: String) {
+        ref.child("users").child(uid!).setValue(["username": username, "profilePhotoID": userProfilephotoID])
+    }
+    
+    func saveProfilePhotoIDStorage() {
+        
+    }
+    
+    func savepostPhotoIDStorage() {
+        
     }
     
 }
-

@@ -14,7 +14,8 @@ class MainViewController: UIViewController {
         super.viewDidLoad()
         
         postTableView.dataSource = self
-        InstaDatabase.main.loadData()
+        InstaDatabase.main.loadPostData()
+        InstaDatabase.main.loadUserData()
         NotificationCenter.default.addObserver(self, selector: #selector(self.loadComplete), name: .myNotification, object: nil)
         
         self.view.backgroundColor = .white
@@ -39,7 +40,8 @@ class MainViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         print("didview")
-        InstaDatabase.main.loadData()
+        InstaDatabase.main.loadUserData()
+        InstaDatabase.main.loadPostData()
         NotificationCenter.default.addObserver(self, selector: #selector(self.loadComplete), name: .myNotification, object: nil)
         postTableView.reloadData()
     }
@@ -51,6 +53,7 @@ extension MainViewController: UITableViewDataSource {
     
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        print(InstaDatabase.main.posts.count)
         return InstaDatabase.main.posts.count
     }
     
@@ -59,10 +62,10 @@ extension MainViewController: UITableViewDataSource {
         
         let instaData = InstaDatabase.main
 
-        cell.userProfileImgView.setupImage(photoID: InstaDatabase.main.PhotoID)
-        cell.usernameLabel.text = instaData.posts[indexPath.row].user
-        cell.postImgView.setupImage(photoID: InstaDatabase.main.posts[indexPath.row].photoID)
-        print(InstaDatabase.main.posts[indexPath.row].photoID)
+        cell.userProfileImgView.setupImage(photoID: InstaDatabase.main.profilePhotoID)
+        cell.usernameLabel.text = instaData.posts[indexPath.row].username
+        cell.postImgView.setupImage(photoID: InstaDatabase.main.posts[indexPath.row].postPhotoID)
+        print(InstaDatabase.main.posts[indexPath.row].postPhotoID)
         cell.postContent.text = instaData.posts[indexPath.row].content
 
         return cell

@@ -215,7 +215,7 @@ class ProfileViewController: UIViewController, UIImagePickerControllerDelegate, 
 //        }
         DispatchQueue.main.async {
             //MARK: - Get data in instaDatabase
-            self.idLabel.text = InstaDatabase.main.user
+            self.idLabel.text = InstaDatabase.main.username
             self.idLabel.font = UIFont.boldSystemFont(ofSize: 14.0)
 //            self.cameraBtn.setImage(UIImage(data: InstaDatabase.main.profileImgData!), for: .normal)
         }
@@ -263,10 +263,10 @@ class ProfileViewController: UIViewController, UIImagePickerControllerDelegate, 
             guard let uploadData = UIImageJPEGRepresentation(img, 0.3) else { return }
             // Save imageData
             Storage.storage().reference().child("profile_images").child(uid!).putData(uploadData, metadata: nil, completion: { (metadata, error) in
-                guard let profileImgUrl = metadata?.downloadURL()?.absoluteString else { return }
+                guard let userProfilephotoID = metadata?.downloadURL()?.absoluteString else { return }
                 
-                    print(profileImgUrl)
-                Database.database().reference().child(self.uid!).updateChildValues(["profileImgUrl":profileImgUrl], withCompletionBlock: { (error, databaseRef) in
+                    InstaDatabase.main.profilePhotoID = userProfilephotoID
+                Database.database().reference().child("users").child(self.uid!).updateChildValues(["userProfilephotoID": userProfilephotoID], withCompletionBlock: { (error, databaseRef) in
                     //finish
                 })
             })
