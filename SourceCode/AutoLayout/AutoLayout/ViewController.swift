@@ -10,8 +10,6 @@ class ViewController: UIViewController {
     }()
     override func viewDidLoad() {
         super.viewDidLoad()
-        UIFontTextStyle
-        UIFont
         self.view.addSubview(btn)
         // Do any additional setup after loading the view, typically from a nib.
     }

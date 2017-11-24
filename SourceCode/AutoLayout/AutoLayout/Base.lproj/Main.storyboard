@@ -47,11 +47,30 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <navigationItem key="navigationItem" id="UdA-ea-8jW"/>
+                    <navigationItem key="navigationItem" id="UdA-ea-8jW">
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="fHe-V2-1y1">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Geg-eO-eCt">
+                                <rect key="frame" x="313" y="7" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <segue destination="vpE-Ma-EGV" kind="show" id="Xeh-k2-wTj"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1348" y="116.49175412293854"/>
+        </scene>
+        <!--TestViewController-->
+        <scene sceneID="QfO-mF-3hu">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Contents" referencedIdentifier="TestViewController" id="vpE-Ma-EGV" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PVJ-Et-fee" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1914" y="-135"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="Vaz-9v-Qzf">
@@ -59,6 +78,7 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="xcs-IZ-sJG" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="nQ7-Zu-6bg">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
