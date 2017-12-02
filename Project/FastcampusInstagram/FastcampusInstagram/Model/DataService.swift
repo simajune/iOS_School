@@ -15,15 +15,12 @@ class InstaDatabase {
     var posts: [Post] = []
     
     private init() {
-//        loadPostData()
-//        loadUserData()
+
     }
     
     func loadUserData() {
         posts = []
-        print(uid)
         ref.child("users").child(uid!).observe(.value) { (snapshot) in
-            
             print(snapshot.value)
             DispatchQueue.main.async {
                 if let value = snapshot.value as? [String: Any] {

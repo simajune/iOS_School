@@ -94,7 +94,9 @@ extension MainViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! CustomCell
-        let imageData: Data? = try? Data(contentsOf: URL(string: result[indexPath.row].imgCoverUrl!)!)
+        
+        let imgURL = result[indexPath.row].imgCoverUrl ?? "https://lhy-api-ios2.s3.amazonaws.com/media/post/qweqeqeqe.jpeg"
+        let imageData: Data? = try? Data(contentsOf: URL(string: imgURL)!)
         cell.contentsLb.text = result[indexPath.row].title
         cell.mainImageView.image = UIImage(data: imageData!)
         return cell

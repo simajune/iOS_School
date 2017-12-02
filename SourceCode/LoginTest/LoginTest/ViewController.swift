@@ -67,7 +67,55 @@ class ViewController: UIViewController, FBSDKLoginButtonDelegate {
         
     }
     
+//    @IBAction func kakaoAction(_ sender: Any) {
+//
+//
+//        let session :KOSession = KOSession.shared()
+//        if session.isOpen() {
+//            session.close()
+//        }
+//        session.presentingViewController = self
+//        session.open(completionHandler: {(error) -> Void in
+//            // 카카오 로그인 화면에서 벋어날 시 호출됨. (취소일 때도 표시됨)
+//            if error != nil {
+//                print(error?.localizedDescription ?? "")
+//            }else if session.isOpen() {
+//
+//                print(KOSession.shared().accessToken)
+//
+//                //let token = KOPushTokenInfo.init()
+//
+//                /*
+//                KOSessionTask.meTask(completionHandler: {(profile, error) -> Void in
+//                    KOSessionTask.accessTokenInfoTask(completionHandler: { (tokenInfo, error) in
+//                        if error != nil {
+//                            print(error!.localizedDescription)
+//                        } else {
+//                            KOSession.shared().accessToken
+//
+//                            print(KOSession.shared().accessToken)
+//                            guard let tokenID = KOSession.shared().accessToken else { return }
+//
+//                            Auth.auth().signIn(withCustomToken: tokenID, completion: { (user, error) in
+//                                print(error?.localizedDescription)
+//                                print(user)
+//                            })
+//                        }
+//                    })
+//                    if profile != nil {
+//                        print(profile)
+//                        DispatchQueue.main.async(execute: { () -> Void in
+//                            let kakao : KOUser = profile as! KOUser
+//                            print(kakao.properties)
+//                        })
+//                    }
+//                })*/
+//            }
+//        })
+//    }
+    
     func showEmailAdress() {
+  
         let accessToken = FBSDKAccessToken.current()
         guard let accessTokenString = accessToken?.tokenString else { return }
         let credentails = FacebookAuthProvider.credential(withAccessToken: accessTokenString)
@@ -76,14 +124,19 @@ class ViewController: UIViewController, FBSDKLoginButtonDelegate {
                 print("Something went wrong with our FB user ", error ?? "")
                 return
             }
+            print(user?.providerID)
             print("Successful logged in with our user: ", user ?? "")
+            
         }
         
         FBSDKGraphRequest(graphPath: "/me", parameters: ["fields": "id, name, email, gender, updated_time"]).start { (connection, result, err) in
             if err != nil {
+                
                 print("error for graph Request", err ?? "")
                 return
             }
+            
+            print("----------------")
             print(result ?? "")
         }
     }

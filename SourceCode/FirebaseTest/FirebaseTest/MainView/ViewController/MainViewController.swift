@@ -128,12 +128,17 @@ extension MainViewController: JTAppleCalendarViewDelegate {
     func calendar(_ calendar: JTAppleCalendarView, didSelectDate date: Date, cell: JTAppleCell?, cellState: CellState) {
         handleCellSelected(cell: cell, cellState: cellState)
         handleCellTextColor(cell: cell, cellState: cellState)
+        let contentVC = self.storyboard?.instantiateViewController(withIdentifier: "Content") as! PopUpViewController
+        contentVC.modalPresentationStyle = .overCurrentContext
+        present(contentVC, animated: true, completion: nil)
     }
     
     func calendar(_ calendar: JTAppleCalendarView, didDeselectDate date: Date, cell: JTAppleCell?, cellState: CellState) {
+        print(date)
         handleCellSelected(cell: cell, cellState: cellState)
         handleCellTextColor(cell: cell, cellState: cellState)
     }
+        
 
     
     func calendar(_ calendar: JTAppleCalendarView, cellForItemAt date: Date, cellState: CellState, indexPath: IndexPath) -> JTAppleCell {

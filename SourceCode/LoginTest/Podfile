@@ -14,5 +14,6 @@ pod "Firebase/Auth"
 pod "Firebase/Core"
   pod 'GoogleMaps'
   pod 'GooglePlaces'
-
+pod 'CVCalendar'
+pod 'FSCalendar'
 end

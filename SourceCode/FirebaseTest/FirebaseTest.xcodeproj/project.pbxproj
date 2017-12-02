@@ -19,6 +19,7 @@
 		231B4D561FB1E43B002A4709 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 231B4D551FB1E43B002A4709 /* SignupViewController.swift */; };
 		23C564AD1FB9A076003C703E /* ContentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23C564AC1FB9A076003C703E /* ContentsViewController.swift */; };
 		23C564AF1FB9C1C3003C703E /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23C564AE1FB9C1C3003C703E /* User.swift */; };
+		23D665311FD14B080093CB48 /* PopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23D665301FD14B080093CB48 /* PopUpViewController.swift */; };
 		BF625E6A7332F81C07853CEB /* Pods_FirebaseTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35C48F45E40B8B30F09C7B94 /* Pods_FirebaseTest.framework */; };
 /* End PBXBuildFile section */
 
@@ -37,6 +38,7 @@
 		231B4D551FB1E43B002A4709 /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
 		23C564AC1FB9A076003C703E /* ContentsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentsViewController.swift; sourceTree = "<group>"; };
 		23C564AE1FB9C1C3003C703E /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		23D665301FD14B080093CB48 /* PopUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUpViewController.swift; sourceTree = "<group>"; };
 		35C48F45E40B8B30F09C7B94 /* Pods_FirebaseTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FirebaseTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		63A3A822ACEAE233C2F52CBF /* Pods-FirebaseTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirebaseTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FirebaseTest/Pods-FirebaseTest.debug.xcconfig"; sourceTree = "<group>"; };
 		777200CDD51EC8840B6C0835 /* Pods-FirebaseTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirebaseTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-FirebaseTest/Pods-FirebaseTest.release.xcconfig"; sourceTree = "<group>"; };
@@ -86,6 +88,7 @@
 			children = (
 				231A3BC91FB3778000C2868F /* MainViewController.swift */,
 				23C564AC1FB9A076003C703E /* ContentsViewController.swift */,
+				23D665301FD14B080093CB48 /* PopUpViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -302,6 +305,7 @@
 				23C564AF1FB9C1C3003C703E /* User.swift in Sources */,
 				23C564AD1FB9A076003C703E /* ContentsViewController.swift in Sources */,
 				2316FFF31FB46CC100FBADCF /* CustomCell.swift in Sources */,
+				23D665311FD14B080093CB48 /* PopUpViewController.swift in Sources */,
 				231A3BCA1FB3778000C2868F /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

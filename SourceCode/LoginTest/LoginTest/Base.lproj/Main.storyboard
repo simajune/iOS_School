@@ -18,7 +18,21 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cgy-xO-Ro7" customClass="KOLoginButton">
+                                <rect key="frame" x="-0.5" y="585.5" width="375" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="kakaoAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Y50-BR-P8C"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="cgy-xO-Ro7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="32a-pX-kgJ"/>
+                            <constraint firstItem="cgy-xO-Ro7" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="ST0-EC-C5M"/>
+                            <constraint firstItem="cgy-xO-Ro7" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="1.8" id="wWH-vI-mus"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
@@ -35,15 +49,23 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uv1-F0-BgS" customClass="GMSMapView">
-                                <rect key="frame" x="0.0" y="33.5" width="375" height="266.5"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DrI-yY-Pma">
+                                <rect key="frame" x="164" y="318" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <segue destination="v58-qI-Afm" kind="show" id="xb7-O6-Zuw"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="uv1-F0-BgS" firstAttribute="centerX" secondItem="lIY-QC-Bva" secondAttribute="centerX" id="0tV-fz-Czb"/>
-                            <constraint firstItem="uv1-F0-BgS" firstAttribute="centerY" secondItem="lIY-QC-Bva" secondAttribute="centerY" multiplier="0.5" id="DOI-ar-esT"/>
-                            <constraint firstItem="uv1-F0-BgS" firstAttribute="height" secondItem="lIY-QC-Bva" secondAttribute="height" multiplier="0.4" id="J08-Tl-uo4"/>
+                            <constraint firstItem="uv1-F0-BgS" firstAttribute="centerY" secondItem="lIY-QC-Bva" secondAttribute="centerY" id="DOI-ar-esT"/>
+                            <constraint firstItem="uv1-F0-BgS" firstAttribute="height" secondItem="lIY-QC-Bva" secondAttribute="height" id="J08-Tl-uo4"/>
                             <constraint firstItem="uv1-F0-BgS" firstAttribute="width" secondItem="lIY-QC-Bva" secondAttribute="width" id="r9z-VO-QKE"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="hAA-Cx-b8s"/>
@@ -55,6 +77,78 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UM3-jq-ORI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="957.60000000000002" y="117.39130434782609"/>
+        </scene>
+        <!--Calendar View Controller-->
+        <scene sceneID="nIR-Dg-9nB">
+            <objects>
+                <viewController id="v58-qI-Afm" customClass="CalendarViewController" customModule="LoginTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="LgU-ff-FS3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kvy-iQ-hZh" customClass="FSCalendar">
+                                <rect key="frame" x="0.0" y="333.5" width="375" height="333.5"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="placeholderType">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="firstWeekday">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="headerHeight">
+                                        <real key="value" value="-1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="allowsMultipleSelection" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="weekdayTextSize">
+                                        <real key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="headerTitleTextSize">
+                                        <real key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="eventDefaultColor">
+                                        <color key="value" red="0.80796983509999998" green="0.74901960779999999" blue="0.23529411759999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="eventSelectionColor">
+                                        <color key="value" red="0.80796983509999998" green="0.74901960779999999" blue="0.23529411759999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="rowHeight">
+                                        <real key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="titleTextSize">
+                                        <real key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="subtitleTextSize">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ndy-P9-g3f" customClass="KOLoginButton">
+                                <rect key="frame" x="164" y="152" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="kakaoAction:" destination="v58-qI-Afm" eventType="touchUpInside" id="Ete-VK-Mk2"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="kvy-iQ-hZh" firstAttribute="centerY" secondItem="LgU-ff-FS3" secondAttribute="centerY" multiplier="1.5" id="ajO-Fe-9Hs"/>
+                            <constraint firstItem="Ndy-P9-g3f" firstAttribute="centerX" secondItem="LgU-ff-FS3" secondAttribute="centerX" id="cjk-jx-UgU"/>
+                            <constraint firstItem="kvy-iQ-hZh" firstAttribute="height" secondItem="LgU-ff-FS3" secondAttribute="height" multiplier="0.5" id="iyO-fC-1sb"/>
+                            <constraint firstItem="kvy-iQ-hZh" firstAttribute="width" secondItem="LgU-ff-FS3" secondAttribute="width" id="n4N-dK-bXn"/>
+                            <constraint firstItem="kvy-iQ-hZh" firstAttribute="centerX" secondItem="LgU-ff-FS3" secondAttribute="centerX" id="swT-dU-De4"/>
+                            <constraint firstItem="Ndy-P9-g3f" firstAttribute="centerY" secondItem="LgU-ff-FS3" secondAttribute="centerY" multiplier="0.5" id="tsO-hL-P0H"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Bw2-d8-1QP"/>
+                    </view>
+                    <connections>
+                        <outlet property="kakaoBtn" destination="Ndy-P9-g3f" id="ZpO-b0-IhM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2HF-YF-uf1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1812" y="116.49175412293854"/>
         </scene>
     </scenes>
 </document>

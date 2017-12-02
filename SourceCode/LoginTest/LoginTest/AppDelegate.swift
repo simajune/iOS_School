@@ -20,6 +20,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         FBSDKApplicationDelegate.sharedInstance().application(application, didFinishLaunchingWithOptions: launchOptions)
+        KOSession.shared().isAutomaticPeriodicRefresh = true
         FirebaseApp.configure()
         GMSServices.provideAPIKey("AIzaSyBqQAziAnH4caGsugSMWaDD-Mp95_gPiMw")
         GMSPlacesClient.provideAPIKey("AIzaSyBqQAziAnH4caGsugSMWaDD-Mp95_gPiMw")
@@ -33,6 +34,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 //            openURL:url
 //            sourceApplication:options[UIApplicationOpenURLOptionsSourceApplicationKey]
 //            annotation:options[UIApplicationOpenURLOptionsAnnotationKey]
+        if KOSession.isKakaoAccountLoginCallback(url) {
+            return KOSession.handleOpen(url)
+        }
+        
         let handled = FBSDKApplicationDelegate.sharedInstance().application(app,
                                                                             open: url,
                                                                             sourceApplication: options[UIApplicationOpenURLOptionsKey.sourceApplication] as! String,
@@ -46,6 +51,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
     func applicationDidEnterBackground(_ application: UIApplication) {
+        KOSession.handleDidEnterBackground()
     }
 
     func applicationWillEnterForeground(_ application: UIApplication) {

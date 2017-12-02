@@ -2,10 +2,6 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
-	<string>항상 위치 정보를 이용합니다.</string>
-	<key>NSLocationWhenInUseUsageDescription</key>
-	<string>사용중에만 위치를 나타냅니다.</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleExecutable</key>
@@ -28,6 +24,14 @@
 				<string>fb339958573081521</string>
 			</array>
 		</dict>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>kakao30c1427f01b9f1bb9040b62b2fa334be</string>
+			</array>
+		</dict>
 	</array>
 	<key>CFBundleVersion</key>
 	<string>1</string>
@@ -35,15 +39,27 @@
 	<string>339958573081521</string>
 	<key>FacebookDisplayName</key>
 	<string>FirebaseSocialLogin</string>
+	<key>KAKAO_APP_KEY</key>
+	<string>30c1427f01b9f1bb9040b62b2fa334be</string>
 	<key>LSApplicationQueriesSchemes</key>
 	<array>
 		<string>fbapi</string>
 		<string>fb-messenger-api</string>
 		<string>fbauth2</string>
 		<string>fbshareextension</string>
+        <string>kakao30c1427f01b9f1bb9040b62b2fa334be</string>
+        <string>kakaokompassauth</string>
+        <string>storykompassauth</string>
+        <string>kakaolink</string>
+        <string>kakaotalk-4.5.0</string>
+        <string>kakaostory-2.9.0</string>
 	</array>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>항상 위치 정보를 이용합니다.</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>사용중에만 위치를 나타냅니다.</string>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>

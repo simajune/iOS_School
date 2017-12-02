@@ -101,7 +101,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="535.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="UOl-Ug-pDD">
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="UOl-Ug-pDD">
                                                     <rect key="frame" x="9.5" y="21.5" width="37.5" height="37.5"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" secondItem="UOl-Ug-pDD" secondAttribute="height" multiplier="1:1" id="97i-QK-Fas"/>
