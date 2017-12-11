@@ -9,10 +9,9 @@ class MainViewController: UIViewController {
     @IBOutlet weak var calendarView: JTAppleCalendarView!
     @IBOutlet weak var yearLb: UILabel!
     @IBOutlet weak var monthLb: UILabel!
-    @IBOutlet weak var addButton: UIButton!
     
     let outsideMonthColor = UIColor(red: 88.0/255.0, green: 74.0/255.0, blue: 102.0/255.0, alpha: 1.0)
-    let monthColor = UIColor.white
+    let monthColor = UIColor.black
     let selectedMonthColor = UIColor(red: 58.0/255.0, green: 41.0/255.0, blue: 75.0/255.0, alpha: 1.0)
     let currentDateSelectedViewColor = UIColor(red: 78.0/255.0, green: 63.0/255.0, blue: 93.0/255.0, alpha: 1.0)
 //    var ref = DatabaseReference.init()
@@ -24,6 +23,8 @@ class MainViewController: UIViewController {
         super.viewDidLoad()
         ref = Database.database().reference()
         let userID = Auth.auth().currentUser?.uid
+        
+        
         ref.child("user").child(userID!).observeSingleEvent(of: .value, with: { (snapshot) in
             // Get user value
             let value = snapshot.value as? NSDictionary
@@ -44,8 +45,8 @@ class MainViewController: UIViewController {
     }
     
     func setupCalendarView() {
-        calendarView.minimumLineSpacing = 0
-        calendarView.minimumInteritemSpacing = 0
+        calendarView.minimumLineSpacing = 0.1
+        calendarView.minimumInteritemSpacing = 0.1
         
         calendarView.visibleDates { (visibleDates) in
             let date = visibleDates.monthDates.first!.date
@@ -56,8 +57,8 @@ class MainViewController: UIViewController {
             self.formater.dateFormat = "MMMM"
             self.monthLb.text = self.formater.string(from: date)
             
-            self.addButton.layer.cornerRadius = self.addButton.frame.width / 2
-            self.addButton.clipsToBounds = true
+//            self.addButton.layer.cornerRadius = self.addButton.frame.width / 2
+//            self.addButton.clipsToBounds = true
         }
     }
     
@@ -100,10 +101,7 @@ class MainViewController: UIViewController {
             self.present(loginVC, animated: true, completion: nil)
         }
     }
-    @IBAction func addButtonAction(_ sender: UIButton) {
-        
-        
-    }
+
     
 }
 
@@ -144,6 +142,7 @@ extension MainViewController: JTAppleCalendarViewDelegate {
     func calendar(_ calendar: JTAppleCalendarView, cellForItemAt date: Date, cellState: CellState, indexPath: IndexPath) -> JTAppleCell {
         let cell = calendar.dequeueReusableJTAppleCell(withReuseIdentifier: "CustomCell", for: indexPath) as! CustomCell
         cell.dateLb.text = cellState.text
+        
         handleCellSelected(cell: cell, cellState: cellState)
         handleCellTextColor(cell: cell, cellState: cellState)
         return cell
@@ -157,6 +156,7 @@ extension MainViewController: JTAppleCalendarViewDelegate {
 extension MainViewController: UICollectionViewDelegateFlowLayout{
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let cellSize = CGSize(width: self.view.frame.width / 7, height: 30)
+        print("cellSize: ", cellSize)
         return cellSize
     }
 }
