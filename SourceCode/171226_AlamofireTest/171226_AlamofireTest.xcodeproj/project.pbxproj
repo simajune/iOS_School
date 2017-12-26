@@ -8,25 +8,27 @@
 
 /* Begin PBXBuildFile section */
 		239D639F1FF22E2C0091A0C2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 239D639E1FF22E2C0091A0C2 /* AppDelegate.swift */; };
-		239D63A11FF22E2C0091A0C2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 239D63A01FF22E2C0091A0C2 /* ViewController.swift */; };
 		239D63A41FF22E2C0091A0C2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 239D63A21FF22E2C0091A0C2 /* Main.storyboard */; };
 		239D63A61FF22E2C0091A0C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 239D63A51FF22E2C0091A0C2 /* Assets.xcassets */; };
 		239D63A91FF22E2C0091A0C2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 239D63A71FF22E2C0091A0C2 /* LaunchScreen.storyboard */; };
-		239D63B41FF23A2A0091A0C2 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 239D63B21FF23A290091A0C2 /* SWRevealViewController.m */; };
+		239D63BB1FF23DAF0091A0C2 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 239D63BA1FF23DAF0091A0C2 /* ChatViewController.swift */; };
+		239D63BD1FF23DC50091A0C2 /* ChannelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 239D63BC1FF23DC50091A0C2 /* ChannelViewController.swift */; };
+		239D63C01FF245110091A0C2 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 239D63BE1FF245100091A0C2 /* SWRevealViewController.m */; };
 		2A2F8F092AA99C99072239E4 /* Pods_171226_AlamofireTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E836958934A2FE15DEC9B63C /* Pods_171226_AlamofireTest.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		239D639B1FF22E2C0091A0C2 /* 171226_AlamofireTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 171226_AlamofireTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		239D639E1FF22E2C0091A0C2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		239D63A01FF22E2C0091A0C2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		239D63A31FF22E2C0091A0C2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		239D63A51FF22E2C0091A0C2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		239D63A81FF22E2C0091A0C2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		239D63AA1FF22E2C0091A0C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		239D63B11FF23A270091A0C2 /* 171226_AlamofireTest-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "171226_AlamofireTest-Bridging-Header.h"; sourceTree = "<group>"; };
-		239D63B21FF23A290091A0C2 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
-		239D63B31FF23A2A0091A0C2 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
+		239D63BA1FF23DAF0091A0C2 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		239D63BC1FF23DC50091A0C2 /* ChannelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelViewController.swift; sourceTree = "<group>"; };
+		239D63BE1FF245100091A0C2 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+		239D63BF1FF245110091A0C2 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
+		239D63C21FF246E40091A0C2 /* 171226_AlamofireTest-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "171226_AlamofireTest-Bridging-Header.h"; sourceTree = "<group>"; };
 		402231D3F5A9B8843EE3C413 /* Pods-171226_AlamofireTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-171226_AlamofireTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-171226_AlamofireTest/Pods-171226_AlamofireTest.release.xcconfig"; sourceTree = "<group>"; };
 		A3A745E4469FE98F6F636B96 /* Pods-171226_AlamofireTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-171226_AlamofireTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-171226_AlamofireTest/Pods-171226_AlamofireTest.debug.xcconfig"; sourceTree = "<group>"; };
 		E836958934A2FE15DEC9B63C /* Pods_171226_AlamofireTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_171226_AlamofireTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -55,7 +57,6 @@
 		239D63921FF22E2C0091A0C2 = {
 			isa = PBXGroup;
 			children = (
-				239D63B01FF239F30091A0C2 /* Supporting Files */,
 				239D639D1FF22E2C0091A0C2 /* 171226_AlamofireTest */,
 				239D639C1FF22E2C0091A0C2 /* Products */,
 				86B1D1D7D5E8A43646D91A40 /* Pods */,
@@ -74,8 +75,11 @@
 		239D639D1FF22E2C0091A0C2 /* 171226_AlamofireTest */ = {
 			isa = PBXGroup;
 			children = (
+				239D63B71FF23D040091A0C2 /* Model */,
+				239D63B61FF23CFD0091A0C2 /* View */,
+				239D63B51FF23CF00091A0C2 /* Controller */,
+				239D63B01FF239F30091A0C2 /* Supporting Files */,
 				239D639E1FF22E2C0091A0C2 /* AppDelegate.swift */,
-				239D63A01FF22E2C0091A0C2 /* ViewController.swift */,
 				239D63A21FF22E2C0091A0C2 /* Main.storyboard */,
 				239D63A51FF22E2C0091A0C2 /* Assets.xcassets */,
 				239D63A71FF22E2C0091A0C2 /* LaunchScreen.storyboard */,
@@ -87,11 +91,34 @@
 		239D63B01FF239F30091A0C2 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				239D63B31FF23A2A0091A0C2 /* SWRevealViewController.h */,
-				239D63B21FF23A290091A0C2 /* SWRevealViewController.m */,
-				239D63B11FF23A270091A0C2 /* 171226_AlamofireTest-Bridging-Header.h */,
+				239D63BF1FF245110091A0C2 /* SWRevealViewController.h */,
+				239D63BE1FF245100091A0C2 /* SWRevealViewController.m */,
+				239D63C21FF246E40091A0C2 /* 171226_AlamofireTest-Bridging-Header.h */,
 			);
 			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		239D63B51FF23CF00091A0C2 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				239D63BC1FF23DC50091A0C2 /* ChannelViewController.swift */,
+				239D63BA1FF23DAF0091A0C2 /* ChatViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		239D63B61FF23CFD0091A0C2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		239D63B71FF23D040091A0C2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		86B1D1D7D5E8A43646D91A40 /* Pods */ = {
@@ -227,9 +254,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				239D63A11FF22E2C0091A0C2 /* ViewController.swift in Sources */,
 				239D639F1FF22E2C0091A0C2 /* AppDelegate.swift in Sources */,
-				239D63B41FF23A2A0091A0C2 /* SWRevealViewController.m in Sources */,
+				239D63BB1FF23DAF0091A0C2 /* ChatViewController.swift in Sources */,
+				239D63BD1FF23DC50091A0C2 /* ChannelViewController.swift in Sources */,
+				239D63C01FF245110091A0C2 /* SWRevealViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -373,8 +401,10 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.SIMA.-71226-AlamofireTest";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "Supporting Files/171226_AlamofireTest-Bridging-Header.h";
+				SWIFT_INSTALL_OBJC_HEADER = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "171226_AlamofireTest/Supporting Files/171226_AlamofireTest-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_PRECOMPILE_BRIDGING_HEADER = YES;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -391,7 +421,9 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.SIMA.-71226-AlamofireTest";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "Supporting Files/171226_AlamofireTest-Bridging-Header.h";
+				SWIFT_INSTALL_OBJC_HEADER = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "171226_AlamofireTest/Supporting Files/171226_AlamofireTest-Bridging-Header.h";
+				SWIFT_PRECOMPILE_BRIDGING_HEADER = YES;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
