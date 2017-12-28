@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2333EDF21FF565F200DD08D1 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2333EDF11FF565F200DD08D1 /* Constant.swift */; };
+		2333EDF41FF56F1F00DD08D1 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2333EDF31FF56F1F00DD08D1 /* LoginViewController.swift */; };
 		239D639F1FF22E2C0091A0C2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 239D639E1FF22E2C0091A0C2 /* AppDelegate.swift */; };
 		239D63A41FF22E2C0091A0C2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 239D63A21FF22E2C0091A0C2 /* Main.storyboard */; };
 		239D63A61FF22E2C0091A0C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 239D63A51FF22E2C0091A0C2 /* Assets.xcassets */; };
@@ -14,10 +16,13 @@
 		239D63BB1FF23DAF0091A0C2 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 239D63BA1FF23DAF0091A0C2 /* ChatViewController.swift */; };
 		239D63BD1FF23DC50091A0C2 /* ChannelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 239D63BC1FF23DC50091A0C2 /* ChannelViewController.swift */; };
 		239D63C01FF245110091A0C2 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 239D63BE1FF245100091A0C2 /* SWRevealViewController.m */; };
+		239D63C41FF2C0230091A0C2 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 239D63C31FF2C0230091A0C2 /* GradientView.swift */; };
 		2A2F8F092AA99C99072239E4 /* Pods_171226_AlamofireTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E836958934A2FE15DEC9B63C /* Pods_171226_AlamofireTest.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2333EDF11FF565F200DD08D1 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		2333EDF31FF56F1F00DD08D1 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		239D639B1FF22E2C0091A0C2 /* 171226_AlamofireTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 171226_AlamofireTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		239D639E1FF22E2C0091A0C2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		239D63A31FF22E2C0091A0C2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -29,6 +34,7 @@
 		239D63BE1FF245100091A0C2 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
 		239D63BF1FF245110091A0C2 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
 		239D63C21FF246E40091A0C2 /* 171226_AlamofireTest-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "171226_AlamofireTest-Bridging-Header.h"; sourceTree = "<group>"; };
+		239D63C31FF2C0230091A0C2 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		402231D3F5A9B8843EE3C413 /* Pods-171226_AlamofireTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-171226_AlamofireTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-171226_AlamofireTest/Pods-171226_AlamofireTest.release.xcconfig"; sourceTree = "<group>"; };
 		A3A745E4469FE98F6F636B96 /* Pods-171226_AlamofireTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-171226_AlamofireTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-171226_AlamofireTest/Pods-171226_AlamofireTest.debug.xcconfig"; sourceTree = "<group>"; };
 		E836958934A2FE15DEC9B63C /* Pods_171226_AlamofireTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_171226_AlamofireTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -54,6 +60,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		2333EDF01FF565D300DD08D1 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				2333EDF11FF565F200DD08D1 /* Constant.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
 		239D63921FF22E2C0091A0C2 = {
 			isa = PBXGroup;
 			children = (
@@ -75,6 +89,7 @@
 		239D639D1FF22E2C0091A0C2 /* 171226_AlamofireTest */ = {
 			isa = PBXGroup;
 			children = (
+				2333EDF01FF565D300DD08D1 /* Utilities */,
 				239D63B71FF23D040091A0C2 /* Model */,
 				239D63B61FF23CFD0091A0C2 /* View */,
 				239D63B51FF23CF00091A0C2 /* Controller */,
@@ -103,6 +118,7 @@
 			children = (
 				239D63BC1FF23DC50091A0C2 /* ChannelViewController.swift */,
 				239D63BA1FF23DAF0091A0C2 /* ChatViewController.swift */,
+				2333EDF31FF56F1F00DD08D1 /* LoginViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -110,6 +126,7 @@
 		239D63B61FF23CFD0091A0C2 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				239D63C31FF2C0230091A0C2 /* GradientView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -254,8 +271,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2333EDF41FF56F1F00DD08D1 /* LoginViewController.swift in Sources */,
 				239D639F1FF22E2C0091A0C2 /* AppDelegate.swift in Sources */,
+				2333EDF21FF565F200DD08D1 /* Constant.swift in Sources */,
 				239D63BB1FF23DAF0091A0C2 /* ChatViewController.swift in Sources */,
+				239D63C41FF2C0230091A0C2 /* GradientView.swift in Sources */,
 				239D63BD1FF23DC50091A0C2 /* ChannelViewController.swift in Sources */,
 				239D63C01FF245110091A0C2 /* SWRevealViewController.m in Sources */,
 			);
