@@ -11,6 +11,8 @@ import UIKit
 class ChannelViewController: UIViewController {
 
     @IBOutlet weak var loginBtn: UIButton!
+    @IBAction func unwindSegue(segue: UIStoryboardSegue) {}
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.revealViewController().rearViewRevealWidth = self.view.frame.size.width - 60

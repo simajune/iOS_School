@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		232BAA9E1FF6B8EC0000C390 /* CreateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 232BAA9D1FF6B8EC0000C390 /* CreateViewController.swift */; };
 		2333EDF21FF565F200DD08D1 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2333EDF11FF565F200DD08D1 /* Constant.swift */; };
 		2333EDF41FF56F1F00DD08D1 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2333EDF31FF56F1F00DD08D1 /* LoginViewController.swift */; };
 		239D639F1FF22E2C0091A0C2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 239D639E1FF22E2C0091A0C2 /* AppDelegate.swift */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		232BAA9D1FF6B8EC0000C390 /* CreateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateViewController.swift; sourceTree = "<group>"; };
 		2333EDF11FF565F200DD08D1 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		2333EDF31FF56F1F00DD08D1 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		239D639B1FF22E2C0091A0C2 /* 171226_AlamofireTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 171226_AlamofireTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -119,6 +121,7 @@
 				239D63BC1FF23DC50091A0C2 /* ChannelViewController.swift */,
 				239D63BA1FF23DAF0091A0C2 /* ChatViewController.swift */,
 				2333EDF31FF56F1F00DD08D1 /* LoginViewController.swift */,
+				232BAA9D1FF6B8EC0000C390 /* CreateViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -271,6 +274,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				232BAA9E1FF6B8EC0000C390 /* CreateViewController.swift in Sources */,
 				2333EDF41FF56F1F00DD08D1 /* LoginViewController.swift in Sources */,
 				239D639F1FF22E2C0091A0C2 /* AppDelegate.swift in Sources */,
 				2333EDF21FF565F200DD08D1 /* Constant.swift in Sources */,
