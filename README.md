@@ -35,7 +35,7 @@
 >
 >    **연습문제**
 >
->    - [큰수에서 작은수 빼기](https://github.com/simajune/iOS_School/tree/master/SourceCode/170905_MinusPositive)
+>    - [큰수에서 작은수 빼기](https://github.com/simajune/iOS_School/tree/master/SourceCode/170905_minusPositive)
 >
 > 4. [조건문, 반복문](https://github.com/simajune/iOS_School/tree/master/Class/170908_IfFor)
 >
