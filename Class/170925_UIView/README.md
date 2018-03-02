@@ -18,7 +18,7 @@
 
   위에 코드처럼 하게 되면 좌표가 (0,0)이고 크기가 100x100인 view를 만들고 이 view를 전체 view안에 추가 하겠다는 뜻이다.
 
-  ![17092502](https://github.com/simajune/iOS_School/blob/master/Img/17092503.png)
+  ![17092502](https://simajune.github.io/img/posting/17092503.png)
 
 
 - 하지만, 이렇게 하고 시뮬레이션을 켜보면 위와 같이 화면에 아무것도 나타나지 않을 것이다. 왜냐하면 코드에서 뷰의 배경색을 지정해주지 않았기 때문에 화면에는 투명한 뷰가 있기때문에 눈으로는 확인을 할 수가 없다. 그래서 뷰를 확인하기 위해서는 뷰의 배경색을 지정해주면 된다.
@@ -32,6 +32,6 @@
   view.addSubview(mainView)
   ```
 
-  ![17092502](https://github.com/simajune/iOS_School/blob/master/Img/17092504.png)
+  ![17092502](https://simajune.github.io/img/posting/17092504.png)
 
 - 뷰에 대한 설정은 UIView class에 보면 수 많은 Property들이 있다. 이것을 변경하면 뷰에 대한 설정을 개발자의 맞게 변경하면 된다.
