@@ -119,7 +119,7 @@
 > 1. [UI에 대해](https://github.com/simajune/iOS_School/tree/master/Class/170925_UI)
 > 2. [UIView](https://github.com/simajune/iOS_School/tree/master/Class/170925_UIView)
 >    - [UIImageVIew](https://github.com/simajune/iOS_School/tree/master/Class/170926_UIImageView)
->    - [UILabel]
+>    - [UILabel](https://github.com/simajune/iOS_School/tree/master/Class/170926_UILabel)
 >    - [UIScrollView]
 > 3. [UIControl]
 >    - [UIButton]
