@@ -2,7 +2,7 @@
 
 ###1. 동작
 
-![NotePad](https://github.com/simajune/iOS_School/blob/master/Img/NotePad.gif)
+![NotePad](https://simajune.github.io/img/posting/NotePad.gif)
 
 
 

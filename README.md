@@ -53,7 +53,7 @@
 >    - [함수 만들기](https://github.com/simajune/iOS_School/tree/master/SourceCode/170906_Function)
 >    - [단위 환산하기](https://github.com/simajune/iOS_School/tree/master/SourceCode/170911_Dimensions)
 >
-> 6. [콜렉션 타입 (Collection Type)](https://github.com/simajune/iOS_School/tree/master/Class/170910_Collectiontype)
+> 6. [콜렉션 타입 (Collection Type)](https://github.com/simajune/iOS_School/tree/master/Class/170910_Collection)
 >
 >    **연습문제**
 >

@@ -7,7 +7,7 @@
 - 프로퍼티 (변수, 상수)
 - 메서드
 
-![image](https://github.com/simajune/iOS_School/tree/master/Img/17091401.png)
+![image](https://simajune.github.io/img/posting/17091401.png)
 
 ** **
 
