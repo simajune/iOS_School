@@ -91,36 +91,36 @@
 
 1. Git을 초기화할 폴더를 생성한다. (명령어 : **mkdir 폴더명**)
 
-![Git_17091101](https://github.com/simajune/iOS_School/tree/master/Img/Git_17091101.png)
+![Git_17091101](https://simajune.github.io/img/posting/Git_17091101.png)
 
 2. 새로 만든 폴더로 들어가 git을 초기화(**명령어 : git init**)시킨다.그러면 해당 폴더에 git이 초기화 되었고 폴더 내 파일 확인(**명령어 : ls -a**)을 통해 보면 폴더에 .git이 생긴 것을 확인 할 수 있다.
 
-![Git_17091102](https://github.com/simajune/iOS_School/tree/master/Img/Git_17091103.png)
+![Git_17091102](https://simajune.github.io/img/posting/Git_17091103.png)
 
 3. (**명령어 : vi test.txt**)를 통해 파일을 생성하고 문서를 작성하고 만들어 보자
 
-![Git_17091104](https://github.com/simajune/iOS_School/tree/master/Img/Git_17091104.png)
+![Git_17091104](https://simajune.github.io/img/posting/Git_17091104.png)
 
-![Git_17091105](https://github.com/simajune/iOS_School/tree/master/Img/Git_17091105.png)
+![Git_17091105](https://simajune.github.io/img/posting/Git_17091105.png)
 
-![Git_17091106](https://github.com/simajune/iOS_School/tree/master/Img/Git_17091106.png)
+![Git_17091106](https://simajune.github.io/img/posting/Git_17091106.png)
 
-4. 이렇게 폴더 내에 test.txt 파일을 만들고 git의 상태(명령어 : git status)를 확인해보면 빨간색 글씨로 test.txt 파일이 생성되었다고 나타난다. 이 상태에서 git을 index영역에 저장(**명령어 : git add 파일이름**)을 하면 이 파일은 index 영역에 저장이 된다. (만약 폴더 내의 전체 파일을 add하려면 **git add .**을 하면 된다.)![Git_17091108](https://github.com/simajune/iOS_School/tree/master/Img/Git_17091108.png)
+4. 이렇게 폴더 내에 test.txt 파일을 만들고 git의 상태(명령어 : git status)를 확인해보면 빨간색 글씨로 test.txt 파일이 생성되었다고 나타난다. 이 상태에서 git을 index영역에 저장(**명령어 : git add 파일이름**)을 하면 이 파일은 index 영역에 저장이 된다. (만약 폴더 내의 전체 파일을 add하려면 **git add .**을 하면 된다.)![Git_17091108](https://simajune.github.io/img/posting/Git_17091108.png)
 5. indec영역에 저장을 한 후 다시 git의 상태를 확인해 보면 녹색으로 새로운 파일이 index영역에 추가된 것을 확인 할 수 있다.
 
-![Git_17091109](https://github.com/simajune/iOS_School/tree/master/Img/Git_17091109.png)
+![Git_17091109](https://simajune.github.io/img/posting/Git_17091109.png)
 
 6. 이 test.txt 파일을 내부 저장소로 저장하기 위해서는 **명령어 : git commit**을 하게 되면 해당 index영역에 있던 변경 사항들이 내부저장소로 저장이 된다.
 
-![Git_17091110](https://github.com/simajune/iOS_School/tree/master/Img/Git_17091110.png)
+![Git_17091110](https://simajune.github.io/img/posting/Git_17091110.png)
 
 7. 내부 저장소에 저장한 내역(history)는 **명령어 git reflog**를 통해 확인할 수 있다. 
 
-![Git_17091111](https://github.com/simajune/iOS_School/tree/master/Img/Git_17091111.png)
+![Git_17091111](https://simajune.github.io/img/posting/Git_17091111.png)
 
 8. 브랜치 생성은 **명령어 git branch 브랜치이름**으로 생성할 수 있고, 해당 git영역에 어떠한 브랜치들이 존재하는지 확인 하기 위해서는 **명령어 git branch**로 확인이 가능하고 현재 어떠한 브랜치에 있는지 녹색으로 확인 가능하다. 그리고 브랜치간에 이동은 **명령어 git checkout 이동할 브랜치**를 하면 브랜치 이동이 가능하다.
 
-![Git_17091112](https://github.com/simajune/iOS_School/tree/master/Img/Git_17091112.png)
+![Git_17091112](https://simajune.github.io/img/posting/Git_17091112.png)
 
 ** **
 
