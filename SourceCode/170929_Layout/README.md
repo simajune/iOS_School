@@ -2,7 +2,7 @@
 
 ### 1. 동작
 
-![NotePad](https://simajune.github.io/img/posting/CollectionView.gif)
+<img src="https://simajune.github.io/img/posting/CollectionView.gif" width="600px" height="400px"/>
 
 
 
