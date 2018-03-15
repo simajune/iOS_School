@@ -1,10 +1,3 @@
-//
-//  MainViewController.swift
-//  Date
-//
-//  Created by SIMA on 2018. 3. 14..
-//  Copyright © 2018년 devtejay. All rights reserved.
-//
 
 import UIKit
 
