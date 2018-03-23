@@ -13,9 +13,7 @@ class Item: NSObject {
     var Genre = String()
     var Date = String()
     var Platform = String()
-    // MARK: - Variable_End
-    
-    
+    //Variable_End
 }
 
 
@@ -25,8 +23,7 @@ class ItemGroup: NSObject {
     var ItemGroupTitleLabel = String()
     var ItemSet = [Item]()
     // Variable_End
-    
-    
+
     func AddItem() -> [ItemGroup] {
         
         // New Item Group //
