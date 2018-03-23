@@ -43,7 +43,6 @@ class ViewController: UIViewController, UIScrollViewDelegate {
         
         scrollView =  UIScrollView(frame: CGRect(x: 0, y: 0, width: view.frame.size.width, height: view.frame.size.height))
         scrollView.contentSize = CGSize(width: 3*view.frame.size.width, height: view.frame.size.height)
-        //scrollView.delegate = self
         scrollView.bounces = true
         scrollView.isPagingEnabled = false
         view.addSubview(scrollView)
