@@ -19,11 +19,7 @@
 
   ​
 
-
-
-### 2. 기본 구조
-
-​	
+### 2. 기본 구조	
 
 ```swift
 class SpecificClass {
@@ -49,18 +45,21 @@ struct SpecificStruct {
 
 - 클래스와 구조체 둘다 프로퍼티와 메소드로 구성되어 있다.
 
-  ```swift
-  let someClass = SpecificClass()
-  let someStruct = SpecificStruct()
+  ​
 
-  someClass.name = "태준"
+```swift
+let someClass = SpecificClass()
+let someStruct = SpecificStruct()
 
-  someStruct.addCounter()
-  ```
+someClass.name = "태준"
 
+someStruct.addCounter()
+```
 
 - 클래스와 구조체 둘다 사용시에는 인스턴스로 사용이 된다.
 - 클래스와 구조체 내부의 프로퍼티나 메소드에 접근하기 위해선 (.)을 사용하여 접근한다.
+
+
 
 
 ### 3. 초기화
