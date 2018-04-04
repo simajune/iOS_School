@@ -10,8 +10,8 @@ import UIKit
 
 class ViewController: UIViewController {
 
-//    var onBtn: UIButton!
-//    var offBtn: UIButton!
+    var onBtn: UIButton!
+    var offBtn: UIButton!
     var btn1: UIButton!
     var btn2: UIButton!
     var btn3: UIButton!
@@ -27,6 +27,18 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let btn = UIButton(frame: CGRect(x: 0, y: 0, width: 100, height: 100))
+//        btn.titleLabel?.text = "버튼"
+        btn.setTitle("버튼", for: .normal)
+        btn.backgroundColor = .red
+//        btn.setBackgroundImage(UIImage(named:"bg1.png"), for: UIControlState.normal)
+        btn.setTitleColor(.green, for: .normal)
+        btn.addTarget(self,
+                      action:#selector(ViewController.btnAction(sender:)),
+                      for: .touchUpInside)
+        self.view.addSubview(btn)
+        
         //연습문제
 //        onBtn = UIButton(type: .custom)
 //        onBtn.frame = CGRect(x: 10, y: 100, width: 100, height: 100)
@@ -36,8 +48,8 @@ class ViewController: UIViewController {
 //        onBtn.setTitleColor(.black, for: .normal)
 //        onBtn.setTitleColor(.green, for: .selected)
 //        onBtn.addTarget(self, action: #selector(onBtnClicked(_:)), for: .touchUpInside)
-//        
-//        
+//
+//
 //        offBtn = UIButton(type: .custom)
 //        offBtn.frame = CGRect(x: 10, y: 200, width: 100, height: 100)
 //        view.addSubview(offBtn)
@@ -335,49 +347,52 @@ class ViewController: UIViewController {
        */
         
         //textLabel
-        textLB = UILabel(frame: CGRect(x: 0, y: 500, width: view.frame.width, height: 50))
-        view.addSubview(textLB)
-        textLB.backgroundColor = .green
-        textLB.textAlignment = .center
-        
-        
-        for i in 0 ..< 9 {
-            var tmpButton: UIButton
-            var yNumber: Int
-            tmpButton = UIButton()
-            if i < 3 {
-                yNumber = 20
-                tmpButton.frame = CGRect(x: 375 / 3 * i, y: yNumber, width: 375 / 3, height: 375 / 3)
-            }else if i < 6 {
-                yNumber = 375 / 3 + 20
-                tmpButton.frame = CGRect(x: 375 / 3 * (i - 3), y: yNumber, width: 375 / 3, height: 375 / 3)
-            }else {
-                yNumber = 2 * 375 / 3 + 20
-                tmpButton.frame = CGRect(x: 375 / 3 * (i - 6), y: yNumber, width: 375 / 3, height: 375 / 3)
-            }
-            tmpButton.backgroundColor = .blue
-            tmpButton.setTitle("\(i + 1)번", for: .normal)
-            tmpButton.layer.borderColor = UIColor.black.cgColor
-            tmpButton.layer.borderWidth = 1.0
-            tmpButton.addTarget(self, action: #selector(btnClicked(_:)), for: .touchUpInside)
-            view.addSubview(tmpButton)
-        }
+//        textLB = UILabel(frame: CGRect(x: 0, y: 500, width: view.frame.width, height: 50))
+//        view.addSubview(textLB)
+//        textLB.backgroundColor = .green
+//        textLB.textAlignment = .center
+//
+//
+//        for i in 0 ..< 9 {
+//            var tmpButton: UIButton
+//            var yNumber: Int
+//            tmpButton = UIButton()
+//            if i < 3 {
+//                yNumber = 20
+//                tmpButton.frame = CGRect(x: 375 / 3 * i, y: yNumber, width: 375 / 3, height: 375 / 3)
+//            }else if i < 6 {
+//                yNumber = 375 / 3 + 20
+//                tmpButton.frame = CGRect(x: 375 / 3 * (i - 3), y: yNumber, width: 375 / 3, height: 375 / 3)
+//            }else {
+//                yNumber = 2 * 375 / 3 + 20
+//                tmpButton.frame = CGRect(x: 375 / 3 * (i - 6), y: yNumber, width: 375 / 3, height: 375 / 3)
+//            }
+//            tmpButton.backgroundColor = .blue
+//            tmpButton.setTitle("\(i + 1)번", for: .normal)
+//            tmpButton.layer.borderColor = UIColor.black.cgColor
+//            tmpButton.layer.borderWidth = 1.0
+//            tmpButton.addTarget(self, action: #selector(btnClicked(_:)), for: .touchUpInside)
+//            view.addSubview(tmpButton)
+//        }
         
 
     }
     
+    func btnAction(sender:UIButton) {
+        //버튼 이벤트시 액션
+    }
     
     //EX 1>
     
-//    func btnClicked (_ sender: UIButton) {
-//        if sender.isSelected {
-//            sender.backgroundColor = .blue
-//            sender.isSelected = false
-//        }else {
-//            sender.backgroundColor = .gray
-//            sender.isSelected = true
-//        }
-//    }
+    func btnClicked (_ sender: UIButton) {
+        if sender.isSelected {
+            sender.backgroundColor = .blue
+            sender.isSelected = false
+        }else {
+            sender.backgroundColor = .gray
+            sender.isSelected = true
+        }
+    }
     
     //EX 2>
 //    func oddBtnClicked(_ sender: UIButton) {
@@ -394,7 +409,7 @@ class ViewController: UIViewController {
 //            }
 //        }
 //    }
-//    
+//
 //    func evenBtnClicked(_ sender: UIButton) {
 //        let evenArr: [UIButton] = [btn2, btn4, btn6, btn8]
 //        if sender.isSelected {
@@ -413,9 +428,9 @@ class ViewController: UIViewController {
     
     //EX 3>
     
-    func btnClicked (_ sender: UIButton) {
-        textLB.text = sender.titleLabel?.text
-    }
+//    func btnClicked (_ sender: UIButton) {
+//        textLB.text = sender.titleLabel?.text
+//    }
 
     
     
@@ -426,19 +441,19 @@ class ViewController: UIViewController {
     
     
     //연습문제
-//    func onBtnClicked (_ sender: UIButton) {
-//        onBtn.isSelected = true
-//        onBtn.isUserInteractionEnabled = false
-//        offBtn.isSelected = false
-//        offBtn.isUserInteractionEnabled = true
-//    }
-//    
-//    func offBtnClicked (_ sender: UIButton) {
-//        offBtn.isSelected = true
-//        offBtn.isUserInteractionEnabled = false
-//        onBtn.isSelected = false
-//        onBtn.isUserInteractionEnabled = true
-//    }
+    func onBtnClicked (_ sender: UIButton) {
+        onBtn.isSelected = true
+        onBtn.isUserInteractionEnabled = false
+        offBtn.isSelected = false
+        offBtn.isUserInteractionEnabled = true
+    }
+    
+    func offBtnClicked (_ sender: UIButton) {
+        offBtn.isSelected = true
+        offBtn.isUserInteractionEnabled = false
+        onBtn.isSelected = false
+        onBtn.isUserInteractionEnabled = true
+    }
     
 
     override func didReceiveMemoryWarning() {
