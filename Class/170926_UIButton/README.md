@@ -15,7 +15,7 @@
 
   <img src="https://simajune.github.io/img/posting/UIButton.png" width="600px" height="180px"/>
 
-### 2. UIButton 만들기
+### 3. UIButton 만들기
 
 ```swift
 let btn = UIButton(frame: CGRect(x: 0, y: 0, width: 100, height: 100))
