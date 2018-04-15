@@ -1,6 +1,6 @@
 # NotePad
 
-###1. 동작
+### 1. 동작
 
 <img src="https://simajune.github.io/img/posting/NotePad.gif" width="600px" height="400px"/>
 
