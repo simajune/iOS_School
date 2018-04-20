@@ -30,13 +30,13 @@ class ViewController: UIViewController, UITextFieldDelegate {
         //델리게이트 사용//
         nameText.delegate = self
 
-        confirmBtn = UIButton(type: .contactAdd)
-        confirmBtn.frame = CGRect(x: 280, y: 50, width: 50, height: 50)
-        view.addSubview(confirmBtn)
-        confirmBtn.addTarget(self, action: #selector(self.btnClicked(_:)), for: .touchUpInside)
-        
-        nameLb = UILabel(frame: CGRect(x: 20, y: 120, width: 250, height: 50))
-        view.addSubview(nameLb)
+//        confirmBtn = UIButton(type: .contactAdd)
+//        confirmBtn.frame = CGRect(x: 280, y: 50, width: 50, height: 50)
+//        view.addSubview(confirmBtn)
+//        confirmBtn.addTarget(self, action: #selector(self.btnClicked(_:)), for: .touchUpInside)
+//        
+//        nameLb = UILabel(frame: CGRect(x: 20, y: 120, width: 250, height: 50))
+//        view.addSubview(nameLb)
 
     }
     //델리게이트 함수//
