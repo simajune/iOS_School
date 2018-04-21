@@ -120,12 +120,12 @@
 > 2. [UIView](https://github.com/simajune/iOS_School/tree/master/Class/170925_UIView)
 >    - [UIImageVIew](https://github.com/simajune/iOS_School/tree/master/Class/170926_UIImageView)
 >    - [UILabel](https://github.com/simajune/iOS_School/tree/master/Class/170926_UILabel)
->    - [UITextField]
 >    - [UIScrollView](https://github.com/simajune/iOS_School/tree/master/SourceCode/170928_ScrollView)
 > 3. [UIControl](https://github.com/simajune/iOS_School/tree/master/Class/170926_UIControl)
 >    - [UIButton](https://github.com/simajune/iOS_School/tree/master/Class/170926_UIButton)
 >    - [UISlider](https://github.com/simajune/iOS_School/tree/master/Class/170927_UISlider)
 >    - [UISwitch]
+>    - [UITextField](https://github.com/simajune/iOS_School/tree/master/Class/170928_UITextField)
 >
 >
 
