@@ -124,7 +124,7 @@
 > 3. [UIControl](https://github.com/simajune/iOS_School/tree/master/Class/170926_UIControl)
 >    - [UIButton](https://github.com/simajune/iOS_School/tree/master/Class/170926_UIButton)
 >    - [UISlider](https://github.com/simajune/iOS_School/tree/master/Class/170927_UISlider)
->    - [UISwitch]
+>    - [UISwitch](https://github.com/simajune/iOS_School/tree/master/Class/170927_UISwitch)
 >    - [UITextField](https://github.com/simajune/iOS_School/tree/master/Class/170928_UITextField)
 >
 >
