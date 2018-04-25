@@ -13,7 +13,7 @@
 - UISwitch를 사용하는 경우는 보통 에플리케이션의 세팅에 많이 사용을 한다.
 
 
-  <img src="https://simajune.github.io/img/posting/UISwitch1.png" width="200px" height="80px"/>
+  <img src="https://simajune.github.io/img/posting/UISwitch1.png" width="300px" height="80px"/>
 
 
 
