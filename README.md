@@ -126,8 +126,15 @@
 >    - [UISlider](https://github.com/simajune/iOS_School/tree/master/Class/170927_UISlider)
 >    - [UISwitch](https://github.com/simajune/iOS_School/tree/master/Class/170927_UISwitch)
 >    - [UITextField](https://github.com/simajune/iOS_School/tree/master/Class/170928_UITextField)
+> 4. [UserDefault]
+> 5. [AppLifeCycle]
+> 6. [UI Class Hierarchy]
+> 7. [Segue]
+> 8. [UIAlertController]
+> 9. [Container View Controller]
 >
 >
+>    - [UINavigationContoller]
 
 ------
 
