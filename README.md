@@ -128,7 +128,7 @@
 >    - [UITextField](https://github.com/simajune/iOS_School/tree/master/Class/170928_UITextField)
 > 4. [UserDefault](https://github.com/simajune/iOS_School/tree/master/Class/170929_UserDefault)
 > 5. [LifeCycle](https://github.com/simajune/iOS_School/tree/master/Class/170929_AppLifeCycle)
-> 6. [UI Class Hierarchy]
+> 6. [UIViewContoller](https://github.com/simajune/iOS_School/tree/master/Class/170930_UIViewController)
 > 7. [Segue]
 > 8. [UIAlertController]
 > 9. [Container View Controller]
