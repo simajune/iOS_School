@@ -5,7 +5,7 @@
 - UserDefault를 설명하려면 이전에 데이터 저장 방법을 설명해야 한다. 
 - 데이터의 저장 방법에는 3가지가 있다.
   - 파일 저장(Property List, SQLite, 아카이빙)
-  - iOS DataBase이용 - Core Data
+  - iOS DataBase이용 - Core Data
   - Network - Server DB 이용
 - UserDefault는 이중에서 파일 저장의 Property List를 이용한 데이터 저장 방법이다.
 - 사용자의 정보를 저장하는 싱글턴 인스턴스(간단히 말해 하나의 인스턴스를 공유하여 사용)
