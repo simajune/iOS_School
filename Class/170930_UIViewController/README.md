@@ -55,6 +55,100 @@
 
 
 
+### 4. UIVIewController 종류
+
+- General View Controller
+  - UIViewController
+  - UITableViewController
+  - UICollectionViewController
+- Container View Controller
+  - UINavigationController
+  - UITabbarController
+  - UISplitViewController
+
+
+
+#### General View Controller
+
+- 일반적인 ViewController 형태
+- 각 ViewController가 Root View를 가지고 있다.
+  - UIViewController의 Root View는 UIView
+  - UITableViewController의 Root View는 UITableView
+  - UICollectionViewController의 Root View는 UICollectionView
+
+
+
+### 5. UIViewController Instance 생성
+
+- UIViewController의 Instance를 생성하는 방법
+
+  1. 일반적인 초기화 메소드를 활용한 instance 생성
+
+     let vc: UIViewController = UIViewController()
+
+  2. xib파일이 Storyboard에 있을 때, Storyboard를 통한 instance 생성방법
+
+     let storyboard = UIStoryborad(name: "스토리보드 이름", bundle: nil)
+
+     let vc: UIViewController = storyboard.instantiateViewController(withIdentifier: "스토리보드 ID")
+
+
+
+### 6. UIViewController간 화면 전환
+
+- 현재 UIViewController에서 새로운 화면으로 전환을 위해 ViewController는 화면전환을 해야한다.
+- UIViewController의 화면전환 방법은 크게 3가지가 존재한다.
+  - Present Modally
+  - UINavigationController
+  - UITabbarController
+- Storyboard내에서의 화면전환에는 Segue Instance를 사용해서 직관적으로 ViewController간의 관계를 보여준다.
+
+
+
+#### Present Modally
+
+- 일번적인 화면전환을 위한 방법
+
+- 기준 ViewController에서 대상 ViewController를 Present한다.(일반적으로 기준 ViewController가 대상 ViewController Instance를 생성한다.)
+
+- 화면이 전환되어도 기준 ViewController가 메모리에 존재하며, 대상 ViewController 를 되돌아 갈 때 메모리에서 제거된다.
+
+- 다음 두 메소드를 사용해서 화면전환과 되돌아오기가 가능하다.
+
+  ```swift
+  present(UIViewController, animated: Bool, completion: (() -> Void)?)
+  //화면전환
+  dismiss(animated: Bool, completion: (() -> Void)?
+  //되돌아오기
+  ```
+
+- present ( 기준 ViewController Method내부)
+
+  ```swift
+  func goToNextVC() {
+  	//다음 인스턴스 생성
+  	let storyboard = UIStoryboard(name: “Storyboard이름”, bundle: nil)
+  	let nextVC = storyboard.instantiateViewController(withIdentifier: “NextViewController”) as! NextViewController
+  	//present
+  	self.present(nextVC, animated: true) {
+  	//컴플리션 클로져 내부
+  	}
+  }
+  ```
+
+- dismiss (대상 ViewController Method 내부)
+
+  ```swift
+  func backVC() {
+      //되돌아 가기
+  	dismiss(animated: true, completion: nil)
+  }
+  ```
+
+  ​
+
+
+
 
 
 
