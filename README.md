@@ -129,8 +129,8 @@
 > 4. [UserDefault](https://github.com/simajune/iOS_School/tree/master/Class/170929_UserDefault)
 > 5. [LifeCycle](https://github.com/simajune/iOS_School/tree/master/Class/170929_AppLifeCycle)
 > 6. [UIViewContoller](https://github.com/simajune/iOS_School/tree/master/Class/170930_UIViewController)
-> 7. [Segue]
-> 8. [UIAlertController]
+> 7. [UIAlertController]
+> 8. [Segue]
 > 9. [Container View Controller]
 >
 >
@@ -153,3 +153,10 @@
 > 4. [Pop Up](https://github.com/simajune/iOS_School/tree/master/SourceCode/171010_Popup)
 > 5. [TableView Expand](https://github.com/simajune/iOS_School/tree/master/SourceCode/171010_TableView_Expand)
 > 6. [KakaoClone](https://github.com/simajune/iOS_School/tree/master/SourceCode/171011_KakaoClone)
+
+
+
+### 미니 프로젝트
+
+> [CountdownLabel](https://github.com/simajune/iOS_School/tree/master/SourceCode/171011_CountDownLabelTest)
+
