@@ -8,9 +8,6 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-       
-        setCountDown()
-       
     }
     
     func setCountDown(){
@@ -24,12 +21,8 @@ class ViewController: UIViewController {
     }
     
     @IBAction func btn2(_ sender: UIButton) {
-        print("\(CustomLb.timeCounted)")
+        setCountDown()
     }
-    
-    
-
-
 }
 
 extension ViewController: CountdownLabelDelegate{
