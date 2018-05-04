@@ -129,30 +129,46 @@
 > 4. [UserDefault](https://github.com/simajune/iOS_School/tree/master/Class/170929_UserDefault)
 > 5. [LifeCycle](https://github.com/simajune/iOS_School/tree/master/Class/170929_AppLifeCycle)
 > 6. [UIViewContoller](https://github.com/simajune/iOS_School/tree/master/Class/170930_UIViewController)
-> 7. [UIAlertController]
-> 8. [Segue]
-> 9. [Container View Controller]
+> 7. [UIAlertController](https://github.com/simajune/iOS_School/tree/master/Class/170930_UIAlertController)
+> 8. [Segue](https://github.com/simajune/iOS_School/tree/master/Class/171001_Segue)
+> 9. [UINavigationContoller]
+> 10. [Protocol & Delegate](https://github.com/simajune/iOS_School/tree/master/Class/171012_Delegate)
+> 11. [AutoLayout]
 >
->
->    - [UINavigationContoller]
 
 ------
 
 ### 5주차
 
 > 1. [클래스와 구조체](https://github.com/simajune/iOS_School/tree/master/Class/180327_ClassStruct)
-> 2. ​
+> 2. [UITableViewController]
+> 3. 
 
 
 
 ### 6주차
 
+> 1. [에러처리]
+> 2. [Notification]
+> 3. [Sunscript]
+> 4. [Extension]
+> 5. [Generic]
+>
+> - 프로젝트
+>
 > 1. [NotePad](https://github.com/simajune/iOS_School/tree/master/SourceCode/170928_Notepad)
 > 2. [CollectionView](https://github.com/simajune/iOS_School/tree/master/SourceCode/170929_Layout)
 > 3. [Graph](https://github.com/simajune/iOS_School/tree/master/SourceCode/171005_Graph)
 > 4. [Pop Up](https://github.com/simajune/iOS_School/tree/master/SourceCode/171010_Popup)
 > 5. [TableView Expand](https://github.com/simajune/iOS_School/tree/master/SourceCode/171010_TableView_Expand)
 > 6. [KakaoClone](https://github.com/simajune/iOS_School/tree/master/SourceCode/171011_KakaoClone)
+
+
+
+### 7주차
+
+>1. [UIImagePicker]
+>2. [TabbarController]
 
 
 
