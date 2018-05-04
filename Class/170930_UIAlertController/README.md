@@ -46,5 +46,5 @@ func btnAction(sender:UIButton) {
 }
 ```
 
-<img src="https://simajune.github.io/img/posting/UIAlertController1.png" width="414px" height="718px"/>
+<img src="https://simajune.github.io/img/posting/UIAlertController1.gif" width="414px" height="718px"/>
 
