@@ -1,50 +1,69 @@
-# UIAlertController
+# Segue
 
-### 1. UIAlertController란
+### 1. Segue란
 
-- 경고 메세지를 유저에게 보여주는 객체
-
-
-
-
-### 2. UIAlertController 개요
-
-- 이 클래스는 alert을 설정하는데 사용한다. Alert에 대한 설정은 그 메세지와 선택을 했을 때 어떠한 동작을 할지에 대한 것이다. 
-- UIAlertController은 크게 3가지만 기억을 하면 된다.
-  1. UIAlertController
-  2. UIAlertAction
-  3. Present
+- Storyboard 파일 내 두개의 ViewController 사이의 화면전환을 정의한 인스턴스
+- 앱의 인터페이스 흐름을 확인하는데 도움
+- Segue의 시작점은 UIButton, UITableView의 Selected row, UIGesture등으로 시작하며, 끝접은 전환되는 다음 UIViewController를 가르킨다.
+- Segue 화면전환이 된 UIViewController는 unwind segue를 통해 되돌릴 수 있다.
 
 
 
-#### a. UIAlertController
+### 2. Segue 만들기
 
-- UIAlertController에서 Alert에 제목과 메세지 그리고 Alert의 스타일을 설정을 한다.
+<img src="https://simajune.github.io/img/posting/Segue1.png" width="400px" height="270px"/>
 
-#### b. UIAlertAction
+- Segue를 만들기 위해 Storyboard를 열고 UIViewController에 UIButton 하나를 만든다.
+- 그리고 UIButton을 마우스 오른쪽 버튼을 눌러 이동할 UIVIewController에 드래그한다.
 
-- UIAlertAction은 Alert에서의 버튼을 설정을 하고 그 버튼을 눌렀을 때 어떠한 동작을 할지 설정을 한다.
+<img src="https://simajune.github.io/img/posting/Segue2.png" width="400px" height="270px"/>
 
-#### c. Present
+- 드래그를 하면 창이 하나 뜨고 Segue의 스타일을 어떻게 할지 정할 수 있다.
 
-- Present는 이 설정을 보여주는 메소드이다.
+<img src="https://simajune.github.io/img/posting/Segue3.png" width="400px" height="270px"/>
+
+- 하나의 스타일을 누르게 되면 위의 그림처럼 UIViewController 사이에 Segue가 설정된 것을 알 수 있다.
 
 
 
-### 3. Sample Code
+### 3. Segue의 작동 순서
 
-```swift
-func btnAction(sender:UIButton) {
-	let alertVC = UIAlertController.init(title: "타이틀", message: "알럿 메세지", preferredStyle: .alert)
-	let okAction = UIAlertAction.init(title: "확인", style: .default) { (action) in
-	//버튼 클릭시 실행 코드
-	}
-	alertVC.addAction(okAction)
-	self.present(alertVC, animated: true) {
-	//알럿 띄운 후 실행할 액션
-	}
-}
-```
+<img src="https://simajune.github.io/img/posting/Segue4.png" width="600px" height="400px"/>
 
-<img src="https://simajune.github.io/img/posting/UIAlertController1.png" width="414px" height="718px"/>
+
+
+### 4. Unwind Segue
+
+- Unwind Segue의 사용방법은 다음과 같다.
+
+  1. 기준 ViewController의 파일 내부에 메소드를 만든다.
+
+     ```swift
+     @IBAction func unwindSegue(segue: UIStoryboardSegue){}
+     ```
+
+  2. 위에 코드를 입력하고 난 후 Storyboard로 이동 후 기준 ViewController로 이동하게 할 Button을 드래그해서 Exit버튼에 연결한다.
+
+  <img src="https://simajune.github.io/img/posting/Segue5.png" width="400px" height="270px"/>
+
+  3. 코드 내부에 만든 메소드를 선택하면 완료된다.
+
+     <img src="https://simajune.github.io/img/posting/Segue6.png" width="400px" height="270px"/>
+
+
+
+### 5. Manual Segue
+
+- Segue 생성 후 실행을 코드로 실행하기 위해 사용하는 Segue
+
+  1. Storyboard의 기준 ViewController Object를 이동될 ViewController에 연결한다.
+
+  <img src="https://simajune.github.io/img/posting/Segue7.png" width="400px" height="270px"/>
+
+  2. 그리고 Segue Instance를 선택하여 Identifier를 설정한다.
+  3. 기준 ViewController 파일을 선택하여 해당 이벤트 메소드 내에 아래의 메소드를 실행한다.
+
+  ```swift
+  performSegue(withIdentifier: "toVC", sender: nil)
+  ```
 
