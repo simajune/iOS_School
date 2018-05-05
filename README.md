@@ -131,7 +131,7 @@
 > 6. [UIViewContoller](https://github.com/simajune/iOS_School/tree/master/Class/170930_UIViewController)
 > 7. [UIAlertController](https://github.com/simajune/iOS_School/tree/master/Class/170930_UIAlertController)
 > 8. [Segue](https://github.com/simajune/iOS_School/tree/master/Class/171001_Segue)
-> 9. [UINavigationContoller]
+> 9. [UINavigationContoller](https://github.com/simajune/iOS_School/tree/master/Class/171010_UINavigationController)
 > 10. [Protocol & Delegate](https://github.com/simajune/iOS_School/tree/master/Class/171012_Delegate)
 > 11. [AutoLayout]
 >
