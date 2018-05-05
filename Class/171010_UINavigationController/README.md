@@ -42,7 +42,7 @@
   1. ViewController선택
   2. Editor -> Embed in -> Navigation Controller
 
-  <img src="https://simajune.github.io/img/posting/UINavigationController5.gif" width="600px" height="300px"/>
+  <img src="https://simajune.github.io/img/posting/UINavigationController5.gif" width="1000px" height="450px"/>
 
   
 
@@ -51,7 +51,7 @@
   1. UINavigationController Drag and Drop
   2. RootViewController 설정
 
-  <img src="https://simajune.github.io/img/posting/UINavigationController6.gif" width="600px" height="300px"/>
+  <img src="https://simajune.github.io/img/posting/UINavigationController6.gif" width="1000px" height="450px"/>
 
 - Code
 
@@ -217,7 +217,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
 
 - 실행시 화면
 
-  <img src="https://simajune.github.io/img/posting/UINavigationController6.gif" width="600px" height="300px"/>
+  <img src="https://simajune.github.io/img/posting/UINavigationController4.gif" width="375px" height="667px"/>
 
 
 
