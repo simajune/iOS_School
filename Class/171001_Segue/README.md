@@ -11,16 +11,16 @@
 
 ### 2. Segue 만들기
 
-<img src="https://simajune.github.io/img/posting/Segue1.png" width="400px" height="270px"/>
+<img src="https://simajune.github.io/img/posting/Segue1.png" width="800px" height="540px"/>
 
 - Segue를 만들기 위해 Storyboard를 열고 UIViewController에 UIButton 하나를 만든다.
 - 그리고 UIButton을 마우스 오른쪽 버튼을 눌러 이동할 UIVIewController에 드래그한다.
 
-<img src="https://simajune.github.io/img/posting/Segue2.png" width="400px" height="270px"/>
+<img src="https://simajune.github.io/img/posting/Segue2.png" width="800px" height="540px"/>
 
 - 드래그를 하면 창이 하나 뜨고 Segue의 스타일을 어떻게 할지 정할 수 있다.
 
-<img src="https://simajune.github.io/img/posting/Segue3.png" width="400px" height="270px"/>
+<img src="https://simajune.github.io/img/posting/Segue3.png" width="800px" height="540px"/>
 
 - 하나의 스타일을 누르게 되면 위의 그림처럼 UIViewController 사이에 Segue가 설정된 것을 알 수 있다.
 
@@ -44,11 +44,11 @@
 
   2. 위에 코드를 입력하고 난 후 Storyboard로 이동 후 기준 ViewController로 이동하게 할 Button을 드래그해서 Exit버튼에 연결한다.
 
-  <img src="https://simajune.github.io/img/posting/Segue5.png" width="400px" height="270px"/>
+  <img src="https://simajune.github.io/img/posting/Segue5.png" width="800px" height="540px"/>
 
   3. 코드 내부에 만든 메소드를 선택하면 완료된다.
 
-     <img src="https://simajune.github.io/img/posting/Segue6.png" width="400px" height="270px"/>
+     <img src="https://simajune.github.io/img/posting/Segue6.png" width="800px" height="540px"/>
 
 
 
@@ -58,7 +58,7 @@
 
   1. Storyboard의 기준 ViewController Object를 이동될 ViewController에 연결한다.
 
-  <img src="https://simajune.github.io/img/posting/Segue7.png" width="400px" height="270px"/>
+  <img src="https://simajune.github.io/img/posting/Segue7.png" width="800px" height="540px"/>
 
   2. 그리고 Segue Instance를 선택하여 Identifier를 설정한다.
   3. 기준 ViewController 파일을 선택하여 해당 이벤트 메소드 내에 아래의 메소드를 실행한다.
