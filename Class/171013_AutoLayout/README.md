@@ -54,11 +54,11 @@
 
   - Control + Drag
 
-    1. <img src="https://simajune.github.io/img/posting/AutoLayout4.png" width="400px" height="300px"/>
+    1. <img src="https://simajune.github.io/img/posting/AutoLayout4.png" width="500px" height="250px"/>
 
     - Drag를 어떤 위치에 놓는냐에 따라 제약의 메뉴가 달라진다.
 
-    2. <img src="https://simajune.github.io/img/posting/AutoLayout5.png" width="400px" height="300px"/>
+    2. <img src="https://simajune.github.io/img/posting/AutoLayout5.png" width="500px" height="200px"/>
 
     
 
@@ -88,7 +88,7 @@
 
 - Horizontal Stack View와 Vertical Stack View로 나눠져 있다
 
-  <img src="https://simajune.github.io/img/posting/AutoLayout6.png" width="300px" height="350px"/>
+  <img src="https://simajune.github.io/img/posting/AutoLayout6.png" width="200px" height="250px"/>
 
 ### 7. StackView 구조
 
