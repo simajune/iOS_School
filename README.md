@@ -141,7 +141,7 @@
 ### 5주차
 
 > 1. [클래스와 구조체](https://github.com/simajune/iOS_School/tree/master/Class/180327_ClassStruct)
-> 2. [UITableViewController]
+> 2. [UITableView](https://github.com/simajune/iOS_School/tree/master/Class/171019_UITableView)
 > 3. 
 
 
@@ -150,7 +150,7 @@
 
 > 1. [에러처리]
 > 2. [Notification]
-> 3. [Sunscript]
+> 3. [Subscript]
 > 4. [Extension]
 > 5. [Generic]
 >
