@@ -124,11 +124,11 @@ extension IndexPath {
 
     - TableView Cell Identofier 설정
 
-    <img src="https://simajune.github.io/img/posting/TableView5.png" width="375px" height="450px"/>
+    <img src="https://simajune.github.io/img/posting/TableView5.png" width="300px" height="350px"/>
 
     - DataSource 연결
 
-    <img src="https://simajune.github.io/img/posting/TableView6.png" width="375px" height="550px"/>
+    <img src="https://simajune.github.io/img/posting/TableView6.png" width="375px" height="450px"/>
 
  2. DataSource 함수 만들기 (section, row 갯수)
 
@@ -185,4 +185,4 @@ extension IndexPath {
   - Checkmark
   - DetailButton
 
-<img src="https://simajune.github.io/img/posting/TableView7.png" width="300px" height="300px"/>
+<img src="https://simajune.github.io/img/posting/TableView7.png" width="500px" height="300px"/>
