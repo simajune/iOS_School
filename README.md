@@ -142,7 +142,7 @@
 
 > 1. [클래스와 구조체](https://github.com/simajune/iOS_School/tree/master/Class/180327_ClassStruct)
 > 2. [UITableView](https://github.com/simajune/iOS_School/tree/master/Class/171019_UITableView)
-> 3. 
+> 3. [CustomUI](https://github.com/simajune/iOS_School/tree/master/Class/171019_CustomUI)
 
 
 
