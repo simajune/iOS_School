@@ -8,12 +8,12 @@
 
 ### 2. Style
 
- 	1. Plain
-     - 기본적인 TableView
-     - 여러개의 Section을 가질 수 있다
-     - 한 Section에는 여러개의 Row를 포함하고 있다
-     - 각각의 Section에는 Section을 표시하는 header, footer title을 사용할 수 있다
-     - Section을 빠르게 검색할 수 있는 네비게이터 바를 index list라고 부른다
+ 1. Plain
+   - 기본적인 TableView
+   - 여러개의 Section을 가질 수 있다
+   - 한 Section에는 여러개의 Row를 포함하고 있다
+   - 각각의 Section에는 Section을 표시하는 header, footer title을 사용할 수 있다
+   - Section을 빠르게 검색할 수 있는 네비게이터 바를 index list라고 부른다
 
 <img src="https://simajune.github.io/img/posting/TableView1.png" width="375px" height="667px"/>
 
@@ -109,3 +109,80 @@ extension IndexPath {
 }
 ```
 
+
+
+### 5. TableView 만들기
+
+ 1. TableView UI 생성
+
+    - TableView 화면을 이동 후 AutoLayout 설정
+    - TableView Cell 추가
+
+    <img src="https://simajune.github.io/img/posting/TableView3.png" width="375px" height="200px"/>
+
+    <img src="https://simajune.github.io/img/posting/TableView4.png" width="375px" height="667px"/>
+
+    - TableView Cell Identofier 설정
+
+    <img src="https://simajune.github.io/img/posting/TableView5.png" width="375px" height="450px"/>
+
+    - DataSource 연결
+
+    <img src="https://simajune.github.io/img/posting/TableView6.png" width="375px" height="550px"/>
+
+ 2. DataSource 함수 만들기 (section, row 갯수)
+
+    ```swift
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        //섹션별 row의 갯수 리턴 코드 구현
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    	//cell 구현
+    }
+    ```
+
+    
+
+ 3. 각 indexPath에 해당하는 Cell 설정
+
+    - TableViewCell Reusable 
+
+    ```swift
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
+    {
+    	//cell instance 가져오기
+    	let cell = tableView.dequeueReusableCell(withIdentifier: "Reuse ID", for: indexPath)
+    	//Cell Data 설정
+    	cell.textLabel?.text = "\(indexPath.row)"
+    	return cell
+    }
+    ```
+
+    - 재사용(reuse)
+
+      - TableView는 한줄 한줄이 광장히 비슷한 모습을 가지고 있다.
+      - 수백개의 테이블 리스트가 있다고 가정할 때...
+      - 공통적인 레이아웃을 사용하여 여러번 화면을 보여줄 필요가 있는 경우 Cell을 재사용
+
+      <img src="https://simajune.github.io/img/posting/TableView1.png" width="375px" height="667px"/>
+
+
+
+### 5. UITableViewCell
+
+- 텍스트, 이미지 그리고 다른 종류의 컨텐츠를 보여준다
+- 일반 셀과 선택된 셀을 백그라운드 view로 구분한다
+- 셀은 악세사리 view를 가지고 있다
+- ContentView
+  - textLabel
+  - detailTextLabel
+  - imageView
+- accessoryView
+  - None
+  - DisclosureIndicator
+  - DetailDisclosureButton
+  - Checkmark
+  - DetailButton
+
+<img src="https://simajune.github.io/img/posting/TableView7.png" width="300px" height="300px"/>
