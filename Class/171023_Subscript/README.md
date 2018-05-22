@@ -1,37 +1,98 @@
-# Notification
+# Subscript
 
-### 1. Notification Center
+### 1. Subscript
 
-- 특정 이벤트가 발생하였음을 알리기 위해 불특정 다수의 객체에게 알리기 위해 사용하는 클래스
+- 클래스, 구조체, 열거형의 Collection, List, Sequence의 멤버에 접근 가능한 단축문법인 Subscript를 정의할 수 있다.
 
-- 어떤 객체라도 특정 이벤트가 발생했다는 알림을 받을 것이라고 관찰자(Observer)로 등록을 해두면 **Notification Center**가 모든 관찰자 객체에게 알림을 준다.
+- Subscript는 별도의 setter/getter 없이 index를 통해서 데이터를 설정하거나 값을 가져오는 기능을 한다.
+
+- Array[index] / Dictionary["Key"] 등의 표현이 Subscript이다.
 
   
 
-### 2. Notification 구조
-
-<img src="https://simajune.github.io/img/posting/Notification1.png" width="375px" height="250px"/>
-
-1. 객체A가 Notification Center에 자신이 Notification을 받을 것이라고 등록 (등록은 .addObserver를 통해 한다)
-
-2. 객체B가 필요한 시점에 Notification 송출 (postNotification)
-3. Notification Center에서 적절한 객체와 메소드를 찾아 호출
-
-
-
-### 3. Notification 만들기
+### 2. 문법
 
 ```swift
-//Observer
-let notiCenter = NotificationCenter.default
-notiCenter.addObserver(forName:Notification.Name(rawValue:"keyName"), object: nil, queue: nil)
-{ (noti) in
-	//노티가 왔을때 실행될 영역
+subscript(index: Type) -> Type {
+	get {
+		// return an appropriate subscript value here
+	}
+	set(newValue) {
+		// perform a suitable setting action here
+	}
 }
 
-//Poster
-func postNoti() {
-	NotificationCenter.default.post(name: NSNotification.Name(rawValue: "key"), object: nil)
+subscript(index: Type) -> Type {
+	// return an appropriate subscript value here
 }
 ```
 
+
+
+### 3. 예제
+
+- Array
+
+  ```swift
+  class Friends {
+  	private var friendNames:[String] = []
+  	subscript(index:Int) -> String
+  	{
+  		get {
+  			return friendNames[index]
+  		}
+  		set {
+  			friendNames[index] = newValue
+  		}
+  	}
+  }
+  
+  let fList = Friends()
+  fList[0] = "joo"
+  ```
+
+
+
+- struct
+
+  ```swift
+  struct TimesTable {
+  	let multiplier: Int
+  	subscript(index: Int) -> Int {
+  		return multiplier * index
+  	}
+  }
+  
+  let threeTimesTable = TimesTable(multiplier: 3)
+  print("six times three is \(threeTimesTable[6])")
+  ```
+
+
+
+- 다중 Parameter
+
+  ```swift
+  struct Matrix {
+  	let rows: Int, columns: Int
+  	var grid: [Double]
+  	init(rows: Int, columns: Int) {
+  		self.rows = rows
+  		self.columns = columns
+  		grid = Array(repeating: 0.0, count: rows * columns)
+  	}
+  	subscript(row: Int, column: Int) -> Double {
+  		get {
+  			return grid[(row * columns) + column]
+  		}
+  		set {
+  			grid[(row * columns) + column] = newValue
+  		}
+  	}
+  }
+  
+  var metrix = Matrix(rows: 2, columns: 2)
+  metrix[0,0] = 1
+  metrix[0,1] = 2.5
+  ```
+
+  
