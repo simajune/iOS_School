@@ -148,10 +148,10 @@
 
 ### 6주차
 
-> 1. [에러처리]
-> 2. [Notification]
-> 3. [Subscript]
-> 4. [Extension]
+> 1. [에러처리](https://github.com/simajune/iOS_School/tree/master/Class/171023_Error)
+> 2. [Notification](https://github.com/simajune/iOS_School/tree/master/Class/171023_Noti)
+> 3. [Subscript](https://github.com/simajune/iOS_School/tree/master/Class/171023_Subscript)
+> 4. [Extension](https://github.com/simajune/iOS_School/tree/master/Class/171023_Extension)
 > 5. [Generic]
 >
 > - 프로젝트
