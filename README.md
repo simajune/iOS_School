@@ -152,7 +152,9 @@
 > 2. [Notification](https://github.com/simajune/iOS_School/tree/master/Class/171023_Noti)
 > 3. [Subscript](https://github.com/simajune/iOS_School/tree/master/Class/171023_Subscript)
 > 4. [Extension](https://github.com/simajune/iOS_School/tree/master/Class/171023_Extension)
-> 5. [Generic]
+> 5. [Generic](https://github.com/simajune/iOS_School/tree/master/Class/171023_Generic)
+>
+> 
 >
 > - 프로젝트
 >
