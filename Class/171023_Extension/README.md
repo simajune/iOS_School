@@ -29,14 +29,6 @@ extension SomeType: SomeProtocol, AnotherProtocol {
 
 
 
-
-
-<img src="https://simajune.github.io/img/posting/Notification1.png" width="375px" height="250px"/>
-
-
-
-
-
 ### 3. 유형 : Compute Properties
 
 ```swift
