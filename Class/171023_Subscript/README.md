@@ -48,7 +48,7 @@ subscript(index: Type) -> Type {
   }
   
   let fList = Friends()
-  fList[0] = "joo"
+  fList[0] = "taejune"
   ```
 
 
