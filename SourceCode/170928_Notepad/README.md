@@ -10,7 +10,7 @@
 
 - 이번 Nodpad를 만들기 위해서는 가장 기본적인 UIKit는 UITableView이고 그리고 내용을 저장을 UserIterface를 통해 할것이다.  우선 중요한 것은 테이블뷰를 이런식으로 만들었다. 
 
-  <img src="https://simajune.github.io/img/posting/NotePad1.png" width="375px" height="667px"/>
+  <img src="https://simajune.github.io/img/posting/NotePad1.png" width="250px" height="350px"/>
 
   UI는 스토리보드를 이용해 만들것이다.
 

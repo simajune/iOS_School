@@ -164,12 +164,13 @@
 > 4. [Pop Up](https://github.com/simajune/iOS_School/tree/master/SourceCode/171010_Popup)
 > 5. [TableView Expand](https://github.com/simajune/iOS_School/tree/master/SourceCode/171010_TableView_Expand)
 > 6. [KakaoClone](https://github.com/simajune/iOS_School/tree/master/SourceCode/171011_KakaoClone)
+> 7. [미니프로젝트](https://github.com/simajune/iOS_School/tree/master/Project/MainPageProject)
 
 
 
 ### 7주차
 
->1. [UIImagePicker]
+>1. [ImagePicker]
 >2. [TabbarController]
 
 
