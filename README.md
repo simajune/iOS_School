@@ -170,8 +170,29 @@
 
 ### 7주차
 
->1. [ImagePicker]
->2. [TabbarController]
+>1. [ImagePicker](https://github.com/simajune/iOS_School/tree/master/Project/171025_ImagePicker)
+>2. [TabbarController](https://github.com/simajune/iOS_School/tree/master/Project/171026_TabbarController)
+>3. [CollectionView](https://github.com/simajune/iOS_School/tree/master/Project/171027_CollectionView)
+
+
+
+### 8주차
+
+> 1. [ARC]
+> 2. [Closure]
+
+
+
+### 9주차
+
+> 1. [Thread]
+> 2. [Map]
+
+
+
+### 10.주차
+
+> 1. [Network]
 
 
 
