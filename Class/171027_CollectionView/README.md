@@ -1,4 +1,4 @@
-# ollectionView
+# CollectionView
 
 ### 1. CollectionView란
 
