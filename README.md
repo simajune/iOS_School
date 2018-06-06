@@ -170,23 +170,23 @@
 
 ### 7주차
 
->1. [ImagePicker](https://github.com/simajune/iOS_School/tree/master/Project/171025_ImagePicker)
->2. [TabbarController](https://github.com/simajune/iOS_School/tree/master/Project/171026_TabbarController)
->3. [CollectionView](https://github.com/simajune/iOS_School/tree/master/Project/171027_CollectionView)
+>1. [ImagePicker](https://github.com/simajune/iOS_School/tree/master/Class/171025_ImagePicker)
+>2. [TabbarController](https://github.com/simajune/iOS_School/tree/master/Class/171026_TabbarController)
+>3. [CollectionView](https://github.com/simajune/iOS_School/tree/master/Class/171027_CollectionView)
 
 
 
 ### 8주차
 
-> 1. [ARC](https://github.com/simajune/iOS_School/tree/master/Project/171031_ARC)
-> 2. [Closure](https://github.com/simajune/iOS_School/tree/master/Project/171101_Closure)
+> 1. [ARC](https://github.com/simajune/iOS_School/tree/master/Class/171031_ARC)
+> 2. [Closure](https://github.com/simajune/iOS_School/tree/master/Class/171101_Closure)
 
 
 
 ### 9주차
 
-> 1. [Thread](https://github.com/simajune/iOS_School/tree/master/Project/171106_Thread)
-> 2. [Map](https://github.com/simajune/iOS_School/tree/master/Project/171107_MapView)
+> 1. [Thread](https://github.com/simajune/iOS_School/tree/master/Class/171106_Thread)
+> 2. [Map](https://github.com/simajune/iOS_School/tree/master/Class/171107_MapView)
 
 
 
