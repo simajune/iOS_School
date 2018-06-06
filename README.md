@@ -179,14 +179,14 @@
 ### 8주차
 
 > 1. [ARC](https://github.com/simajune/iOS_School/tree/master/Project/171031_ARC)
-> 2. [Closure]
+> 2. [Closure](https://github.com/simajune/iOS_School/tree/master/Project/171101_Closure)
 
 
 
 ### 9주차
 
 > 1. [Thread](https://github.com/simajune/iOS_School/tree/master/Project/171106_Thread)
-> 2. [Map]
+> 2. [Map](https://github.com/simajune/iOS_School/tree/master/Project/171107_MapView)
 
 
 
